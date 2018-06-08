@@ -1,0 +1,25 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %invoice% will be replaced with the sale invoice
+  %finance_contact% will be replaced with the e-mail of the finance contact responsible for receipts
+  %signature% will be replaced with a custom signature of the user who sent the mails
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Dear %name%,
+
+According to our records, we still await settlement of our Invoice No: <b>%invoice%</b>.
+
+The invoice in question has been emailed to you when your order was received along with our Terms and Conditions. We are sure that this matter is an oversight on your behalf but would appreciate a response to this email, detailing when payment can be expected.
+ 
+<b>Please note that our payment terms are on receipt of invoice.</b>
+
+We have attempted to make contact during the past few weeks to resolve the oversight but have failed to obtain commitment to conclude this matter and reconcile your account.
+ 
+If settlement has already been made or is in the processing stage, could you please send proof of delivery to <a href="mailto:%finance_contact%">%finance_contact%</a>.
+
+Thank you in advance for your cooperation and your participation in our digital magazine.</font>
+
+%signature%

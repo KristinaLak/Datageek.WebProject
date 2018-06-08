@@ -1,0 +1,42 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name / reemplazado por el nombre del contacto
+  %invoice% will be replaced with the sale invoice / sustituido con número de factura de anuncio
+  %finance_contact% will be replaced with the e-mail of the finance contact responsible for receipts / reemplazado por el e-mail del contacto responsable de las finanzas recibos
+  %signature% will be replaced with a custom signature of the user who sent the mails / sustituido por una firma personalizada del usuario que envió los correos
+**
+
+%START%<font size="2"><b>(Por favor, no responda a este emisor, este es un mensaje automático. En lugar de utilizar los datos de contacto en el pie de página de este mensaje.)</b>
+
+Estimado (a) %name%,
+
+Según nuestros registros, aún no contamos con el pago de nuestra Factura No: <b>%invoice%</b>.
+
+La factura citada ha sido enviada por correo electrónico cuando su orden fue confirmada, junto con nuestros Términos y Condiciones. No dudamos que esta demora sea debida a un error involuntario de su parte, por lo que les rogamos una contestación a nuestro e-mail, detallando cuando el pago se hace efectivo.
+ 
+<b>Por favor, tenga en cuenta que nuestros términos de pago son en el recibo de la factura.</b>
+
+Hemos tratado de hacer contacto durante las últimas semanas para resolver este pendiente, pero no han logrado obtener el compromiso de concluir este asunto y la conciliación de su cuenta.
+ 
+Si la liquidación ya se ha hecho o está en tramitación, por favor envíe el comprobante para <a href="mailto:%finance_contact%">%finance_contact%</a>.
+
+Uma vez mas agradecemos por su cooperación y su participación en nuestra revista digital.</font>
+
+<hr>
+<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Dear %name%,
+
+According to our records, we still await settlement of our Invoice No: <b>%invoice%</b>.
+
+The invoice in question has been emailed to you when your order was received along with our Terms and Conditions. We are sure that this matter is an oversight on your behalf but would appreciate a response to this email, detailing when payment can be expected.
+ 
+<b>Please note that our payment terms are on receipt of invoice.</b>
+
+We have attempted to make contact during the past few weeks to resolve the oversight but have failed to obtain commitment to conclude this matter and reconcile your account.
+ 
+If settlement has already been made or is in the processing stage, could you please send proof of delivery to <a href="mailto:%finance_contact%">%finance_contact%</a>.
+
+Thank you in advance for your cooperation and your participation in our digital magazine.</font>
+
+%signature%

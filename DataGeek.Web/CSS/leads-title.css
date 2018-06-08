@@ -1,0 +1,78 @@
+.LargeTitle {
+    color:#454545;
+    font-size:20px; 
+    margin-top:5px;
+    margin-bottom:5px;
+    display:block;
+}
+.MediumTitle {
+    color:#454545;
+    font-size:16px; 
+    margin-top:4px;
+    margin-bottom:4px;
+    display:block;
+}
+.SmallTitle {
+    color:#454545;
+    margin:2px 0px 2px 2px;
+    display:block;
+}
+.SmallTitleNoPad {
+    margin:0;
+    display:inline;
+}
+.SmallTitleBold {
+    color:black;
+    font-weight:bold;
+    margin:2px 0px 2px 2px;
+}
+.TinyTitle {
+	font-size:11px; 
+	color:#454545;
+    margin:2px 0px 2px 2px;
+    display:block;
+}
+.SmallSubTitle {
+    color:darkgray;
+    font-size:7pt;
+}
+.ProjectTitle {
+    margin-top:8px;
+    margin-bottom:0px;
+    font-weight:600;
+    float:left;
+}
+.ProjectSubTitle {
+    margin-top:8px;
+    margin-bottom:0px;
+    font-weight:400;
+    margin-left:5px;
+    float:left;
+}
+.NavigationTitle {
+    color:#506b89;
+    font-weight:600;
+    margin:0px 6px 0px 2px;
+    font-size:8pt;
+}
+.BusinessCardTitle {
+	color:#243f40;
+    font-weight:bold;
+}
+.NextActionEntry {
+    color:#43598d;
+}
+.NextActionBullet {
+    color:#da9726;
+}
+.BusinessCardText {
+	color:#101d1d;
+}
+.BusinessCardAction {
+	font-size:10pt;
+	font-weight:bold;
+	margin:3px 1px 3px 1px;
+}
+.imageUploaderField input {
+    width:100%!important;
+}

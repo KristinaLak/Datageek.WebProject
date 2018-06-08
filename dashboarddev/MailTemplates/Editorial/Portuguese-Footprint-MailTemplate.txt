@@ -1,0 +1,30 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name / será substituído pelo nome do contato
+  %issues% will be replaced with the issue name(s) that the advert(s) appear in / será substituído pelo nome (s) questão que o anúncio (s) aparecem em
+  %brochure_and_web_profile% will be replaced with a link to the territory and/or sector mag's website / será substituído por um link para o território e / ou o site da revista setor
+  %ter_bullet% will be replaced by the territory profile info bullet point (if avail) / será substituído pelo perfil território ponto de informação bala (se disponível)
+  %sec_bullet% will be replaced by the sector profile info bullet point (if avail) / será substituído pelo perfil sector ponto de informação bala (se disponível)
+  %widget_link% will be replaced with a link to customer's widget / será substituído por um link para o Widget do cliente
+  %widget_source% will be replaced with the customer's widget iframe source / será substituído por fonte iframe Widget do cliente
+  %cover_img% will be replaced with the cover hyperlinks/images to the advert(s) (if avail) / será substituído por os hiperlinks de cobertura / imagens para o anúncio (s) (se disponível)
+  %feedback_link% will be replaced with a link to the customer feedback form / será substituído por um link para o formulário de feedback do cliente
+  %signature% will be replaced with a custom signature of the user who sent the mails / será substituído por uma assinatura personalizada do usuário que enviou os e-mails
+  %source% will be replaced with the name of the territory that the feature belongs to / vai ser substituído pelo nome de território que o recurso pertence
+**
+
+%START%<font size="2"><b>(Por favor, não responda a este remetente, esta é uma mensagem automática. Em vez disso, utilize os detalhes de contacto no rodapé desta mensagem.)</b>
+
+Olá %name%,
+
+em nome da %issues% foi um prazer trabalhar com você e sua equipe. Completamos todo o Digital Footprint de sua empresa e sua campanha de marketing está agora no ar. Veja abaixo, um relatório final descrevendo cada elemento de seu Digital Footprint personalizado.
+
+<ol>%ter_bullet%%sec_bullet%<li>Você também pode ver seu %brochure_and_web_profile%</li><li>A sua ferramenta de marketing interativo, o <a href="%widget_link%">widget</a>, que foi criado especificamente para o site da sua empresa, que inclui links para o folder digital, o perfil on-line e um PDF da matéria, em alta resolução. Você pode copiar o seguinte código para incorporar o widget no seu site:</li></ol><b>Código:</b> %widget_source%
+
+Finalmente, gostaria de agradecer pela oportunidade de trabalhar com você e sua equipe. Caso possa utilizar cinco minutos de seu tempo para preencher nosso formulário de feedback online, agradeceríamos imensamente, pois estamos sempre procurando melhorar nossos serviços - seus comentários serão publicados em nosso site oportunamente. Por favor, siga este link <a href="%feedback_link%">para fornecer seu feedback</a>.
+
+%cover_img%
+Cordialmente,</font>
+
+%signature%
+<font size="0" color="white">%source%</font>

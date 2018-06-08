@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "Alberta = AB" />
+	<Node Text = "British Columbia = BC" />
+	<Node Text = "Manitoba = MB" />
+	<Node Text = "New Brunswick = NB" />
+	<Node Text = "Newfoundland and Labrador = NL" />
+	<Node Text = "Northwest Territories = NT" />
+	<Node Text = "Nova Scotia = NS" />
+	<Node Text = "Nunavut = NU" />
+	<Node Text = "Ontario = ON" />
+	<Node Text = "Prince Edward Island = PE" />
+	<Node Text = "Quebec = QC" />
+	<Node Text = "Saskatchewan = SK" />
+	<Node Text = "Yukon = YT" />
+</Tree>

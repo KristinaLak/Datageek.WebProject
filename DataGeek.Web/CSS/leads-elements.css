@@ -1,0 +1,198 @@
+/* Custom CSS form Leads */
+.LButton {
+	background-color:#7fa7b8;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #7ca5b6;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial; /*"Segoe UI"; */
+	font-size:15px;
+    /* font-weight:550; */
+	padding:7px 17px;
+	text-decoration:none;
+	text-shadow:0px 0px 1px #2f6627;
+    outline:none;
+    z-index:100;
+}
+.LButton:hover {
+	background-color:#9fbdca;
+}
+.LButton:active {
+	position:relative;
+	top:1px;
+}
+.LButtonBlue {
+    background-color:#66a8dd;
+    border:1px solid #66a8dd !important;
+}
+.LButtonBlue:hover {
+    background-color:#82b8e3;
+}
+.LButtonGray {
+    background-color:#979eab;
+    border:1px solid #acb3bd !important;
+}
+.LButtonGray:hover {
+    background-color:#bbbfc8;
+}
+.LButtonDisabled {
+    background-color:#f4f4f7 !important;
+    border:1px solid #c9c9cb !important;
+    color:#c9c9cb;
+    text-shadow:none !important;
+}
+.LButtonDisabled:hover {
+    background-color:#f4f4f7;
+}
+.NewProjectButton {
+    background:url(/images/leads/create_new_project.png) no-repeat #f4f4f7;
+    width:175px;
+    border:none;
+    cursor:pointer;
+    margin:10px;
+    margin-left:6px;
+    padding:10px 20px;
+    outline:none;
+}
+.NewProjectButton:active {
+	position:relative;
+	top:1px;
+}
+.ToolbarButtonLeft {
+    border:1px solid #adc7d1;
+    border-radius:12px 0px 0px 12px;
+    padding:10px 18px 10px 33px;
+    background:url(/images/leads/ico_move.png) no-repeat 12px 12px #bacfd8;
+    text-shadow:0px 0px 6px black;
+    position:relative;
+    left:9px;
+    background-size:13px 13px;
+}
+.ToolbarButtonMiddleLeft {
+    border:1px solid #adc7d1;
+    border-radius:0px;
+    padding:10px 20px 10px 30px;
+    background:url(/images/leads/ico_note.png) no-repeat 10px 13px #bacfd8;
+    text-shadow:0px 0px 6px black;
+    position:relative;
+    left:4px;
+    background-size:13px 13px;
+}
+.ToolbarButtonCenter {
+    border-radius:0px;
+    border-left:0px;
+    border-right:0px;
+    padding:10px 20px 10px 20px;
+}
+.ToolbarButtonMiddleRight {
+    border:1px solid #adc7d1;
+    border-radius:0px;
+    padding:10px 16px 10px 30px;
+    background:url(/images/leads/ico_colour.png) no-repeat 10px 12px #bacfd8;
+    text-shadow:0px 0px 6px black;
+    position:relative;
+    left:-4px;
+    background-size:13px 13px;
+}
+.ToolbarButtonRight {
+    border:1px solid #adc7d1;
+    border-radius:0px 12px 12px 0px;
+    padding:10px 26px 10px 36px;
+    background:url(/images/leads/ico_kill.png) no-repeat 17px 12px #bacfd8;
+    text-shadow:0px 0px 6px black;
+    position:relative;
+    left:-9px;
+    background-size:13px 13px;
+}
+.AdvancedSearchButton {
+    text-align:center;
+    font-size:10pt;
+    font-family:Segoe UI;
+    margin-left:6px;
+    outline:none;
+    color:white;
+}
+.DoNotContactLinkButton {
+    padding:3px;
+    padding-right:6px;
+    position:relative;
+    border-radius:4px;
+    left:-3px;
+    background:#ffe6cc;
+}
+.AlreadyPersuedLinkButton {
+    padding:3px;
+    padding-right:6px;
+    position:relative;
+    border-radius:4px;
+    left:-3px;
+    background:#e7eff1;
+}
+.EmailManagerCell {
+    overflow:hidden;
+    white-space:nowrap;
+    display:inline-block;
+    box-sizing:border-box;
+}
+.EmailEstimatedEH {
+    color:#e86240 !important;
+}
+.EmailEstimatedDG {
+    color:#7FA7B8 !important;
+}
+.EmailVerified {
+    color:#46753E !important;
+}
+.NoEmail {
+    color:#243653 !important;
+}
+.BBAEmail {
+    color:#AE7C09 !important;
+}
+.EditButton {
+   position:relative; 
+   opacity:0.6;
+}
+.EditButton:active {
+   position:relative; 
+   top:1px; 
+}
+/* Normal Buttons */
+input[type="button"] { 
+    outline:none;
+} 
+/* Normal ImageButtons */
+input[type=image] {
+    outline:none;
+}
+/* TextBoxes and Textareas */
+input[type=text], textarea {
+    border-radius:2px;
+    height:16px;
+    padding:3px;
+    width:150px;
+    font-size:15px;
+}
+input[type=text]:hover, textarea:hover {
+    background-color:#ffeed9;
+}
+/* Hyperlinks */
+a:link, a:visited {
+	color:#454545;
+	text-decoration:none;
+}
+a:hover {
+    color:#454545;
+    text-decoration:underline;
+}
+.HRSeparator { 
+  border:0; 
+  height:1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #C1C1C1, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #C1C1C1, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #C1C1C1, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #C1C1C1, #f0f0f0); 
+}

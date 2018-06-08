@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "Bangladesh" />                                                    
+	<Node Text = "Bhutan" />                                                        
+	<Node Text = "Brunei Darussalam" />                                             
+	<Node Text = "Burma" />                                                         
+	<Node Text = "Cambodia" />                                                      
+	<Node Text = "China" />                                                         
+	<Node Text = "Hong Kong" />                                                     
+	<Node Text = "Indonesia" />                                                     
+	<Node Text = "Japan" />                                                         
+	<Node Text = "Kazakhstan" />                                                    
+	<Node Text = "Korea" />                                                         
+	<Node Text = "Korea, Republic of" />                                            
+	<Node Text = "Lao People's Democratic Republic" />                              
+	<Node Text = "Malaysia" />                                                      
+	<Node Text = "Mongolia" />                                                      
+	<Node Text = "Myanmar" />                                                       
+	<Node Text = "Nepal" />                                                         
+	<Node Text = "Pakistan" />                                                      
+	<Node Text = "Papua New Guinea" />                                              
+	<Node Text = "Philippines" />                                                   
+	<Node Text = "Singapore" />                                                     
+	<Node Text = "Sri Lanka" />                                                     
+	<Node Text = "Taiwan" />                                                        
+	<Node Text = "Thailand" />                                                      
+	<Node Text = "Viet Nam" />                                                      
+</Tree>

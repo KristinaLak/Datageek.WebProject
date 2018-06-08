@@ -1,0 +1,26 @@
+﻿<%@ Master %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+        <meta name="description" content="BizClik Media DataGeek"/>
+        <meta name="keywords" content="BizClik,Media,BizClik Media,DataGeek"/>
+        <script src="/JavaScript/db.js?v2" type="text/javascript"></script>
+        <script src="/JavaScript/jq.js?v2" type="text/javascript"></script>
+        <script src="/JavaScript/alertify.js?v1" type="text/javascript"></script>
+        <script src="/JavaScript/telerik.js" type="text/javascript"></script>
+        <link rel="shortcut icon" href="~/Images/Icons/dashboard.ico"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/dashboard.css?2"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/Alertify/alertify.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/Alertify/themes/bootstrap.min.css"/>
+    </head>
+    <body>
+        <form runat="server" style="width:1440px; margin-left:auto; margin-right:auto; overflow:visible;">
+            <ajax:ToolkitScriptManager runat="server" CombineScripts="false"/>
+            <asp:ContentPlaceHolder ID="Body" runat="server"/>     
+        </form>
+    </body>
+</html>

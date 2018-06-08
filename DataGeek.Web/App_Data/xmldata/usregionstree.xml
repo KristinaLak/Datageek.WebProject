@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "East North Central">
+		<Node Text = "Illinois = IL" />
+		<Node Text = "Indiana = IN" />
+		<Node Text = "Michigan = MI" />
+		<Node Text = "Ohio = OH" />
+		<Node Text = "Wisconsin = WI" />
+	</Node>
+	<Node Text = "East South Central">
+		<Node Text = "Alabama = AL" />
+		<Node Text = "Kentucky = KY" />
+		<Node Text = "Mississippi = MS" />
+		<Node Text = "Tennessee = TN" />
+	</Node>
+	<Node Text = "Middle Atlantic">
+		<Node Text = "New Jersey = NJ" />
+		<Node Text = "New York = NY" />
+		<Node Text = "Pennsylvania = PA" />
+	</Node>
+	<Node Text = "Mountain">
+		<Node Text = "Arizona = AZ" />
+		<Node Text = "Colorado = CO" />
+		<Node Text = "Idaho = ID" />
+		<Node Text = "Montana = MT" />
+		<Node Text = "Nevada = NV" />
+		<Node Text = "New Mexico = NM" />
+		<Node Text = "Utah = UT" />
+		<Node Text = "Wyoming = WY" />
+	</Node>
+	<Node Text = "New England">
+		<Node Text = "Connecticut = CT" />
+		<Node Text = "Maine = ME" />
+		<Node Text = "Massachusetts = MA" />
+		<Node Text = "New Hampshire = NH" />
+		<Node Text = "Rhode Island = RI" />
+		<Node Text = "Vermont = VT" />
+	</Node>
+	<Node Text = "Pacific">
+		<Node Text = "Alaska = AK" />
+		<Node Text = "California = CA" />
+		<Node Text = "Hawaii = HI" />
+		<Node Text = "Oregon = OR" />
+		<Node Text = "Washington = WA" />
+	</Node>
+	<Node Text = "South Atlantic">
+		<Node Text = "Delaware = DE" />
+		<Node Text = "Florida = FL" />
+		<Node Text = "Georgia = GA" />
+		<Node Text = "Maryland = MD" />
+		<Node Text = "North Carolina = NC" />
+		<Node Text = "South Carolina = SC" />
+		<Node Text = "Virginia = VA" />
+		<Node Text = "West Virginia = WV" />
+	</Node>
+	<Node Text = "West North Central">
+		<Node Text = "Iowa = IA" />
+		<Node Text = "Kansas = KS" />
+		<Node Text = "Minnesota = MN" />
+		<Node Text = "Missouri = MO" />
+		<Node Text = "Nebraska = NE" />
+		<Node Text = "North Dakota = ND" />
+		<Node Text = "South Dakota = SD" />
+	</Node>
+	<Node Text = "West South Central">
+		<Node Text = "Arkansas = AR" />
+		<Node Text = "Louisiana = LA" />
+		<Node Text = "Oklahoma = OK" />
+		<Node Text = "Texas = TX" />
+	</Node>
+</Tree>

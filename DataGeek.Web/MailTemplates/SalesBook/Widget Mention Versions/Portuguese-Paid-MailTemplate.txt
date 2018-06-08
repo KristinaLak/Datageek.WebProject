@@ -1,0 +1,43 @@
+** 
+  --- README ---
+  Portuguese
+  %name% will be replaced with the contact name / substituído pelo nome do contato
+  %issue% will be replaced with the issue name / substituído com o nome de emissão
+  %eng_issue% will be replaced with the issue name in english / substituído com o nome de emissão
+  %link% will be replaced with the link to the advert / substituído com o link para o anúncio
+  %eng_link% will be replaced with the link to the advert (always english) / será substituído com o link para o anúncio (sempre Inglês)
+  %pageno% will be replaced with advert's page number / substituído com o número do anúncio página
+  %feature% will be replaced with advert's feature name / substituído com o nome do anúncio do recurso
+  %signature% will be replaced with a custom signature of the user who sent the mails / substituído por uma assinatura personalizada do usuário que enviou os e-mails
+**
+
+%START%<font size="2"><b>(Por favor, não responda a este remetente, esta é uma mensagem automática. Em vez disso, utilize os detalhes de contacto no rodapé desta mensagem.)</b>
+
+Prezado (a) %name%,
+
+Tenho o prazer de informá-lo (a) que a edição de %issue% está no ar e pode ser vista acessando o link abaixo:
+
+%link%
+
+Para sua conveniência, estou anexando o link do seu anúncio, publicado na página %pageno%.
+
+Dentro de uma a duas semanas, o folder digital da %feature% estará completo e baixado em nossos site em Reports > Company Reports. %feature% também receberá uma ferramenta de marketing interativo na forma de um widget que poderá ser incluído no site da empresa. Todas as publicações desta ferramenta incluirão o seu anúncio.
+
+Agradeço por sua participação em nossa revista digital.</font>
+
+<hr>
+<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Dear %name%,
+
+I am pleased to advise that the %eng_issue% issue is now live and can be viewed by visiting our website via the attached link.
+
+%eng_link%
+
+You can find your advertisement on page %pageno%.
+
+In one to two weeks the brochure for %feature% will be completed and uploaded to our websites under Reports > Company Reports. %feature% will also receive their brochure in the form of a widget which they can upload to their website. All publications of this brochure will include your advertisement. 
+
+Thank you for your participation in our digital magazine.</font>
+
+%signature%

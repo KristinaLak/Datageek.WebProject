@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "Energy = 1:0">
+		<Node Text = "Oil and Gas = 1:1" />
+		<Node Text = "Utilities = 1:2" />
+		<Node Text = "Gas and Electric = 1:3" />
+		<Node Text = "Water and Water Services = 1:4" />
+		<Node Text = "Renewables = 1:5" />
+		<Node Text = "Bio-Energy = 1:6" />
+		<Node Text = "Wind = 1:7" />
+		<Node Text = "Solar = 1:8" />
+		<Node Text = "Waste Management = 1:9" />
+		<Node Text = "Recycling = 1:10" />
+		<Node Text = "Subsea = 1:11" />
+		<Node Text = "Petro-Chemical = 1:12" />
+		<Node Text = "Fabrication = 1:13" />
+		<Node Text = "Drilling = 1:14" />
+		<Node Text = "Well services = 1:15" />
+		<Node Text = "Mining = 1:16" />
+    <Node Text = "Nuclear = 1:17" />
+	</Node>
+	<Node Text = "Construction = 2:0">
+		<Node Text = "Home Builders = 2:1" />
+		<Node Text = "Government / Social Housing = 2:2" />
+		<Node Text = "Commercial Buildings = 2:3" />
+		<Node Text = "Civil construction and engineering = 2:4" />
+		<Node Text = "Construction equipment = 2:5" />
+		<Node Text = "Construction materials (timber, tiles, bricks) = 2:6" />
+		<Node Text = "Plant and Machinery = 2:7" />
+		<Node Text = "Manufacturers of building equipment and products = 2:8" />
+		<Node Text = "Industrial Facilities = 2:9" />
+		<Node Text = "Landscaping Services = 2:10" />
+		<Node Text = "Auxiliary Construction Services (Roofing, Plastering, Decorating, Electrical etc = 2:11" />
+		<Node Text = "Architectural Services = 2:12" />
+	</Node>
+	<Node Text = "Healthcare = 3:0">
+		<Node Text = "Hospitals = 3:1" />
+		<Node Text = "Clinical care = 3:2" />
+		<Node Text = "Occupational Health = 3:3" />
+		<Node Text = "Nursing Homes = 3:4" />
+		<Node Text = "Medical devices = 3:5" />
+		<Node Text = "Orthapedic and artificial limbs = 3:6" />
+		<Node Text = "Medical equipment = 3:7" />
+		<Node Text = "Pharmaceuticals = 3:8" />
+	</Node>
+	<Node Text = "Manufacturing = 4:0">
+		<Node Text = "Automotive = 4:1" />
+		<Node Text = "Aerospace = 4:2" />
+		<Node Text = "FMCG = 4:3" />
+		<Node Text = "Metals and Machinery = 4:4" />
+		<Node Text = "Paper, Print and Packaging = 4:5" />
+		<Node Text = "Plastics and Rubber = 4:6" />
+		<Node Text = "Furniture, wood and glass = 4:7" />
+		<Node Text = "Chemicals and Pharmaceuticals = 4:8" />
+		<Node Text = "Marine = 4:9" />
+		<Node Text = "HVAC = 4:10" />
+		<Node Text = "Electrical and Electronic = 4:11" />
+		<Node Text = "Textiles, Apparel and Footwear = 4:12" />
+		<Node Text = "Tobacco = 4:13" />
+		<Node Text = "Other Transport Equipment = 4:14" />
+	</Node>
+	<Node Text = "Supply Chain = 5:0">
+		<Node Text = "Freight Forwarding = 5:1" />
+		<Node Text = "3PL - Logistics and Distribution = 5:2" />
+		<Node Text = "Airfreight = 5:3" />
+		<Node Text = "Sea Freight = 5:4" />
+		<Node Text = "Materials Handling = 5:5" />
+		<Node Text = "Warehousing = 5:6" />
+		<Node Text = "Courier / Postal Services = 5:7" />
+		<Node Text = "Wholesale and Supply = 5:8" />
+		<Node Text = "Other Transportation (Passenger, Rail etc) = 5:9" />
+		<Node Text = "Pipeline Transportation = 5:10" />
+	</Node>
+	<Node Text = "Retail = 6:0">
+		<Node Text = "Shopping Centres = 6:1" />
+		<Node Text = "Leisure Centres = 6:2" />
+		<Node Text = "Hotels = 6:3" />
+		<Node Text = "Restaurants = 6:4" />
+		<Node Text = "Sporting groups = 6:5" />
+		<Node Text = "Equipment Dealerships = 6:6" />
+	</Node>
+	<Node Text = "Food and Drink = 7:0">
+		<Node Text = "Food Manufacturing = 7:1" />
+		<Node Text = "Soft drinks = 7:2" />
+		<Node Text = "Brewery = 7:3" />
+		<Node Text = "Distilleries = 7:4" />
+		<Node Text = "Snack Foods = 7:5" />
+		<Node Text = "Pet foods = 7:6" />
+		<Node Text = "Cold Storage = 7:7" />
+    <Node Text = "Foodservice = 7:8" />
+    <Node Text = "Agriculture and Farming = 7:9" />
+    <Node Text = "Winery = 7:10" />
+	</Node>
+	<Node Text = "Technology = 8:0">
+		<Node Text = "Software companies = 8:1" />
+		<Node Text = "Hardware companies = 8:2" />
+		<Node Text = "E-business solutions = 8:3" />
+		<Node Text = "Telecoms = 8:4" />
+		<Node Text = "Supply chain Software = 8:5" />
+		<Node Text = "Security = 8:6" />
+		<Node Text = "Auxiliary IT Services = 8:7" />
+	</Node>
+	<Node Text = "Stock Market = 9:0">
+		<Node Text = "Dow Jones = 9:1" />
+		<Node Text = "Nasdaq = 9:2" />
+		<Node Text = "SandP 500 = 9:3" />
+		<Node Text = "FTSE = 9:4" />
+		<Node Text = "NYSE = 9:5" />
+	</Node>
+	<Node Text = "Financial Services = 10:0">
+		<Node Text = "Accountants = 10:1" />
+		<Node Text = "Banks = 10:2" />
+		<Node Text = "Insurance / Assurance = 10:3" />
+		<Node Text = "Tax = 10:4" />
+		<Node Text = "Brokerage = 10:5" />
+	</Node>
+	<Node Text = "Services = 20:0">
+		<Node Text = "Legal Services = 20:1" />
+		<Node Text = "HR Services = 20:2" />
+		<Node Text = "Training / Education Services = 20:3" />
+		<Node Text = "Advertising / PR Services = 20:4" />
+		<Node Text = "Sales and Marketing Agencies = 20:5" />
+		<Node Text = "Property / Facilities Management Services = 20:6" />
+		<Node Text = "Rental / Leasing Services = 20:7" />
+		<Node Text = "Security Services = 20:8" />
+		<Node Text = "Media Services = 20:9" />
+		<Node Text = "Translation / Interpretation Services = 20:10" />
+		<Node Text = "Consulting Services = 20:11" />
+		<Node Text = "Professional Cleaning / Laundry Services = 20:12" />
+    <Node Text = "Design Services = 20:13" />
+    <Node Text = "Events Management Services = 20:14" />
+    <Node Text = "Travel Services = 20:15" />
+    <Node Text = "Risk Management Services = 20:16" />
+    <Node Text = "Project Management Services = 20:17" />
+    <Node Text = "Packing Services = 20:18" />
+    <Node Text = "Forestry and Logging = 20:19" />
+    <Node Text = "Library Services = 20:20" />
+    <Node Text = "Procurement Services = 20:21" />
+    <Node Text = "Animal Welfare Services = 20:22" />
+    <Node Text = "Funeral Services = 20:23" />
+    <Node Text = "Hair and Beauty Services = 20:24" />
+    <Node Text = "Entertainment Services = 20:25" />
+    <Node Text = "Pest Control Services = 20:26" />
+	</Node>
+	<Node Text = "Engineering Services = 30:0">
+		<Node Text = "Research and Development = 30:1" />
+		<Node Text = "Environmental = 30:2" />
+		<Node Text = "Surveying and Geophysics = 30:3" />
+	</Node>
+	<Node Text = "Associations / Organisations = 40:0">
+	</Node>
+  <Node Text = "Promo = 66:0">
+  </Node>
+  <Node Text = "Government Organisation = 99:0">
+  </Node>
+</Tree>

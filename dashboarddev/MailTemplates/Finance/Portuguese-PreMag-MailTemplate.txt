@@ -1,0 +1,40 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name / substituído pelo nome do contato
+  %issue% will be replaced with the issue name / substituído com o nome de emissão
+  %eng_issue% will be replaced with the issue name in english / substituído com o nome de emissão
+  %pub_date% will be replaced with the publication date of the mag / será substituído com a data de publicação da revista
+  %eng_pub_date% will be replaced with the publication date of the mag in english / será substituído com a data de publicação da revista em Inglês
+  %invoice% will be replaced with the sale invoice / substituído por número da fatura do anúncio
+  %finance_contact% will be replaced with the e-mail of the finance contact responsible for receipts / substituído pelo e-mail do contato finanças responsável por receitas
+  %signature% will be replaced with a custom signature of the user who sent the mails / substituído por uma assinatura personalizada do usuário que enviou os e-mails
+**
+
+%START%<font size="2"><b>(Por favor, não responda a este remetente, esta é uma mensagem automática. Em vez disso, utilize os detalhes de contacto no rodapé desta mensagem.)</b>
+
+Prezado (a) %name%,
+
+A inclusão do seu anúncio em nossa revista digital %issue% está prevista para %pub_date% mas não pudemos determinar quando o pagamento de nossa Fatura No: <b>%invoice%</b> será efetuado.
+
+Todos os anúncios de nossos clientes estão sujeitos ao “pagamento quando da confirmação do pedido”, por isso a obrigatoriedade em recebermos a remessa do pagamento antes das publicações irem ao ar na Internet.
+
+Anexamos cópia da fatura vencida e dados bancários para que o pagamento seja efetuado. Por gentileza encaminhe estes documentos para o seu Depto Financeiro, o mais breve possível, para que o contrato de publicidade seja concluído conforme negociado.
+
+Gostaria de desculpar-me antecipadamente, caso nossa fatura já tenha sido quitada e aproveito para solicitar a gentileza de enviar o comprovante de pagamento para <a href="mailto:%finance_contact%">%finance_contact%</a>.
+
+Uma vez mais agradeço pela sua participação em nossa revista digital.</font>
+
+<hr>
+<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Dear %name%,
+
+Your advertising insertion in our %eng_issue% magazine is due to be published on %eng_pub_date% and we have been unable to establish when payment of our Invoice No: <b>%invoice%</b> will be made.
+
+All of our client advertising is subject to 'payment upon order confirmation', so it is imperative for us to receive cleared funds in advance of the publications going live on the Internet.
+
+May I apologise in advance if payment has already been made and I would be grateful if you could forward a copy of the proof of payment to <a href="mailto:%finance_contact%">%finance_contact%</a>.
+
+Once again, thank you for your participation in our digital magazine.</font>
+
+%signature%

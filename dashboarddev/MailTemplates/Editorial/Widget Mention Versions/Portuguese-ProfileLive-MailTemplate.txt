@@ -1,0 +1,36 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name / será substituído pelo nome do contato
+  %publication% will be replaced with month of publication/name / será substituído por mês de publicação / nome
+  %issues_and_p#s% will be replaced with the issue name(s) and page numbers to adverts / será substituído pelo nome questão (s) e números de página de anúncios
+  %sector_mag% will be replaced with sector magazine name / será substituído com o nome da revista setor
+  %territory_mag% will be replaced with territory magazine name / será substituído com o nome da revista território
+  %company_name% will be replaced with the feature name / será substituído pelo nome do recurso
+  %cover_img% will be replaced with the cover hyperlink/image to the advert (if avail) / serão substituídos com a tampa hyperlink / imagem para o anúncio (se disponível)
+  %signature% will be replaced with a custom signature of the user who sent the mails / será substituído por uma assinatura personalizada do usuário que enviou os e-mails
+  %source% will be replaced with the name of the territory that the feature belongs to / vai ser substituído pelo nome de território que o recurso pertence
+**
+
+%START%<font size="2"><b>(Por favor, não responda a este remetente, esta é uma mensagem automática. Em vez disso, utilize os detalhes de contacto no rodapé desta mensagem.)</b>
+
+Prezado(a) %name%,
+
+é com muita satisfação que, conforme prometido, encaminhamos os links de acesso à edição de %publication% das %issues_and_p#s%, onde publicamos o perfil corporativo do(a) %company_name%.
+
+%cover_img%
+ 
+Aproveitamos para convidá-los a curtir a nossa página no <a href="https://www.facebook.com/BusinessReviewBrasil?ref=hl">Facebook</a>, e a nos seguir no <a href="https://twitter.com/BizReviewBrasil">Twitter</a> e no <a href="http://www.linkedin.com/groups?home=&gid=3824318&trk=anet_ug_hm">LinkedIn</a>, redes sociais onde a matéria será promovida.
+ 
+Porém, o nosso trabalho com o(a) %company_name% não acabou aqui. Como as revistas %territory_mag% e %sector_mag% são revistas eletrônicas, o nosso pacote de produtos para o(a) %company_name% vai além da publicação destes perfis. 
+
+Nas próximas oito semanas, nosso departamento de Marketing estará divulgando a matéria feita por nós, construindo o que chamamos de Digital Footprint do(a) %company_name%. Após este período, vamos enviar a vocês uma ferramenta de marketing interativo, na forma de um widget, contendo um folder digital do perfil produzido, através do qual vocês poderão ter a matéria em formato de PDF, elaborado em alta resolução, para impressão em gráficas. O widget pode ser também incluído no site da empresa, para que seus clientes possam ter acesso à matéria que produzimos. 
+Esperamos que gostem do resultado.   
+ 
+Estamos à disposição para quaisquer dúvidas, críticas ou sugestões!
+
+Tenham uma boa leitura! 
+ 
+Cordialmente,</font>
+
+%signature%
+<font size="0" color="white">%source%</font>

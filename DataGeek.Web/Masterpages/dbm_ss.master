@@ -1,0 +1,41 @@
+﻿<%@ Master %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head ID="main_head" runat="server">
+        <title></title>
+        <meta name="description" content="BizClik Media SmartSocial"/>
+        <meta name="keywords" content="BizClik,Media,BizClik Media,Smart,Social,SmartSocial"/>
+        <meta name="viewport" content="width=1340"/>
+        <asp:ContentPlaceHolder ID="Head" runat="server"/>
+        <script src="/JavaScript/db.js?v1" type="text/javascript"></script>
+        <script src="/JavaScript/alertify.js?v1" type="text/javascript"></script>
+        <script src="/JavaScript/telerik.js?v1" type="text/javascript"></script>
+        <link rel="shortcut icon" href="~/images/smartsocial/ico_logo.png"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/Alertify/alertify.min.css?leadsv4"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/Alertify/themes/bootstrap.min.css?leadsv4"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/ss-layout.css?ssv1"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/ss-title.css?ssv1"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/ss-elements.css?ssv1"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/ss-misc.css?ssv1"/>
+    </head>
+    <body ID="main_body" runat="server">
+        <form runat="server">
+            <ajax:ToolkitScriptManager runat="server" CombineScripts="false"/>
+            <telerik:RadToolTipManager runat="server" AutoTooltipify="false" ShowDelay="600" RelativeTo="Mouse" Skin="MetroTouch" HideDelay="0"/>
+            <asp:ContentPlaceHolder ID="Body" runat="server"/>
+        </form>
+    </body>
+    
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-40205898-1', 'wdmgroup.com');
+        ga('send', 'pageview');
+    </script>
+</html>

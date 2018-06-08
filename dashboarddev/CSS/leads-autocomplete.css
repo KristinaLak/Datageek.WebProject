@@ -1,0 +1,77 @@
+.CompletionList {
+	border-radius:5px;
+    -moz-border-radius:5px;
+    border:solid 1px #444444;
+    background-color:#FFFFFF;
+    font-size:9pt;
+	font-family:'Helvetica';
+    margin:0px;
+    padding:2px;
+    overflow:auto;
+    min-width:300px;
+    text-indent:0px;
+    text-align:left;
+}
+.ListItem {
+    color:#1C1C1C;
+    border:1px solid #DDD;
+    padding:4px;
+    height:40px;
+    cursor:pointer; 
+    position:relative;
+}
+.ItemHighlighted {
+    background-color:#e7eff1;
+    border:1px solid #DDD;
+    padding:4px;
+    height:40px;
+    cursor:pointer; 
+    position:relative;
+}
+.ListItemInnerContainer{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+.ListItemThumbImage {
+	vertical-align:middle; 
+	margin-bottom:1px;
+	width:28px;
+	height:40px;
+}
+.ListItemTopRightText {
+	position:absolute;
+	top:2px;
+	right:2px;
+	font-size:8pt;
+}
+.ListItemBottomRightText {
+	position:absolute;
+	bottom:2px;
+	right:2px;
+	font-size:8pt;
+}
+.ListItemVerifiedContactImage {
+	height:13px;
+	width:13px;
+	position:relative;
+    padding-right:4px;
+	top:2px;
+}
+.ListItemVerifiedContact {
+	background:#fbffea;
+	height:100%;
+	width:100%;
+}
+.SearchWatermark  { 
+	width:500px;
+	color:Silver; 
+	height:20px;
+    padding:5px;
+}
+.ListItemImage {
+    vertical-align:middle; 
+    padding-left:4px;
+    width:35px;
+    height:35px;
+}

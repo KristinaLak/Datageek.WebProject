@@ -1,0 +1,30 @@
+** 
+  --- README ---
+  %issues_and_p#s% will be replaced with the issue name(s) and page numbers to adverts / será reemplazado por el nombre de problema (s) y los números de página a los anuncios
+  %links% will be replaced with the link(s) to the advert(s) / será reemplazado por el enlace (s) para el anuncio (s)
+  %cover_img% will be replaced with the cover hyperlink/image to the advert (if avail) / será reemplazado con la cubierta hipervínculo / imagen para el anuncio (si está disponible)
+  %signature% will be replaced with a custom signature of the user who sent the mails / será reemplazado por una firma personalizada del usuario que envió el correo
+  %source% will be replaced with the name of the territory that the feature belongs to / será reemplazado por el nombre del territorio del que la característica pertenece a
+**
+
+%START%<font size="2"><b>(Por favor, no responda a este emisor, este es un mensaje automático. En lugar de utilizar los datos de contacto en el pie de página de este mensaje.)</b>
+
+Buen día. 
+
+Espero se encuentre muy bien y disfrutando de este lindo día. Le hago llegar los links de la revista para que los comparta con sus compañeros.   
+
+Por favor encuentre una versión en línea del perfil corporativo de su compañía en %issues_and_p#s% con tan solo darle clic a los links que aparecen en la parte inferior. 
+
+El artículo se reproducirá como un folleto digital para su uso en su sitio web, como material de mercadeo, demostración comercial, etc.
+
+En cuanto se termine el diseño del folleto la siguiente semana, se lo haremos llegar con un widget específico para su sitio web. 
+
+Para verificar que haya recibido todo el material nos comunicaremos con usted, también para responder cualquier pregunta adyacente, como la forma de subirlo a su página de Internet.
+
+Encuentre su reporte ejecutivo en los siguientes. 
+
+%links%
+
+%cover_img%</font>
+%signature%
+<font size="0" color="white">%source%</font>

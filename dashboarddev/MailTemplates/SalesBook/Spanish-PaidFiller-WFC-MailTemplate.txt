@@ -1,0 +1,44 @@
+** 
+  --- README ---
+  Spanish
+  %name% will be replaced with the contact name / reemplazado por el nombre del contacto
+  %issue% will be replaced with the issue name / reemplazado con el nombre cuestión
+  %eng_issue% will be replaced with the issue name in english / reemplazado con el nombre cuestión
+  %link% will be replaced with the link to the advert / reemplazado por el enlace al anuncio
+  %eng_link% will be replaced with the link to the advert (always english) / reemplazado por el enlace al anuncio (en Inglés)
+  %pageno% will be replaced with advert's page number / sustituido con número de página de anuncio
+  %feature% will be replaced with advert's feature name / reemplazado con el nombre de función de anuncio de
+  %signature% will be replaced with a custom signature of the user who sent the mails / sustituido por una firma personalizada del usuario que envió los correos
+  %design_contact% will be replaced with the e-mail of the design contact responsible for artwork / reemplazado por el e-mail del contacto responsable de diseño de obras de arte
+**
+
+%START%<font size="2"><b>(Por favor, no responda a este emisor, este es un mensaje automático. En lugar de utilizar los datos de contacto en el pie de página de este mensaje.)</b>
+
+Estimado (a) %name%,
+
+Me complace compartir con ustedes que la edición de %issue% ha sido sido publicada y se puede ver visitándo nuestro sitio web a través del enlace a continuación:
+
+%link%
+
+Nuestro departamento de arte no recibió ningún diseño para esta edición por lo que han tenido que poner un anuncio temporal en la página %pageno% de la revista. Como usted se hizo responsable por el costo de este espacio, le agradecería si puede enviar su diseño a <a href="mailto:%design_contact%">%design_contact%</a> con el fin de que su anuncio sea publicado en nuestra revista digital.
+
+En una o dos semanas, el folleto corporativo de %feature% se completará y estará disponible en nuestros sítios web bajo Reports > Company Reports. En todas las publicaciones de este folleto se incluirá su anuncio. 
+
+Agradezco su participación en nuestra revista digital.</font>
+
+<hr>
+<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Dear %name%,
+
+I am pleased to advise that the %eng_issue% issue is now live and can be viewed by visiting our website via the attached link.
+
+%eng_link%
+
+Our Design department did not receive any artwork for this edition and have placed a filler in the magazine on Page %pageno%. As you will be liable for the cost of this filler, I would be grateful if you could forward your artwork to <a href="mailto:%design_contact%">%design_contact%</a> by return so your own advertisement can be featured in our digital magazine.
+
+In one to two weeks the brochure for %feature% will be completed and uploaded to our websites under Reports > Company Reports. All publications of this brochure will include your advertisement. 
+
+Thank you for your participation in our digital magazine.</font>
+
+%signature%

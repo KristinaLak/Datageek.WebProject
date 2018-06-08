@@ -1,0 +1,56 @@
+.AdvancedSearchArea
+{
+	margin-left:8px;
+}
+
+.DetailsArea
+{
+	margin-top:15px;
+	margin-left:20px;
+	width:640px;
+}
+
+.DetailsText
+{
+	color:#454545;
+	font-size:12px; 
+	margin-bottom:4px;
+	margin-top:10px;
+	display:block;
+}
+
+.FieldLabel
+{
+	padding-right:40px;
+	padding-left:8px;
+} 
+
+.CtcFieldInput
+{
+	position:relative;
+	left:7px;
+	height:18px;
+	width:100%;
+	padding:2px;
+	float:right;
+} 
+
+.CpyFieldInput
+{
+	height:18px;
+	width:400px;
+	padding:2px;
+	float:right;
+}
+
+.ExpandLabel
+{
+	color:#454545;
+	cursor:pointer; 
+	cursor:hand;
+}
+
+.ExpandLabel:hover
+{
+	text-decoration:underline;
+}

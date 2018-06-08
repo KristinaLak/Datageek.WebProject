@@ -1,0 +1,40 @@
+﻿<%@ Master %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+        <script src="/javascript/db.js?v1" type="text/javascript"></script>
+        <script src="/javascript/telerik.js" type="text/javascript"></script>
+        <script src="/javascript/jq.js?v1" type="text/javascript"></script>
+        <script src="/javascript/alertify.js?v1" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="/css/dashboard.css?v1"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-title.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-layout.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-elements.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-misc.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-autocomplete.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/alertify/alertify.min.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/alertify/themes/bootstrap.min.css?leadsv10"/>
+    </head>
+    <body>
+        <form runat="server">
+            <ajax:ToolkitScriptManager runat="server"/>
+            <asp:ContentPlaceHolder ID="Body" runat="server"/>
+        </form>
+    </body>
+
+    <script type="text/javascript">
+        function rwm_master_radopen(url, title) {
+            setTimeout(function () {
+                var rwm = GetRadWindow().get_windowManager();
+                if (title != null)
+                    rwm.set_title(title);
+                rwm.open(url);
+            }, 0);
+        }
+    </script>
+</html>

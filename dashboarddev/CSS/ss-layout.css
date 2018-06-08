@@ -1,0 +1,188 @@
+body { 
+    margin:0px;
+    padding:0px;
+    background:#363636;
+    width:100%;
+    height:100%;
+    font-family:Helvetica;
+}
+.MainContainer {
+    max-width:1340px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.LanuagesContainer {
+    position:absolute;
+    right:0;
+    top:0;
+    margin:0px 6px 0px 0px;
+}
+.PageHead {
+    height:54px;
+    margin-top:12px;
+}
+.ProjectHead {
+    height:205px;
+    background:#ffffff;
+    text-align:center;
+    clear:both;
+}
+.ProjectMags {
+    height:575px;
+    background-color:#ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0) !important; /* IE6-9 */
+    background-image: /* ff/chrome/opera */
+    linear-gradient(
+      to bottom,
+      white,
+      #f2f2f2 84%
+    );
+    margin-top:-1px; /*div gap fix on mobile*/
+}
+.ProjectMagsViewContainer {
+    width:90%;
+    margin:0 auto;
+}
+.ProjectMagsEditContainer {
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    padding-top:30px;
+}
+.CaseStudyMagsEditContainer {
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    padding-top:30px;
+}
+.SocialMediaTipsImages {
+    text-align:center;
+    background:#ffffff 49% 96% no-repeat url('../images/smartsocial/social_media_tips.png');
+    padding-top:42px;
+    height:240px;
+    margin-top:-1px; /*div gap fix on mobile*/
+}
+.SocialMediaTips {
+    text-align:center;
+    background:#ffffff;
+    padding-bottom:90px;
+    margin-top:-2px; /*div gap fix on mobile*/
+}
+.SocialMediaTipTitle {
+    width:262px;
+    display:inline-block;
+    padding:0px 24px 0px 24px;
+    position:relative;
+    top:-42px;
+    font-weight:bolder !important;
+    color:#444444 !important;
+    font-size:15px !important;
+}
+.SocialMediaTip {
+    width:262px;
+    display:inline-block;
+    padding:0px 24px 0px 24px;
+    vertical-align:top;
+}
+.SocialMediaUpload {
+    width:262px;
+    display:inline-block;
+    padding:0px 24px 0px 24px;
+    font-weight:800;
+}
+.FileUpload {
+    position:relative;
+    left:100px;
+}
+.FileDownload {
+    color:black;
+    width:262px;
+    display:inline-block;
+    padding:0px 24px 0px 24px;
+    font-weight:800;
+    margin-top:20px;
+    zoom:1; /* IE fixes */
+    *display: inline;
+}
+.LeaveFeedback {
+    background:#00adef;
+    text-align:center;
+    padding:70px 0px 70px 0px;
+    margin-top:-1px; /*div gap fix on mobile*/
+}
+.FeedbackForm {
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    background:#00adef;
+    text-align:center;
+}
+.FeedbackRecipientsContainer {
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.OtherCaseStudies {
+    height:400px;
+    background:#ffffff;
+    text-align:center;
+    padding-top:42px;
+}
+.BreakRow {
+    height:6px;
+    background:transparent;
+    margin:0 auto;
+    display:table;
+}
+.BreakCell {
+    height:6px;
+    width:250px;
+    display:table-cell;
+}
+.BreakCellLeft {
+    background:#33b4eb;
+}
+.BreakCellMiddleLeft {
+    background:#9fcf62;
+}
+.BreakCellMiddleRight {
+    background:#f68d22;
+}
+.BreakCellRight {
+    background:#d6257f;
+}
+.ProjectDetails {
+    background:#363636;
+    padding:26px 0px;
+    display:table;
+    margin:0 auto;
+}
+.ProjectDetail {
+    border-right:solid 1px #414141;
+    width:209px;
+    padding:20px;
+    float:left;
+    height:50px;
+    text-align:center;
+    margin:0 auto;
+    display:table-cell;
+}
+.SaveProfile {
+    background:#f68d22;
+    padding:10px;
+    height:35px;
+    margin-bottom:6px;
+}
+.NameRequiredContainer {
+    height:95%;
+    width:95%;
+    margin:10px;
+}
+.ShareContainer {
+    width:95%;
+    margin:10px;
+}
+.BikClikLogoContainer {
+    position:relative;
+    outline:none;
+}

@@ -1,0 +1,31 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %outstanding% will be replaced with the sale outstanding value
+  %invoice% will be replaced with the invoice
+  %invoice_date% will be replaced with the invoice date
+  %deadline% will be replaced with a date 7 days ahead of current date
+  %finance_contact_e% will be replaced with the e-mail of the finance contact responsible for receipts
+  %finance_contact_p% will be replaced with the phone of the finance contact responsible for receipts
+  %signature% will be replaced with a custom signature of the user who sent the mails
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the lower half of this message.)</b>
+
+Dear %name%,
+
+<center><font size="5" color="red">FINAL NOTICE</font></center>
+
+Despite previous attempts to recover the amount due of <b>%outstanding%</b> outstanding in respect of invoice no. <b>%invoice%</b> (%invoice_date%), this amount has not yet been received.
+
+Unless payment is received by cleared funds into our bank by %deadline%, this account will automatically be passed to our solicitor with instructions to commence immediate recovery action.
+
+This action which we have tried to avoid will attract interest of 6% above the UK base rate as indicated in our terms and conditions. Additionally any legal fees incurred will also be liable by you. 
+
+Any legal action taken may seriously affect your credit rating and you may have difficulty obtaining credit in the future.
+
+Please contact our finance team member by email at %finance_contact_e% or directly by phone at %finance_contact_p% with payment details.
+
+We can only hope that your payment is received in time.</font>
+
+%signature%

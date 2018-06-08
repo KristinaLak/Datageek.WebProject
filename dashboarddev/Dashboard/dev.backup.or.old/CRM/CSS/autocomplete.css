@@ -1,0 +1,44 @@
+.CompletionList 
+{
+    border:solid 1px #444444;
+    margin:0px;
+    padding:2px;
+    height:400px;
+    overflow:auto;
+    background-color:#FFFFFF;
+    min-width:500px;
+    text-align:left;
+    text-indent:4px;
+    font-family:'Helvetica';
+}
+
+.ListItem 
+{
+    color:#1C1C1C;
+    border:1px solid #DDD;
+    line-height:30px;
+}
+
+.ItemHighlighted 
+{
+    background-color:DarkOrange;
+    border:1px solid #DDD;
+    line-height:30px;
+    cursor:pointer; 
+    cursor:hand;
+}
+
+.SearchBar 
+{
+    height:20px;
+    width:500px;
+    padding:5px;
+}
+
+.SearchWatermark 
+{ 
+	width:500px;
+	color:Silver; 
+	height:20px;
+    padding:5px;
+}

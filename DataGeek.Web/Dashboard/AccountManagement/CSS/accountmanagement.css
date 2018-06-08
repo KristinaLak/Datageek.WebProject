@@ -1,0 +1,133 @@
+/* Titles */
+.LargeTitle
+{
+    color:#454545;
+    font-size:23px; 
+    margin-bottom:5px;
+    display:block;
+}
+.MediumTitle
+{
+    color:#454545;
+    font-size:18px; 
+    margin-top:10px;
+    margin-bottom:4px;
+    display:block;
+}
+.SmallTitle
+{
+    color:#454545;
+    margin:2px 0px 2px 2px;
+    display:block;
+}
+
+/* Buttons */
+input[type=submit].AddButton
+{
+    padding: 11px 11px 11px 40px;
+    background:url(/images/leads/add.png) no-repeat 4px 5px, center -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:url(/images/leads/add.png) no-repeat 4px 5px, center -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+}
+input[type=submit].AddButton:hover 
+{
+    background:url(/images/leads/add.png) no-repeat 4px 5px, center -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e7ffd5), color-stop(1, #dfad95) );
+	background:url(/images/leads/add.png) no-repeat 4px 5px, center -moz-linear-gradient( center top, #e7ffd5 5%, #dfad95 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7ffd5', endColorstr='#dfad95');
+}
+input[type=submit].ImportButton
+{
+    padding: 11px 11px 11px 40px;
+    background:url(/images/leads/import.png) no-repeat 2px 5px, center -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:url(/images/leads/import.png) no-repeat 2px 5px, center -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+}
+input[type=submit].ImportButton:hover 
+{
+    background:url(/images/leads/import.png) no-repeat 2px 5px, center -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e7ffd5), color-stop(1, #dfad95) );
+	background:url(/images/leads/import.png) no-repeat 2px 5px, center -moz-linear-gradient( center top, #e7ffd5 5%, #dfad95 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7ffd5', endColorstr='#dfad95');
+}
+input[type=submit]
+{
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7ffd5', endColorstr='#dfad95');
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	padding: 5px 5px 5px 5px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:Helvetica;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+input[type=submit]:hover 
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e7ffd5), color-stop(1, #dfad95) );
+	background:-moz-linear-gradient( center top, #e7ffd5 5%, #dfad95 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+}
+input[type=submit]:active 
+{
+	position:relative;
+	top:1px;
+}
+
+/* TextBoxes */
+input[type=text], textarea
+{
+    border-radius:2px;
+    font-family:Helvetica;
+    height:16px;
+    padding:3px;
+    width:250px;
+    font-size:15px;
+}
+input[type=text]:hover, textarea:hover
+{
+    background-color:#ffeed9;
+}
+
+/* DropDowns */
+select
+{
+	padding:3px;
+	height:30px;
+	width:200px;
+}
+select:hover  
+{
+	background-color:#ffeed9; 
+}
+
+/* Layout */
+.ContainerTable
+{
+	background:white;
+}
+
+/* Misc */
+.HandCursor
+{
+	cursor:pointer; 
+	cursor:hand;
+}

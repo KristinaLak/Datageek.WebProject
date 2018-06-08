@@ -1,0 +1,411 @@
+/* Telerik Skin Overrides  */
+.FadeItemsHover {
+    height:92px;
+    border-radius:6px;
+    padding:8px;
+    position:relative;
+    cursor:pointer;
+}
+.FadeItemsContainer {
+    padding:10px;
+    height:25px;
+    width:60px;
+    background:white;
+    border-radius:6px;
+    border:solid 1px gray;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0; 
+    margin:auto;
+}
+.FadeItemsHover .FadeItemsContainer {
+  opacity:0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.FadeItemsHover:hover .FadeItemsContainer {
+  opacity:1;
+}
+.GrayHeaderText th.rgHeader {
+    color:Gray !important;
+}
+.VerifiedEmail {   /* For RadButton toggle states */
+    color:green !important;
+}
+.NotVerifiedEmail {
+    color:darkorange !important;
+}
+.rspPaneTabIcon { /* RadPane Tab Icon centering */
+    margin:5px 0px 0px 5px !important;
+}
+.RadUpload_Bootstrap .ruDropZone { /* RadUpload DropZone */
+    position:relative !important; 
+    height:70px !important;
+    width:390px !important;
+    top:-70px !important;
+    left:0px !important;
+    opacity:0.9 !important;
+}
+.ruButton { /* RadUpload Upload button width */
+    width:130px !important;
+}
+.ajs-input { /* Makes alertify prompt textboxes fullsized */
+    width:100% !important;
+    padding:6px !important;
+}
+.rnTitleBarTitle { /* Notification Title*/
+    margin-top:5px !important;
+    font-size:9pt !important;
+}
+.RadCalendar_Metro .rcRow .rcSelected { /* Calendar Days  */
+    background:#7fa7b8 !important;
+}
+.RadCalendarMonthView_Metro .rcSelected a,
+.RadCalendarTimeView_Metro td.rcSelected a { /* Calendar Month and Time Picker  */
+    background:#7fa7b8 !important;
+    border:none !important;
+}
+.RadPicker_Metro .rcCalPopup:hover, .RadPicker_Metro .rcCalPopup:focus {  /* Calendar Date Popup Img  */
+    background:#eaeaea 0 -50px repeat-x url('../images/leads/sprites/r_cal.gif') !important;
+}
+.RadPicker_Metro .rcTimePopup:hover, .RadPicker_Metro .rcTimePopup:focus {  /* Calendar Time Popup Img  */
+    background:#eaeaea 0 -150px repeat-x url('../images/leads/sprites/r_cal.gif') !important;
+}
+.RadComboBox_Bootstrap input[type=text]:hover { /* White background hover override for ComboBox  */
+    background-color:#ffffff !important;
+}
+.RadComboBox_Bootstrap .rcbEmptyMessage { /* ComboBox watermark  */
+    color:#c5c5c5 !important;
+    font-size:8pt !important;
+ }
+.rddlInner { /* RadDropDown white background  */
+    background:white !important;
+}
+.rddlInner:hover {
+    background:#e5e5e5 !important;
+}
+.BlackRadDropDownText .rddlFakeInput {
+    color:black !important;
+}
+.RadButton_Metro.rbSkinnedButton:active, .RadButton_Metro.rbVerticalButton:active, .RadButton_Metro.rbSkinnedButton:active .rbDecorated,
+.RadButton_Metro.rbVerticalButton:active .rbDecorated, .RadButton_Metro.rbPressedButton.rbSkinnedButton, .RadButton_Metro.rbPressedButton .rbDecorated {
+    background-color:#7fa7b8 !important;
+    border-color:#7fa7b8 !important; 
+}
+.RadDropDownList_Metro .rddlFocused {
+    border-color:#7fa7b8 !important;
+    background-color:#7fa7b8 !important;
+}
+.rddlPopup_Metro .rddlItemSelected {
+    background-color:#7fa7b8 !important;
+}
+.RDDInactiveUser {
+    color:darkorange !important;
+}
+/* RadMenu padding and color override, note: this applies to controls other than Dashboard's main RadMenu */
+div.RadMenu .rmText {  
+    padding-left:20px !important;
+    padding-right:20px !important;
+}
+.RadMenu_Glow .rmRootGroup,
+.RadMenu_Glow .rmItem {
+    background:#323232 !important;
+    font-weight:bold;
+}
+.RadMenu_Glow .rmHorizontal .rmRootLink:hover, .RadMenu_Glow .rmHorizontal .rmRootLink.rmFocused, .RadMenu_Glow .rmHorizontal .rmRootLink.rmSelected {
+    border-top:0px !important;
+    line-height:38px !important;
+    border-bottom:4px solid #7fa7b8 !important;
+    color:white !important;
+    background:#202020 !important;
+    height:34px;
+}
+.SalesLeaderBoard.RadGrid_Bootstrap .rgHeader {
+    background:#B1CEED !important;
+}
+.RadGrid { /* RadGrid rounded corners and outline none  */
+   border-radius:8px;
+   overflow:hidden;
+   outline:none;
+}
+.RadGrid .rgHoveredRow { /* RadGrid hovered row */
+    background-color:#dfeaee !important;
+}
+.RadGrid .rgHoveredRow > td { /* RadGrid hovered cell */
+    border-bottom:1px solid transparent !important;
+}
+.RadGrid_Metro .rgSelectedRow { /* RadGrid selected row */
+  background:#B5CCD7 !important;
+  color:#323232 !important;
+}
+.RadGrid_Metro .rgSelectedRow > td { /* RadGrid selected row border */
+  border-color:#e5e5e5 !important;
+}
+.RadGrid .rgHeader { /* RadGrid header backcolour and non-sortable header texts */
+    background-color:#f9f9f9;
+    height:20px;
+    color:#454545 !important;
+}
+.RadGrid .rgPager {  /* RadGrid pager  */
+    background-color:#f9f9f9;
+}
+.rgHeader a {  /* RadGrid header text colour  */
+    color:#454545 !important;
+}
+.rgExpand, .rgCollapse  {  
+    outline:none !important;
+}  
+.ThinRadGridColumn {
+    position:relative; 
+    left:-2px;
+}
+.RadGridColumnOffset {
+    position:relative; 
+    left:2px;
+}
+.RadTreeView_Metro .rtPlus { /* TreeView Expand Button  */
+    cursor:pointer !important;
+    position:relative !important; 
+    top:3px !important;
+}
+.RadTreeView_Metro .rtMinus { /* TreeView Collapse Button  */
+    background:0 -10px repeat-x url('../images/leads/sprites/r_tv.gif') !important;
+    cursor:pointer !important;
+}
+div.RadTreeView { /* Space between TreeView Items and Left Margin (Project List)  */
+    line-height:18px;
+    margin-left:8px;
+}
+.RadTreeView_Metro .rtSelected .rtIn { /* TreeView Selected Item */
+    background-color:#7fa7b8 !important; 
+    border:none !important;
+}
+div div .RadTreeView_Metro .rtSelected .rtIn { /* TreeView Selected Item (Project List)  */
+    border:none !important;
+    background-color:transparent !important; 
+    padding-right:70px !important;
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    padding-left:8px !important;
+    border-radius:6px;
+    background: linear-gradient(to right, rgba(210,211,209,1) 0%,rgba(210,211,209,0) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(left,rgba(210,211,209,1) 0%,rgba(210,211,209,0) 100%) !important;  /* Chrome10-25,Safari5.1-6 */
+    background: -moz-linear-gradient(left, rgba(210,211,209,1) 0%, rgba(210,211,209,0) 100%) !important; /* FF3.6-15 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ) !important; /* IE6-9 */
+    font-weight:600;
+    color:#323232;
+    box-shadow:inset 0 0 5px 1px #F1F3F4;
+}
+.RadTreeView_Metro .rtIn:hover { /* TreeView Hovered Item (Project List)  */
+    border-radius:4px !important;
+} 
+.RadSplitter_Metro { /* Remove Splitter Left Border Width */
+    border-left-width:0px !important;
+}
+.RadSplitter_Metro .rspPane { /* Expand Panel  */
+    border-color:#dcdcde !important;
+}
+.RadSplitter_Metro .rspSlideContainer {
+    position:relative !important;
+    top:2px !important;
+    background:red !important;
+}
+.RadSplitter_Metro .rspSlideContainerResize { /* Resize Bar  */
+    background-color:#f6f6f6 !important;
+    border:0 !important;
+    border-right:solid 1px #dcdcde !important;
+}
+.RadSplitter_Metro .rspSlideContainerResizeOver { /* Resize Bar Hover  */
+    background-color:#7fa7b8 !important;
+}
+#ctl00_Body_rp_content { /* Leads main grid div colour */
+    background:#EFF0F2 !important;
+}
+#RAD_SPLITTER_PANE_CONTENT_ctl00_Body_rp_side { /* Left Container Bar div  */
+    background:#7FA7B8 !important;
+}
+.RadSplitter_Metro .rspPaneTabContainer { /* Left Container Bar Item  */
+    background-color:#7fa7b8 !important; 
+    padding:8px 3px 8px 3px !important;
+    height:26px !important;
+}
+.RadSplitter_Metro .rspPaneTabContainerDocked,
+.RadSplitter_Metro .rspPaneTabContainerDockedHorizontal { /* Left Container Bar Selected Item (docked only) */
+    background:#8fb4c2 !important;
+}
+.RadSplitter_Metro .rspPaneTabContainer:hover { /* Left Container Bar Items Hover */
+    background-color:#5a8ea5 !important; 
+} 
+.RadSplitter_Metro .rspPaneTabContainer { /* Border Around Container Bar Items  */
+    border-color:#83acbc !important;
+}
+.RadSplitter_Metro .rspCollapseBarCollapseOver,
+.RadSplitter_Metro .rspCollapseBarExpandOver,
+.RadSplitter_Metro .rspTabsContainer { /* Container Bar  */
+    background-color:#7fa7b8 !important;
+} 
+.RadSplitter_Metro .rspPaneTabContainerDocked .rspPaneTabText { /* Selected Tab Text Colour  */
+    color:black !important;
+}
+.rspSlideTitle { /* Sliding Area Title */
+    font-size:14pt !important;
+    margin:16px 0px 8px 16px !important;
+}
+.RadSplitter_Metro .rspSlideTitleContainer { /* Sliding Area Title Area */
+    background-color:#f6f6f6 !important;
+    border:0px !important;
+} 
+.RadSplitter_Metro .rspSlideHeaderIconWrapper { /* Sliding Area Title Pin/Close Area  */
+    background-color:#f6f6f6 !important;
+    padding:6px !important;
+    border:0px !important;
+}
+.RadSlidingPane { /* Sliding Area  */
+    background-color:#f6f6f6 !important;
+    z-index:50 !important;
+}
+.rwWindowContent {
+    background-color:#fdfdfd !important;
+}
+.rwTopLeft, .rwTopRight, .rwTitlebar, .rwFooterLeft, .rwFooterRight, .rwFooterCenter, .rwTopResize, .rwStatusbar, .rwBodyLeft, .rwBodyRight {
+    background-image:none !important;
+    background-color:#fdfdfd !important;
+}
+.RadWindow_Metro .rwTopLeft, .RadWindow_Metro .rwTopRight, .RadWindow_Metro .rwTitlebar, .RadWindow_Metro .rwTopResize { /* Window Title Bar  */
+    background:#7fa7b8 !important;
+} 
+.RadWindow_Metro .rwTitlebarControls em { /* White RadWindow titlebar text, issue in 2017Q1 */
+    color:white !important;
+}
+.RadWindow_Metro .rwIcon { /* RadWindow Maximise button causing issues in 2017Q1 */
+    display:none !important;
+} 
+.RadWindow_Metro .rwControlButtons a { /* Window Title Bar Buttons  */
+    background-color:#7fa7b8 !important;
+    border:1px solid #7fa7b8 !important;
+}
+/* RadWindow remove border */
+.borderLessDialog.RadWindow { /* remove main borders */
+    border:none !important;
+    padding:0 !important;
+}
+.borderLessDialog.RadWindow .rwTitleBar { /* remove the titlebar widening */
+    margin:0 !important;
+}
+.borderLessDialog .rwTitleBar { /* remove the titlebar */
+    display:none !important;
+}
+.borderLessDialog .rwStatusBar { /* remove the statusbar */
+    display:none !important;
+}
+.borderLessDialog.RadWindow .rwContent { /* radwindow border override */
+     border:groove 1px gray !important;
+}
+/* Misc */ 
+.NoRecords {
+    color:#454545;
+    font-size:16px; 
+    margin:10px;
+    display:block;
+}
+.SelectedGridDataItem {
+    background: -moz-linear-gradient(left,  rgba(218,230,235,1) 0%, rgba(218,230,235,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(218,230,235,1) 0%,rgba(218,230,235,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(218,230,235,1) 0%,rgba(218,230,235,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7eff1', endColorstr='#e7eff1',GradientType=1 ); /* IE6-9 */
+    box-shadow:inset 0 0 8px 5px #F6F6F6;
+}
+.SelectedRadTree {
+    margin:6px;
+}
+.RadTreeParentNode {
+    font-weight:500;
+    color:#323232 !important;
+    cursor:pointer;
+}
+.RadTreeNode {
+    cursor:pointer;
+}
+.ProjectListButton {
+    opacity:0.6 !important;
+    padding:1px;
+}
+.ProjectListButton:hover {
+    opacity:0.9 !important;
+}
+.NoteBullet {
+    margin:6px; 
+    list-style-type:square; 
+    color:#5282aa;
+}
+.NoteTemplate {
+    width:100%;
+    height:100%;
+}
+.GradientAlpha {
+    width:700px; 
+    height:40px; 
+    text-align:center;
+    background: -moz-linear-gradient(left,  rgba(237,237,237,1) 0%, rgba(237,237,237,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(237,237,237,1) 0%,rgba(237,237,237,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(237,237,237,1) 0%,rgba(237,237,237,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+.HandCursor {
+	cursor:pointer; 
+}
+.IconOffset16 {
+    position:relative; 
+    left:-1px;
+}
+.IconOffset24 {
+    position:relative; 
+    left:-3px;
+}
+.CenterMe {
+    margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    width:100%;
+}
+.DoNotContact {
+    background-color:#ffe6cc;
+}
+
+/* Colours */
+.LowRatingCell { 
+    background-color:#c04738; 
+}
+.MediumRatingLightCell { 
+    background-color:#f7e9d2; 
+}
+.MediumRatingCell { 
+    background-color:#d99e3a; 
+}
+.HighRatingCell { 
+    background-color:#9ac547; 
+}
+.GoodColourCell {
+    background-color:#EFF4F5;
+}
+.NeutralColourLightCell {
+    background-color:#ffe6cc;
+}
+.BadColourCell {
+    background-color:#eb5252;
+}
+.NeutralColourText {
+    color:#ce714e;
+}
+.NeutralColourLightText {
+    color:#ffe6cc;
+}
+.BadColourText {
+    color:#eb5252;
+}
+.BadColourLightText {
+    color:#854025;
+}

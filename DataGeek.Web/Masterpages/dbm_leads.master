@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="dbm_leads.master.cs" Inherits="dbm" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head ID="main_head" runat="server">
+        <title></title>
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+        <meta name="description" content="BizClik Media DataGeek"/>
+        <meta name="keywords" content="BizClik,Media,BizClik Media,DataGeek,Data,Geek"/>
+        <asp:ContentPlaceHolder ID="Head" runat="server"/>
+        <script src="/javascript/db.js?v2" type="text/javascript"></script>
+        <script src="/javascript/jq.js?v1" type="text/javascript"></script>
+        <script src="/javascript/alertify.js?v1" type="text/javascript"></script>
+        <script src="/javascript/telerik.js?v2" type="text/javascript"></script>
+        <link rel="shortcut icon" href="~/images/leads/ico_datageek.png"/>
+        <link rel="stylesheet" type="text/css" href="/css/dashboard.css?dbv1"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-title.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-layout.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-elements.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-misc.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-autocomplete.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/alertify/alertify.min.css?leadsv10"/>
+        <link rel="stylesheet" type="text/css" href="/css/alertify/themes/bootstrap.min.css?leadsv10"/>
+        <style type="text/css">  
+            html, body, form  {
+               height:100%;
+               width:100%;
+               margin:0px;
+               padding:0px;
+            }
+        </style> 
+    </head>
+    <body ID="main_body" runat="server" style="overflow-x:hidden;">
+        <form runat="server">
+            <ajax:ToolkitScriptManager runat="server" CombineScripts="false"/>
+            <telerik:RadSkinManager ID="rsm" runat="server" PersistenceMode="Cookie" Skin="Metro" Visible="false"/>
+            <telerik:RadWindowManager ID="rwm_master" runat="server" VisibleStatusbar="false" Behaviors="Close, Move" Animation="Fade" AnimationDuration="600" VisibleTitlebar="true" AutoSize="true" 
+                OnClientAutoSizeEnd="CenterRadWindow" ShowContentDuringLoad="false"> 
+            <Windows>
+                <telerik:RadWindow ID="rw_view_cpy_ctc" runat="server" Title="View Company and Contacts" AutoSize="false" Height="700" Width="1050" MaxHeight="800"/>
+                <telerik:RadWindow ID="rw_lead_overview" runat="server" Title="Lead Overview" Width="1220" AutoSize="false" Height="650" MaxHeight="800"/>
+            </Windows>
+            </telerik:RadWindowManager>
+            <telerik:RadNotification ID="rnf" runat="server" Skin="Silk" Animation="Fade" EnableRoundedCorners="true" EnableShadow="true"
+                Position="BottomRight" OffsetX="-20" OffsetY="-20" ShowCloseButton="true" LoadContentOn="EveryShow"/>
+            <div ID="div_header" runat="server" class="LeadsHeader">
+                <img src="/images/leads/ico_datageek.png" alt="BizClik Media Leads" class="LeadsHeaderLogo"/>
+                <div class="LeadsHeaderSearchArea">
+                    <telerik:RadComboBox ID="rcb_search" runat="server" EnableLoadOnDemand="True" OnItemsRequested="rcb_search_ItemsRequested" AutoPostBack="false" 
+                        HighlightTemplatedItems="true" Width="360" DropDownWidth="500px" AutoCompleteType="Disabled" Skin="Bootstrap" ItemRequestTimeout="350"
+                        EmptyMessage="Search for Companies and Contacts by name or phone.." CausesValidation="false" DropDownAutoWidth="Enabled" ShowWhileLoading="true" OnClientDropDownOpening="rcb_Rebind">
+                    </telerik:RadComboBox>
+                    <asp:LinkButton runat="server" Text="Advanced" CssClass="AdvancedSearchButton" ForeColor="White"
+                        OnClientClick="Alertify('Advanced search is currently under construction.','Hold On'); return false;" ToolTip="Advanced search is currently under construction."/>
+                    <asp:HiddenField ID="hf_lead_view_id" runat="server"/>
+                    <asp:Button ID="btn_view_in_project" runat="server" OnClick="ViewLeadInProject" style="display:none;"/>
+                </div>
+                <div ID="div_christmas" runat="server" visible="false" class="ChristmasContainer" style="bottom:0px; z-index:9999999;">
+                    <asp:ImageButton ID="imbtn_christmas_lights" runat="server" Visible="true" Height="19" Width="19" ImageUrl="~/images/icons/christmas_lights.png" OnClick="ToggleChristmasLights" 
+                    style="position:relative; top:6px; left:2px; opacity:0.2; filter:alpha(opacity=20);"/>
+                    <asp:DropDownList ID="dd_snow_setting" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ChangeSnow" Font-Size="7" Width="70" BackColor="#cef7de" style="padding:3px; border-radius:3px;">
+                        <asp:ListItem Text="Snow On"/>
+                        <asp:ListItem Text="Snow Off" Selected="True"/>
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="dd_snow_count" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ChangeSnow" Font-Size="7" Width="55" BackColor="#fbddde" style="padding:3px; border-radius:3px;">
+                        <asp:ListItem Text="x10" Value="10"/>
+                        <asp:ListItem Text="x20" Value="20"/>
+                        <asp:ListItem Text="x30" Value="30"/>
+                        <asp:ListItem Text="x50" Value="50"/>
+                        <asp:ListItem Text="x100" Value="100" Selected="True"/>
+                        <asp:ListItem Text="x200" Value="200"/>
+                        <asp:ListItem Text="x300" Value="300"/>
+                        <asp:ListItem Text="x400" Value="400"/>
+                        <asp:ListItem Text="x500" Value="500"/>
+                        <asp:ListItem Text="x750" Value="750"/>
+                        <asp:ListItem Text="x1000" Value="1000"/>
+                    </asp:DropDownList>
+                    <asp:Literal ID="js_snowstorm" runat="server"/>
+                </div>
+                <div class="LeadsHeaderUserArea">
+                    <telerik:RadButton ID="btn_user" runat="server" Font-Size="10" AutoPostBack="false" OnClientClicked="rcm_OnClientClicked" Skin="Black" style="position:relative; top:37px; margin-right:4px; z-index:9999;"/>
+                    <telerik:RadContextMenu ID="rcm_user" runat="server" EnableRoundedCorners="true" EnableShadows="true" CausesValidation="false"
+                        CollapseAnimation-Type="InBack" ExpandAnimation-Type="OutBack" OnItemClick="rcm_user_Click" ClickToOpen="true" Skin="Bootstrap" EnableOverlay="true">
+                        <Targets>
+                            <telerik:ContextMenuControlTarget ControlID="btn_user"/>
+                        </Targets>
+                        <Items>
+                            <telerik:RadMenuItem Text="Log In" Value="In" Enabled="false"/>
+                            <telerik:RadMenuItem Text="Log Out" Value="Out"/>
+                        </Items>
+                    </telerik:RadContextMenu>
+                    <asp:HiddenField ID="hf_user_id" runat="server"/>
+                </div>
+                <telerik:RadMenu ID="rm" runat="server" EnableShadows="true" CausesValidation="false" Skin="Glow" Width="100%" CssClass="LeadsHeaderMenuBar">
+                    <Items>
+                        <telerik:RadMenuItem IsSeparator="true" Width="30"/>
+                        <telerik:RadMenuItem Tooltip="DataGeek" Text="DataGeek" NavigateUrl="~/default.aspx" Value="default.aspx"/>
+                        <telerik:RadMenuItem Tooltip="My LinkedIn Worlds" Text="My Worlds" NavigateUrl="~/dashboard/leads/leads.aspx" Value="leads.aspx" Selected="true"/>
+                        <telerik:RadMenuItem Tooltip="Reports" Text="Reports" NavigateUrl="~/dashboard/leads/leads.aspx" Value="leads.aspx" Visible="false"/>
+                        <telerik:RadMenuItem Tooltip="Analytics" Text="Analytics" NavigateUrl="~/dashboard/leads/analytics.aspx" Value="analytics.aspx"/>
+                        <telerik:RadMenuItem Tooltip="Supplier Lists" Text="Supplier Lists" NavigateUrl="~/dashboard/leads/supplierlists.aspx" Value="supplierlists.aspx" Visible="false"/>
+                        <telerik:RadMenuItem Tooltip="Admin" Text="Admin" NavigateUrl="~/dashboard/leads/admin.aspx" Value="admin.aspx"/>
+                    </Items>
+                </telerik:RadMenu>
+            </div>
+            <asp:ContentPlaceHolder ID="Body" runat="server"/>
+        </form>
+    </body>
+    
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-40205898-1', 'wdmgroup.com');
+        ga('send', 'pageview');
+
+        function rcm_OnClientClicked(sender, args) {
+            var l = $telerik.getLocation(sender.get_element());
+            var cm = $find("<%= rcm_user.ClientID %>");
+            cm.showAt(l.x-6, l.y+23);
+        }
+        function SetViewLeadID(LeadID) {
+            grab("<%= hf_lead_view_id.ClientID %>").value = LeadID;
+            grab("<%= btn_view_in_project.ClientID %>").click();
+        }
+        function rwm_master_radopen(url, window) {
+            var manager = $find("<%= rwm_master.ClientID %>");
+            return manager.open(url, window);
+        }
+        function rcb_Rebind(sender, args) {
+            if (sender.get_items().get_count() == 0) {
+                return;
+            }
+            else {
+                sender.requestItems(sender.get_text(), false);
+            }
+        }
+    </script>
+</html>

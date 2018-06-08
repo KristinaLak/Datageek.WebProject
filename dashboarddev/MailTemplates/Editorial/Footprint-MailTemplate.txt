@@ -1,0 +1,33 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %issues% will be replaced with the issue name(s) that the advert(s) appear in
+  %company_name% will be replaced with the feature company name
+  %brochure_and_web_profile% will be replaced with a link to the territory and/or sector mag's website
+  %ter_bullet% will be replaced by the territory profile info bullet point (if avail)
+  %sec_bullet% will be replaced by the sector profile info bullet point (if avail)
+  %widget_link% will be replaced with a link to customer's widget
+  %widget_source% will be replaced with the customer's widget iframe source
+  %cover_img% will be replaced with the cover hyperlinks/images to the advert(s) (if avail)
+  %feedback_link% will be replaced with a link to the customer feedback form
+  %signature% will be replaced with a custom signature of the user who sent the mails
+  %source% will be replaced with the name of the territory that the feature belongs to
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Hello %name%,
+
+On behalf of %issues% it has been our pleasure to work with you and your team. We have completed the entire ‘Digital Footprint’ for <b>%company_name%</b> and your marketing campaign is now live online. Please find below a final report outlining each element of your customised ‘Digital Footprint’.
+
+<ol>%ter_bullet%%sec_bullet%<li>You can also view your %brochure_and_web_profile%</li><li>Your <a href="%widget_link%">custom-built widget</a> created specifically for your company website, including links to the brochure, web profile and high resolution PDF. You can copy the following code to embed the widget on your website:</li></ol><b>Widget Embed Code:</b> %widget_source%
+
+If you are not already aware, we have recently launched the world's newest social media platform for professionals and the companies they work for. I would like to encourage you and your fellow executives to sign up to <a href="www.businessfriend.com">www.businessfriend.com</a> - it will change the way we all do business. I would also recommend creating a company page, which is designed to give companies their own social media presence. 
+
+Finally, I would like to thank you for the opportunity to work with you and your team. We look forward to being able to support any of your digital marketing requirements in the future. If you would be kind enough to take five minutes to fill out our online feedback form it would be greatly appreciated as we are always looking to improve our services; your comments will be published to our website in due course. Please follow this link to <a href="%feedback_link%">give your feedback</a>.
+
+%cover_img%
+Best Regards,</font>
+
+%signature%
+<font size="0" color="white">%source%</font>

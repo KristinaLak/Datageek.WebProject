@@ -1,0 +1,10 @@
+.PageContainer
+{    
+  margin-left:auto;
+  margin-right:auto;
+  padding:30px;
+  width:996px;
+  background-color:#f2f2f2;
+  font-size:10pt;
+  font-family:'Helvetica';
+}

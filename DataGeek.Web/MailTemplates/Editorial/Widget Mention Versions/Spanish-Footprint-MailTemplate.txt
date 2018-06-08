@@ -1,0 +1,31 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name / será reemplazado por el nombre del contacto
+  %issues% will be replaced with the issue name(s) that the advert(s) appear in / será reemplazado por el nombre (s) cuestión que el anuncio (s) aparecen en
+  %company_name% will be replaced with the feature company name / será reemplazado por el nombre de la empresa característica
+  %brochure_and_web_profile% will be replaced with a link to the territory and/or sector mag's website / será reemplazado con un enlace para el territorio y / o el sitio web de mag sector
+  %ter_bullet% will be replaced by the territory profile info bullet point (if avail) / será reemplazado por el perfil territorio punto de información bala (si está disponible)
+  %sec_bullet% will be replaced by the sector profile info bullet point (if avail) / será reemplazado por el perfil del sector punto de información bala (si está disponible)
+  %widget_link% will be replaced with a link to customer's widget / será reemplazado con un enlace a tu currículum del cliente
+  %widget_source% will be replaced with the customer's widget iframe source / será reemplazado por fuente iframe Widget del cliente
+  %cover_img% will be replaced with the cover hyperlinks/images to the advert(s) (if avail) / será reemplazado por los hipervínculos de la cubierta / imágenes al anuncio (s) (si está disponible)
+  %feedback_link% will be replaced with a link to the customer feedback form / será reemplazado con un enlace al formulario de comentarios de los clientes
+  %signature% will be replaced with a custom signature of the user who sent the mails / será reemplazado por una firma personalizada del usuario que envió el correo
+  %source% will be replaced with the name of the territory that the feature belongs to / será reemplazado por el nombre del territorio del que la característica pertenece a
+**
+
+%START%<font size="2"><b>(Por favor, no responda a este emisor, este es un mensaje automático. En lugar de utilizar los datos de contacto en el pie de página de este mensaje.)</b>
+
+Buen día %name%,
+
+Por parte de %issues% ha sido un placer trabajar con usted y su equipo. Hemos completado la ‘Huella Digital’ para <b>%company_name%</b> y su campaña publicitaria se encuentra en línea. Por favor encuentre un informe final donde se especifica cada elemento personalizado de su ‘Huella Digital’.
+
+<ol>%ter_bullet%%sec_bullet%<li>También puede ver su %brochure_and_web_profile%</li><li>Su <a href="%widget_link%">widget personalizado</a>  fue creado específicamente para la página de internet de su compañía, incluyendo enlaces a su folleto empresarial, perfil en la red y PDF en alta resolución. Puede copiar el siguiente código para integrar el widget en su página de internet.</li></ol><b>Código para integrar su widget:</b> %widget_source%
+
+Hemos lanzado recientemente una plataforma de medios sociales para profesionales y las compañías para las que trabajan. Lo invito a usted y a sus compañeros ejecutivos a formar parte de <a href="www.businessfriend.com">www.businessfriend.com</a> - cambiará la forma en la que todos hacemos negocios. También recomiendo crear una página para su compañía, la cual está diseñada para brindarle presencia en los medios sociales. 
+
+Finalmente, quisiera agradecer por la oportunidad de trabajar con usted y su equipo. Esperamos ser capaces de apoyar cualquier requerimiento en su campaña digital en el futuro. Si pudiera tomar cinco minutos de su tiempo para llenar el siguiente formulario de retroalimentación, se lo agradecería ya que siempre buscamos formas de mejorar nuestros servicios; sus comentarios serán publicados en nuestra página de internet a su debido momento. Por favor siga este enlace para <a href="%feedback_link%">hacernos llegar sus comentarios</a>.
+
+%cover_img%</font>
+%signature%
+<font size="0" color="white">%source%</font>

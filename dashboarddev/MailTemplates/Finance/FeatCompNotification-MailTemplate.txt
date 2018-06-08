@@ -1,0 +1,30 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %feature% will be replaced with the feature company name
+  %finance_contact_e% will be replaced with the e-mail of the finance contact responsible for receipts
+  %finance_contact_p% will be replaced with the phone of the finance contact responsible for receipts
+  %signature% will be replaced with a custom signature of the user who sent the mails
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the lower half of this message.)</b>
+
+Dear %name%,
+
+I am writing to you with the hope that you are unaware of the 'delinquent' status that has been placed on your account with our company.
+ 
+As you may recall, we recently featured a substantial marketing initiative on behalf of %feature% and your company booked and placed an advertisement in conjunction with this program.
+ 
+As part of our contractual compliance, we are now due to close the file on %feature% and send them their final overview but we have been unable to as all monies on the project must be settled before the report can be sent and your account is still outstanding and is now seriously overdue.
+ 
+Unless we receive your response within 5 working days, we will send the report and will commence immediate legal proceedings to collect the debt.
+ 
+If you have recently sent us the payment, please can you send a copy of the proof of payment to the following e-mail address – %finance_contact_e%.
+ 
+If there is any reason why you believe this account is not outstanding, please contact me by return so any issues can be resolved.
+
+Please contact our finance team member by email at %finance_contact_e% or directly by phone at %finance_contact_p% with payment details.
+ 
+Thank you for your participation in our digital magazine and we look forward to settlement of this account.</font>
+
+%signature%

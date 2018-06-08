@@ -1,0 +1,22 @@
+.LargeTitle
+{
+    color:#454545;
+    font-size:23px; 
+    margin-bottom:5px;
+    display:block;
+}
+.MediumTitle
+{
+    color:#454545;
+    font-size:18px; 
+    margin-top:10px;
+    margin-bottom:4px;
+    display:block;
+}
+.SmallTitle
+{
+    color:#454545;
+    font-size:12px; 
+    margin-bottom:2px;
+    display:block;
+}

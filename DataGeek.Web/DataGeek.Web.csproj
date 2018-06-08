@@ -1,0 +1,2812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7664EFE4-F9CB-4B70-8EA6-FAFA36967237}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataGeek.Web</RootNamespace>
+    <AssemblyName>DataGeek.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveUp.Net.Common">
+      <HintPath>..\ExternalLibraries\ActiveUp.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Imap4">
+      <HintPath>..\ExternalLibraries\ActiveUp.Net.Imap4.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Mail">
+      <HintPath>..\ExternalLibraries\ActiveUp.Net.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Smtp">
+      <HintPath>..\ExternalLibraries\ActiveUp.Net.Smtp.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\ExternalLibraries\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="App_Licenses">
+      <HintPath>..\ExternalLibraries\App_Licenses.dll</HintPath>
+    </Reference>
+    <Reference Include="AWS.Extensions">
+      <HintPath>..\ExternalLibraries\AWS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK">
+      <HintPath>..\ExternalLibraries\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\ExternalLibraries\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\ExternalLibraries\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.34.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.34.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.34.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.34.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.34.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.34.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Calendar.v3, Version=1.34.0.1244, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Calendar.v3.1.34.0.1244\lib\net45\Google.Apis.Calendar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.34.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.34.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Gmail.v1">
+      <HintPath>..\ExternalLibraries\Google.Apis.Gmail.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.34.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.34.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ExternalLibraries\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MailChimp.Net.V3">
+      <HintPath>..\ExternalLibraries\MailChimp.Net.V3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\ExternalLibraries\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\ExternalLibraries\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\ExternalLibraries\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit">
+      <HintPath>..\ExternalLibraries\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\ExternalLibraries\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>..\ExternalLibraries\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\ExternalLibraries\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\ExternalLibraries\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.1\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.3.7\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.3.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\ExternalLibraries\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2017.3.913.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core">
+      <HintPath>..\ExternalLibraries\Telerik.Windows.Documents.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Flow">
+      <HintPath>..\ExternalLibraries\Telerik.Windows.Documents.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip">
+      <HintPath>..\ExternalLibraries\Telerik.Windows.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web, Version=5.1.5.29221, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.Web.5.1.5\lib\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.5.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.5.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.5.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.5.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.5.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\PageSuiteBizClikAPI.cs">
+      <SubType>Component</SubType>
+    </Content>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedbackSurvey.aspx.cs">
+      <DependentUpon>FeedbackSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lb.aspx.cs">
+      <DependentUpon>lb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Moved.aspx.cs">
+      <DependentUpon>Moved.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SO.aspx.cs">
+      <DependentUpon>SO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPage.aspx.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPage.aspx.designer.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CompanyManager.ascx.cs">
+      <DependentUpon>CompanyManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactEmailManager.ascx.cs">
+      <DependentUpon>ContactEmailManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactManager.ascx.cs">
+      <DependentUpon>ContactManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactManagerOld.ascx.cs">
+      <DependentUpon>ContactManagerOld.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactNotesManager.ascx.cs">
+      <DependentUpon>ContactNotesManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactTemplate.ascx.cs">
+      <DependentUpon>ContactTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\db_footer.ascx.cs">
+      <DependentUpon>db_footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\db_footer.old.ascx.cs">
+      <DependentUpon>db_footer.old.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\db_header.ascx.cs">
+      <DependentUpon>db_header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\db_header.old.ascx.cs">
+      <DependentUpon>db_header.old.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GmailAuthenticator.ascx.cs">
+      <DependentUpon>GmailAuthenticator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\OfficeToggler.ascx.cs">
+      <DependentUpon>OfficeToggler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="404.aspx" />
+    <Compile Include="Dashboard\3MonthPlannerSummary\3MPSummary.aspx.cs">
+      <DependentUpon>3MPSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\3MonthPlanner\3MonthPlanner.aspx.cs">
+      <DependentUpon>3MonthPlanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\3MonthPlanner\EmailPlanner.aspx.cs">
+      <DependentUpon>EmailPlanner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\8WeekReport\8WeekReport.aspx.cs">
+      <DependentUpon>8WeekReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\8WeekSummary\8WeekSummary.aspx.cs">
+      <DependentUpon>8WeekSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\AccountManagement\AccountManagement.aspx.cs">
+      <DependentUpon>AccountManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\BackBudget\BackBudget.aspx.cs">
+      <DependentUpon>BackBudget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CashReport\CashReport.aspx.cs">
+      <DependentUpon>CashReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ChangePW\ChangePW.aspx.cs">
+      <DependentUpon>ChangePW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CommissionForms\CFCommissionDefaults.aspx.cs">
+      <DependentUpon>CFCommissionDefaults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CommissionForms\CFEligibility.aspx.cs">
+      <DependentUpon>CFEligibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CommissionForms\CFUserRules.aspx.cs">
+      <DependentUpon>CFUserRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CommissionForms\CommissionForms.aspx.cs">
+      <DependentUpon>CommissionForms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DataHubReport\DataHubReport.aspx.cs">
+      <DependentUpon>DataHubReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\DSR\DSR.aspx.cs">
+      <DependentUpon>DSR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditorialTracker\EditorialTracker.aspx.cs">
+      <DependentUpon>EditorialTracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditorialTracker\ETManageFootprint.aspx.cs">
+      <DependentUpon>ETManageFootprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditorialTracker\ETManageSale.aspx.cs">
+      <DependentUpon>ETManageSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditorialTracker\ETMoveSale.aspx.cs">
+      <DependentUpon>ETMoveSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditorialTracker\ETNewIssue.aspx.cs">
+      <DependentUpon>ETNewIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\EditorialTracker\ETWatchSale.aspx.cs">
+      <DependentUpon>ETWatchSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\Finance.aspx.cs">
+      <DependentUpon>Finance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNApproveRedLine.aspx.cs">
+      <DependentUpon>FNApproveRedLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNEditLiab.aspx.cs">
+      <DependentUpon>FNEditLiab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNEditSale.aspx.cs">
+      <DependentUpon>FNEditSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNEditTab.aspx.cs">
+      <DependentUpon>FNEditTab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNExport.aspx.cs">
+      <DependentUpon>FNExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNMailingOptions.aspx.cs">
+      <DependentUpon>FNMailingOptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNMoveToTab.aspx.cs">
+      <DependentUpon>FNMoveToTab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNNewLiab.aspx.cs">
+      <DependentUpon>FNNewLiab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNNewReminder.aspx.cs">
+      <DependentUpon>FNNewReminder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNNewTab.aspx.cs">
+      <DependentUpon>FNNewTab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNReOpenAccount.aspx.cs">
+      <DependentUpon>FNReOpenAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNSaveDailySummary.aspx.cs">
+      <DependentUpon>FNSaveDailySummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNSendRedLineRequest.aspx.cs">
+      <DependentUpon>FNSendRedLineRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNSetColour.aspx.cs">
+      <DependentUpon>FNSetColour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNSetRecur.aspx.cs">
+      <DependentUpon>FNSetRecur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Finance\FNViewSummaries.aspx.cs">
+      <DependentUpon>FNViewSummaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\GPR\GPR.aspx.cs">
+      <DependentUpon>GPR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\GPR\GPRExcel.aspx.cs">
+      <DependentUpon>GPRExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\GSD\GSD.aspx.cs">
+      <DependentUpon>GSD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\HomeHub\HomeHub.aspx.cs">
+      <DependentUpon>HomeHub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Analytics.aspx.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\AppointmentList.aspx.cs">
+      <DependentUpon>AppointmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\AppointmentManager.aspx.cs">
+      <DependentUpon>AppointmentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\AssignProject.aspx.cs">
+      <DependentUpon>AssignProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ContactCard.aspx.cs">
+      <DependentUpon>ContactCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\DeDupeLeads.aspx.cs">
+      <DependentUpon>DeDupeLeads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Import.aspx.cs">
+      <DependentUpon>Import.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\LeadOverview.aspx.cs">
+      <DependentUpon>LeadOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Leads.aspx.cs">
+      <DependentUpon>Leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\LeadsWorlds.aspx.cs">
+      <DependentUpon>LeadsWorlds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MailingManager.aspx.cs">
+      <DependentUpon>MailingManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MailingScheduler.aspx.cs">
+      <DependentUpon>MailingScheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MailingTemplateEditor.aspx.cs">
+      <DependentUpon>MailingTemplateEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MailingTemplateManager.aspx.cs">
+      <DependentUpon>MailingTemplateManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MailingThumbnailSelector.aspx.cs">
+      <DependentUpon>MailingThumbnailSelector.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ManageColumns.aspx.cs">
+      <DependentUpon>ManageColumns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ManageWorld.aspx.cs">
+      <DependentUpon>ManageWorld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ModifyBucket.aspx.cs">
+      <DependentUpon>ModifyBucket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ModifyProject.aspx.cs">
+      <DependentUpon>ModifyProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MultiColour.aspx.cs">
+      <DependentUpon>MultiColour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MultiKill.aspx.cs">
+      <DependentUpon>MultiKill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MultiLeadAdd.aspx.cs">
+      <DependentUpon>MultiLeadAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MultiMove.aspx.cs">
+      <DependentUpon>MultiMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\MultiNote.aspx.cs">
+      <DependentUpon>MultiNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\PushToProspect.aspx.cs">
+      <DependentUpon>PushToProspect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\RestoreProject.aspx.cs">
+      <DependentUpon>RestoreProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\SingleLeadAdd.aspx.cs">
+      <DependentUpon>SingleLeadAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\SupplierLists.aspx.cs">
+      <DependentUpon>SupplierLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Util\AuthWithGMAPI.aspx.cs">
+      <DependentUpon>AuthWithGMAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Util\DataPuller.aspx.cs">
+      <DependentUpon>DataPuller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\Util\DeDupeCompanies.aspx.cs">
+      <DependentUpon>DeDupeCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ViewCompanyAndContact.aspx.cs">
+      <DependentUpon>ViewCompanyAndContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ViewContactEmailHistory.aspx.cs">
+      <DependentUpon>ViewContactEmailHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Leads\ViewContactMailingHistory.aspx.cs">
+      <DependentUpon>ViewContactMailingHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\League\League.aspx.cs">
+      <DependentUpon>League.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\League\PastCompetitions.aspx.cs">
+      <DependentUpon>PastCompetitions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\LHAReport\LHAEditLHA.aspx.cs">
+      <DependentUpon>LHAEditLHA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\LHAReport\LHANewLHA.aspx.cs">
+      <DependentUpon>LHANewLHA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\LHAReport\LHAReport.aspx.cs">
+      <DependentUpon>LHAReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\FeatureOverview.aspx.cs">
+      <DependentUpon>FeatureOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDAssign.aspx.cs">
+      <DependentUpon>LDAssign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDEditList.aspx.cs">
+      <DependentUpon>LDEditList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDMoveAllListsToIssue.aspx.cs">
+      <DependentUpon>LDMoveAllListsToIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDMoveToIssue.aspx.cs">
+      <DependentUpon>LDMoveToIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDNewIssue.aspx.cs">
+      <DependentUpon>LDNewIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDNewList.aspx.cs">
+      <DependentUpon>LDNewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\LDSetColour.aspx.cs">
+      <DependentUpon>LDSetColour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ListDistribution\ListDistribution.aspx.cs">
+      <DependentUpon>ListDistribution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\LogViewer\LogViewer.aspx.cs">
+      <DependentUpon>LogViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MagsManager\MMEditLinks.aspx.cs">
+      <DependentUpon>MMEditLinks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MagsManager\MMMagManager.aspx.cs">
+      <DependentUpon>MMMagManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MailAddresses\MailAddresses.aspx.cs">
+      <DependentUpon>MailAddresses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MediaSales\MediaSales.aspx.cs">
+      <DependentUpon>MediaSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MediaSales\MSAddPart.aspx.cs">
+      <DependentUpon>MSAddPart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MediaSales\MSApprove.aspx.cs">
+      <DependentUpon>MSApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MediaSales\MSEditSale.aspx.cs">
+      <DependentUpon>MSEditSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MediaSales\MSNewSale.aspx.cs">
+      <DependentUpon>MSNewSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MWD\MWD.aspx.cs">
+      <DependentUpon>MWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MWD\MWDGroupStats.aspx.cs">
+      <DependentUpon>MWDGroupStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\OfficeManager\OfficeManager.aspx.cs">
+      <DependentUpon>OfficeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PageSuiteAPI\PageSuiteReceiver.aspx.cs">
+      <DependentUpon>PageSuiteReceiver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PageSuiteAPI\PageSuiteSender.aspx.cs">
+      <DependentUpon>PageSuiteSender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PRGroupSummary\PRGroupSummary.aspx.cs">
+      <DependentUpon>PRGroupSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PRInput\PREditReport.aspx.cs">
+      <DependentUpon>PREditReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PRInput\PRInput.aspx.cs">
+      <DependentUpon>PRInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PrinterVersion\PrinterVersion.aspx.cs">
+      <DependentUpon>PrinterVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ProspectReports\ProspectEdit.aspx.cs">
+      <DependentUpon>ProspectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ProspectReports\ProspectMove.aspx.cs">
+      <DependentUpon>ProspectMove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ProspectReports\ProspectReports.aspx.cs">
+      <DependentUpon>ProspectReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ProspectReports\ProspectWriteUp.aspx.cs">
+      <DependentUpon>ProspectWriteUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PROutput\PRCCAEmailReport.aspx.cs">
+      <DependentUpon>PRCCAEmailReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PROutput\PRCCAOutput.aspx.cs">
+      <DependentUpon>PRCCAOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PROutput\PRTeamOutput.aspx.cs">
+      <DependentUpon>PRTeamOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\PROutput\PRTerritoryOutput.aspx.cs">
+      <DependentUpon>PRTerritoryOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\QuarterlyReport\QuarterlyReport.aspx.cs">
+      <DependentUpon>QuarterlyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\QuarterlyReport\QuarterlyReportEmail.aspx.cs">
+      <DependentUpon>QuarterlyReportEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\ReportGenerator\ReportGenerator.aspx.cs">
+      <DependentUpon>ReportGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Roles\RoleManagement.aspx.cs">
+      <DependentUpon>RoleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\RSG\RSG.aspx.cs">
+      <DependentUpon>RSG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBApproveSaleSubmission.aspx.cs">
+      <DependentUpon>SBApproveSaleSubmission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBDetailsList.aspx.cs">
+      <DependentUpon>SBDetailsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBEditRedLine.aspx.cs">
+      <DependentUpon>SBEditRedLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBEditSale.aspx.cs">
+      <DependentUpon>SBEditSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBGroupStats.aspx.cs">
+      <DependentUpon>SBGroupStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBInput.aspx.cs">
+      <DependentUpon>SBInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBInputExport.aspx.cs">
+      <DependentUpon>SBInputExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBMoveSale.aspx.cs">
+      <DependentUpon>SBMoveSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBNewBook.aspx.cs">
+      <DependentUpon>SBNewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBNewRedLine.aspx.cs">
+      <DependentUpon>SBNewRedLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBNewSale.aspx.cs">
+      <DependentUpon>SBNewSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBOverrideMagIssue.aspx.cs">
+      <DependentUpon>SBOverrideMagIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBSubmitNewSale.aspx.cs">
+      <DependentUpon>SBSubmitNewSale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBInput\SBViewTac.aspx.cs">
+      <DependentUpon>SBViewTac.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SBOutput\SBOutput.aspx.cs">
+      <DependentUpon>SBOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Search\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SigTest\SignatureTest.aspx.cs">
+      <DependentUpon>SignatureTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\Analytics.aspx.cs">
+      <DependentUpon>Analytics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\NameRequired.aspx.cs">
+      <DependentUpon>NameRequired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\Oops.aspx.cs">
+      <DependentUpon>Oops.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\Project.aspx.cs">
+      <DependentUpon>Project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\Share.aspx.cs">
+      <DependentUpon>Share.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\Tracker.aspx.cs">
+      <DependentUpon>Tracker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\TrackerAdvertiserList.aspx.cs">
+      <DependentUpon>TrackerAdvertiserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\TrackerAlt.aspx.cs">
+      <DependentUpon>TrackerAlt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\TrackerCompanyContactEditor.aspx.cs">
+      <DependentUpon>TrackerCompanyContactEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SmartSocial\ViewActions.aspx.cs">
+      <DependentUpon>ViewActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SOA\SOA.aspx.cs">
+      <DependentUpon>SOA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\StatusSummary\StatusSummary.aspx.cs">
+      <DependentUpon>StatusSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SurveyFeedbackViewer\SurveyFeedbackViewer.aspx.cs">
+      <DependentUpon>SurveyFeedbackViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Teams\Teams.aspx.cs">
+      <DependentUpon>Teams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Training\Admin\TrainingAdmin.aspx.cs">
+      <DependentUpon>TrainingAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Training\Presentations\TrainingPresentations.aspx.cs">
+      <DependentUpon>TrainingPresentations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Training\ToolBox\WDMToolBox.aspx.cs">
+      <DependentUpon>WDMToolBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Training\Videos\VideoViewer.aspx.cs">
+      <DependentUpon>VideoViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\UserList\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\WeeklyGroupSummary\WeeklyGroupSummary.aspx.cs">
+      <DependentUpon>WeeklyGroupSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\FinanceAlertMailer.aspx.cs">
+      <DependentUpon>FinanceAlertMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\FinanceSummaryMailer.aspx.cs">
+      <DependentUpon>FinanceSummaryMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\GroupDSRMailer.aspx.cs">
+      <DependentUpon>GroupDSRMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\LeadsNotificationMailer.aspx.cs">
+      <DependentUpon>LeadsNotificationMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\LeadsStatsMailer.aspx.cs">
+      <DependentUpon>LeadsStatsMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\PRLiveStatsMailer.aspx.cs">
+      <DependentUpon>PRLiveStatsMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\PRNewReports.aspx.cs">
+      <DependentUpon>PRNewReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\ProspectSummaryMailer.aspx.cs">
+      <DependentUpon>ProspectSummaryMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\PRRevenueSummaryMailer.aspx.cs">
+      <DependentUpon>PRRevenueSummaryMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\PRSummaryMailer.aspx.cs">
+      <DependentUpon>PRSummaryMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mailing\RSGMailer.aspx.cs">
+      <DependentUpon>RSGMailer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\dbm.master.cs">
+      <DependentUpon>dbm.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masterpages\dbm_leads.master.cs">
+      <DependentUpon>dbm_leads.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="App_Data\xmldata\afregionstree.xml" />
+    <Content Include="App_Data\xmldata\asiaregionstree.xml" />
+    <Content Include="App_Data\xmldata\caregionstree.xml" />
+    <Content Include="App_Data\xmldata\euregionstree.xml" />
+    <Content Include="App_Data\xmldata\jobroletree.xml" />
+    <Content Include="App_Data\xmldata\mideastregionstree.xml" />
+    <Content Include="App_Data\xmldata\ozregionstree.xml" />
+    <Content Include="App_Data\xmldata\sectorstree.xml" />
+    <Content Include="App_Data\xmldata\southamericaregionstree.xml" />
+    <Content Include="App_Data\xmldata\territoriestree.xml" />
+    <Content Include="App_Data\xmldata\ukregionstree.xml" />
+    <Content Include="App_Data\xmldata\usregionstree.xml" />
+    <Content Include="ConnectionError.aspx" />
+    <Content Include="CSS\Alertify\alertify.min.css" />
+    <Content Include="CSS\Alertify\themes\bootstrap.min.css" />
+    <Content Include="CSS\Alertify\themes\bootstrap.rtl.min.css" />
+    <Content Include="CSS\Alertify\themes\default.min.css" />
+    <Content Include="CSS\Alertify\themes\semantic.min.css" />
+    <Content Include="CSS\dashboard.css" />
+    <Content Include="CSS\leads-autocomplete.css" />
+    <Content Include="CSS\leads-elements.css" />
+    <Content Include="CSS\leads-layout.css" />
+    <Content Include="CSS\leads-misc.css" />
+    <Content Include="CSS\leads-title.css" />
+    <Content Include="CSS\ss-elements.css" />
+    <Content Include="CSS\ss-layout.css" />
+    <Content Include="CSS\ss-misc.css" />
+    <Content Include="CSS\ss-title.css" />
+    <Content Include="Dashboard\3MonthPlannerSummary\3MPSummary.aspx" />
+    <Content Include="Dashboard\3MonthPlanner\3MonthPlanner.aspx" />
+    <Content Include="Dashboard\3MonthPlanner\EmailPlanner.aspx" />
+    <Content Include="Dashboard\8WeekReport\8WeekReport.aspx" />
+    <Content Include="Dashboard\8WeekSummary\8WeekSummary.aspx" />
+    <Content Include="Dashboard\AccountManagement\AccountManagement.aspx" />
+    <Content Include="Dashboard\AccountManagement\CSS\accountmanagement.css" />
+    <Content Include="Dashboard\AccountManagement\RolesBreakdownWindow.aspx" />
+    <Content Include="Dashboard\AccountManagement\SalesBookRoleWindow.aspx" />
+    <Content Include="Dashboard\BackBudget\BackBudget.aspx" />
+    <Content Include="Dashboard\CashReport\CashReport.aspx" />
+    <Content Include="Dashboard\ChangePW\ChangePW.aspx" />
+    <Content Include="Dashboard\CommissionForms\CFCommissionDefaults.aspx" />
+    <Content Include="Dashboard\CommissionForms\CFEligibility.aspx" />
+    <Content Include="Dashboard\CommissionForms\CFUserRules.aspx" />
+    <Content Include="Dashboard\CommissionForms\CommissionForms.aspx" />
+    <Content Include="Dashboard\DataHubReport\DataHubReport.aspx" />
+    <Content Include="Dashboard\DSR\DSR.aspx" />
+    <Content Include="Dashboard\EditorialTracker\EditorialTracker.aspx" />
+    <Content Include="Dashboard\EditorialTracker\ETManageFootprint.aspx" />
+    <Content Include="Dashboard\EditorialTracker\ETManageSale.aspx" />
+    <Content Include="Dashboard\EditorialTracker\ETMoveSale.aspx" />
+    <Content Include="Dashboard\EditorialTracker\ETNewIssue.aspx" />
+    <Content Include="Dashboard\EditorialTracker\ETWatchSale.aspx" />
+    <Content Include="Dashboard\Finance\Finance.aspx" />
+    <Content Include="Dashboard\Finance\FNApproveRedLine.aspx" />
+    <Content Include="Dashboard\Finance\FNEditLiab.aspx" />
+    <Content Include="Dashboard\Finance\FNEditSale.aspx" />
+    <Content Include="Dashboard\Finance\FNEditTab.aspx" />
+    <Content Include="Dashboard\Finance\FNExport.aspx" />
+    <Content Include="Dashboard\Finance\FNMailingOptions.aspx" />
+    <Content Include="Dashboard\Finance\FNMoveToTab.aspx" />
+    <Content Include="Dashboard\Finance\FNNewLiab.aspx" />
+    <Content Include="Dashboard\Finance\FNNewReminder.aspx" />
+    <Content Include="Dashboard\Finance\FNNewTab.aspx" />
+    <Content Include="Dashboard\Finance\FNReOpenAccount.aspx" />
+    <Content Include="Dashboard\Finance\FNSaveDailySummary.aspx" />
+    <Content Include="Dashboard\Finance\FNSendRedLineRequest.aspx" />
+    <Content Include="Dashboard\Finance\FNSetColour.aspx" />
+    <Content Include="Dashboard\Finance\FNSetRecur.aspx" />
+    <Content Include="Dashboard\Finance\FNViewSummaries.aspx" />
+    <Content Include="Dashboard\Finance\HelpWindow.aspx" />
+    <Content Include="Dashboard\GPR\GPR.aspx" />
+    <Content Include="Dashboard\GPR\GPRExcel.aspx" />
+    <Content Include="Dashboard\GSD\GSD.aspx" />
+    <Content Include="Dashboard\HomeHub\HomeHub.aspx" />
+    <Content Include="Dashboard\Leads\Admin.aspx" />
+    <Content Include="Dashboard\Leads\Analytics.aspx" />
+    <Content Include="Dashboard\Leads\AppointmentList.aspx" />
+    <Content Include="Dashboard\Leads\AppointmentManager.aspx" />
+    <Content Include="Dashboard\Leads\AssignProject.aspx" />
+    <Content Include="Dashboard\Leads\ContactCard.aspx" />
+    <Content Include="Dashboard\Leads\DeDupeLeads.aspx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\industry mapping concerns.txt" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\a.png" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\tmp_img_3_rs.png" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\tmp_img_4_rs.png" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\tmp_img_5_rs.png" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\tmp_img_6_rs.png" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Untitled.png" />
+    <Content Include="Dashboard\Leads\Import.aspx" />
+    <Content Include="Dashboard\Leads\LeadOverview.aspx" />
+    <Content Include="Dashboard\Leads\Leads.aspx" />
+    <Content Include="Dashboard\Leads\LeadsWorlds.aspx" />
+    <Content Include="Dashboard\Leads\MailingManager.aspx" />
+    <Content Include="Dashboard\Leads\MailingScheduler.aspx" />
+    <Content Include="Dashboard\Leads\MailingTemplateEditor.aspx" />
+    <Content Include="Dashboard\Leads\MailingTemplateManager.aspx" />
+    <Content Include="Dashboard\Leads\MailingThumbnailSelector.aspx" />
+    <Content Include="Dashboard\Leads\ManageColumns.aspx" />
+    <Content Include="Dashboard\Leads\ManageWorld.aspx" />
+    <Content Include="Dashboard\Leads\ModifyBucket.aspx" />
+    <Content Include="Dashboard\Leads\ModifyProject.aspx" />
+    <Content Include="Dashboard\Leads\MultiColour.aspx" />
+    <Content Include="Dashboard\Leads\MultiKill.aspx" />
+    <Content Include="Dashboard\Leads\MultiLeadAdd.aspx" />
+    <Content Include="Dashboard\Leads\MultiMove.aspx" />
+    <Content Include="Dashboard\Leads\MultiNote.aspx" />
+    <Content Include="Dashboard\Leads\PushToProspect.aspx" />
+    <Content Include="Dashboard\Leads\RestoreProject.aspx" />
+    <Content Include="Dashboard\Leads\SingleLeadAdd.aspx" />
+    <Content Include="Dashboard\Leads\SupplierLists.aspx" />
+    <Content Include="Dashboard\Leads\Util\AuthWithGMAPI.aspx" />
+    <Content Include="Dashboard\Leads\Util\DataPuller.aspx" />
+    <Content Include="Dashboard\Leads\Util\DeDupeCompanies.aspx" />
+    <Content Include="Dashboard\Leads\ViewCompanyAndContact.aspx" />
+    <Content Include="Dashboard\Leads\ViewContactEmailHistory.aspx" />
+    <Content Include="Dashboard\Leads\ViewContactMailingHistory.aspx" />
+    <Content Include="Dashboard\League\League.aspx" />
+    <Content Include="Dashboard\League\PastCompetitions.aspx" />
+    <Content Include="Dashboard\LHAReport\LHAEditLHA.aspx" />
+    <Content Include="Dashboard\LHAReport\LHANewLHA.aspx" />
+    <Content Include="Dashboard\LHAReport\LHAReport.aspx" />
+    <Content Include="Dashboard\ListDistribution\FeatureOverview.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDAssign.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDEditList.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDMoveAllListsToIssue.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDMoveToIssue.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDNewIssue.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDNewList.aspx" />
+    <Content Include="Dashboard\ListDistribution\LDSetColour.aspx" />
+    <Content Include="Dashboard\ListDistribution\ListDistribution.aspx" />
+    <Content Include="Dashboard\LogViewer\LogViewer.aspx" />
+    <Content Include="Dashboard\MagsManager\MMEditLinks.aspx" />
+    <Content Include="Dashboard\MagsManager\MMMagManager.aspx" />
+    <Content Include="Dashboard\MailAddresses\MailAddresses.aspx" />
+    <Content Include="Dashboard\MediaSales\MediaSales.aspx" />
+    <Content Include="Dashboard\MediaSales\MSAddPart.aspx" />
+    <Content Include="Dashboard\MediaSales\MSApprove.aspx" />
+    <Content Include="Dashboard\MediaSales\MSEditSale.aspx" />
+    <Content Include="Dashboard\MediaSales\MSNewSale.aspx" />
+    <Content Include="Dashboard\MWD\MWD.aspx" />
+    <Content Include="Dashboard\MWD\MWDGroupStats.aspx" />
+    <Content Include="Dashboard\OfficeManager\OfficeManager.aspx" />
+    <Content Include="Dashboard\PageSuiteAPI\PageSuiteReceiver.aspx" />
+    <Content Include="Dashboard\PageSuiteAPI\PageSuiteSender.aspx" />
+    <Content Include="Dashboard\PRGroupSummary\PRGroupSummary.aspx" />
+    <Content Include="Dashboard\PRInput\PREditReport.aspx" />
+    <Content Include="Dashboard\PRInput\PRInput.aspx" />
+    <Content Include="Dashboard\PrinterVersion\PrinterVersion.aspx" />
+    <Content Include="Dashboard\ProspectReports\ProspectEdit.aspx" />
+    <Content Include="Dashboard\ProspectReports\ProspectMove.aspx" />
+    <Content Include="Dashboard\ProspectReports\ProspectMoveToDue.aspx" />
+    <Content Include="Dashboard\ProspectReports\ProspectMoveToListDist.aspx" />
+    <Content Include="Dashboard\ProspectReports\ProspectReports.aspx" />
+    <Content Include="Dashboard\ProspectReports\ProspectWriteUp.aspx" />
+    <Content Include="Dashboard\PROutput\PRCCAEmailReport.aspx" />
+    <Content Include="Dashboard\PROutput\PRCCAOutput.aspx" />
+    <Content Include="Dashboard\PROutput\PRTeamOutput.aspx" />
+    <Content Include="Dashboard\PROutput\PRTerritoryOutput.aspx" />
+    <Content Include="Dashboard\QuarterlyReport\QuarterlyReport.aspx" />
+    <Content Include="Dashboard\QuarterlyReport\QuarterlyReportEmail.aspx" />
+    <Content Include="Dashboard\ReportGenerator\ReportGenerator.aspx" />
+    <Content Include="Dashboard\Roles\RoleManagement.aspx" />
+    <Content Include="Dashboard\RSG\RSG.aspx" />
+    <Content Include="Dashboard\SBInput\SBApproveSaleSubmission.aspx" />
+    <Content Include="Dashboard\SBInput\SBDetailsList.aspx" />
+    <Content Include="Dashboard\SBInput\SBEditRedLine.aspx" />
+    <Content Include="Dashboard\SBInput\SBEditSale.aspx" />
+    <Content Include="Dashboard\SBInput\SBGroupStats.aspx" />
+    <Content Include="Dashboard\SBInput\SBInput.aspx" />
+    <Content Include="Dashboard\SBInput\SBInputExport.aspx" />
+    <Content Include="Dashboard\SBInput\SBMoveSale.aspx" />
+    <Content Include="Dashboard\SBInput\SBNewBook.aspx" />
+    <Content Include="Dashboard\SBInput\SBNewRedLine.aspx" />
+    <Content Include="Dashboard\SBInput\SBNewSale.aspx" />
+    <Content Include="Dashboard\SBInput\SBOverrideMagIssue.aspx" />
+    <Content Include="Dashboard\SBInput\SBSubmitNewSale.aspx" />
+    <Content Include="Dashboard\SBInput\SBViewTac.aspx" />
+    <Content Include="Dashboard\SBOutput\SBOutput.aspx" />
+    <Content Include="Dashboard\Search\Search.aspx" />
+    <Content Include="Dashboard\SigTest\SignatureTest.aspx" />
+    <Content Include="Dashboard\SmartSocial\404.aspx" />
+    <Content Include="Dashboard\SmartSocial\Analytics.aspx" />
+    <Content Include="Dashboard\SmartSocial\NameRequired.aspx" />
+    <Content Include="Dashboard\SmartSocial\Oops.aspx" />
+    <Content Include="Dashboard\SmartSocial\Project.aspx" />
+    <Content Include="Dashboard\SmartSocial\Share.aspx" />
+    <Content Include="Dashboard\SmartSocial\Tracker.aspx" />
+    <Content Include="Dashboard\SmartSocial\TrackerAdvertiserList.aspx" />
+    <Content Include="Dashboard\SmartSocial\TrackerAlt.aspx" />
+    <Content Include="Dashboard\SmartSocial\TrackerCompanyContactEditor.aspx" />
+    <Content Include="Dashboard\SmartSocial\ViewActions.aspx" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Alex Barron.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Ben Weaver.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Craig Daniels.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Dennis Morales.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Frankie Birkenhead.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\James Mitchell.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\James Pepper.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\John Holliman.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Kelly Keegan.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Kiron Chavda.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Lauren Allen.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Nick Norris.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Nizar Kanafani.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Oli Bishop.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Richard Deane.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Richard Durrant.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Rosie Rowe.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Scott Edwards.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\William Lloyd.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Aaron Wells.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Andrew Zhao.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Bryan Giles.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Carly Rush.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Cassie Ludden.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Chris Sobota.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Cory Schwarzschild.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Dan Story.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Jeff Soboleski.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Nick Ledue.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Rob Benson.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Tom Venturo.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Wayne Masciotro.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Cesar Soares.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Karla Sohn.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Rafael Klatil.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Sabrina Lima.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Sergio Ambrosino.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Taybele Piven.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Canada\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Canada\Mike Magno.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Canada\Rebecca Woods.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Canada\Xan Wynne-Jones.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Empty.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Alex Barron.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Ben Weaver.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Craig Daniels.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Dennis Morales.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Frankie Birkenhead.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\James Mitchell.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\James Pepper.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\John Holliman.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Kelly Keegan.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Kiron Chavda.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Lauren Allen.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Nick Norris.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Nizar Kanafani.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Oli Bishop.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Richard Deane.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Richard Durrant.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Rosie Rowe.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Scott Edwards.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Will Phillips.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\William Lloyd.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Alfonso Nakamura.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Carmenza David.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Jose Diaz.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Stephanie Martinez.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Taybele Piven.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Middle East\Craig Daniels.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Aaron Wells.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Alex Hortaridis.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Clark Burns.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Gerry Poynter.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Jason Wright.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Lee Harris.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Mike Magno.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Rich Gentile.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Sam Hustler.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Tom Venturo.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\West Coast\Aaron Wells.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\West Coast\Gerry Poynter.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\West Coast\Glen White.jpg" />
+    <Content Include="Dashboard\SOA\Images\CCAs\West Coast\Lee Harris.jpg" />
+    <Content Include="Dashboard\SOA\Images\Charts\earnings_comparison_Kiron Chavda.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\earnings_comparison_Mike Magno.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\earnings_comparison_Sean Bakke.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Amy Noon.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Anthony Munatswa.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Cedric Aldophe.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Dennis Morales.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_James Pepper.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Kiron Chavda.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Mike Magno.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\input_vs_conversion_Sean Bakke.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Amy Noon.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Anthony Munatswa.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Cedric Aldophe.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Dennis Morales.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_James Pepper.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Kiron Chavda.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Mike Magno.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_line_Sean Bakke.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Amy Noon.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Anthony Munatswa.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Cedric Aldophe.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Dennis Morales.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_James Pepper.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Kiron Chavda.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Mike Magno.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\personal_rev_pie_Sean Bakke.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\sales_buddy_pie_Amy Noon.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\sales_buddy_pie_Anthony Munatswa.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\sales_buddy_pie_Cedric Aldophe.png" />
+    <Content Include="Dashboard\SOA\Images\Charts\sales_buddy_pie_Dennis Morales.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Africa.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Asia.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Australia.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Brazil.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Canada.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Europe.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Latin America.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\Middle East.png" />
+    <Content Include="Dashboard\SOA\Images\Regions\USA.png" />
+    <Content Include="Dashboard\SOA\SOA.aspx" />
+    <Content Include="Dashboard\StatusSummary\StatusSummary.aspx" />
+    <Content Include="Dashboard\SurveyFeedbackViewer\SurveyFeedbackViewer.aspx" />
+    <Content Include="Dashboard\Teams\Teams.aspx" />
+    <Content Include="Dashboard\Training\Admin\TrainingAdmin.aspx" />
+    <Content Include="Dashboard\Training\Presentations\TrainingPresentations.aspx" />
+    <Content Include="Dashboard\Training\ToolBox\WDMToolBox.aspx" />
+    <Content Include="Dashboard\Training\Videos\VideoViewer.aspx" />
+    <Content Include="Dashboard\Training\Videos\Vid\wdm%27s.mp4" />
+    <Content Include="Dashboard\Training\Videos\Vid\wdm.mp4" />
+    <Content Include="Dashboard\UserList\UserList.aspx" />
+    <Content Include="Dashboard\WeeklyGroupSummary\WeeklyGroupSummary.aspx" />
+    <Content Include="debug.txt" />
+    <Content Include="Default.aspx" />
+    <Content Include="FeedbackSurvey.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Backgrounds\1.jpg" />
+    <Content Include="Images\Backgrounds\1.png" />
+    <Content Include="Images\Backgrounds\2.jpg" />
+    <Content Include="Images\Backgrounds\404.png" />
+    <Content Include="Images\Backgrounds\AccessDenied.png" />
+    <Content Include="Images\Backgrounds\Background.png" />
+    <Content Include="Images\Backgrounds\Background_old.png" />
+    <Content Include="Images\Backgrounds\Background_smaller.png" />
+    <Content Include="Images\Backgrounds\Default.old.png" />
+    <Content Include="Images\Backgrounds\Default.old2.png" />
+    <Content Include="Images\Backgrounds\Default.old3.png" />
+    <Content Include="Images\Backgrounds\Default.png" />
+    <Content Include="Images\Backgrounds\DHAccess.png" />
+    <Content Include="Images\Backgrounds\Footer.png" />
+    <Content Include="Images\Backgrounds\Graywood.png" />
+    <Content Include="Images\Backgrounds\Header.png" />
+    <Content Include="Images\Backgrounds\Maintenance.png" />
+    <Content Include="Images\Backgrounds\SBSearchPanel.png" />
+    <Content Include="Images\Backgrounds\tst.jpg" />
+    <Content Include="Images\Backgrounds\UnderConstruction.png" />
+    <Content Include="Images\Icons\admin_AddNewTeam.png" />
+    <Content Include="Images\Icons\admin_AddUser.png" />
+    <Content Include="Images\Icons\admin_Admins.png" />
+    <Content Include="Images\Icons\admin_CustomisePrivs.png" />
+    <Content Include="Images\Icons\admin_DeleteUser.png" />
+    <Content Include="Images\Icons\admin_EditUser.png" />
+    <Content Include="Images\Icons\admin_Password.png" />
+    <Content Include="Images\Icons\admin_RequestPassword.png" />
+    <Content Include="Images\Icons\admin_SaveAdmin.png" />
+    <Content Include="Images\Icons\admin_User.png" />
+    <Content Include="Images\Icons\admin_UserLogins.png" />
+    <Content Include="Images\Icons\admin_UserPreferences.png" />
+    <Content Include="Images\Icons\bbb.png" />
+    <Content Include="Images\Icons\businessfriend.png" />
+    <Content Include="Images\Icons\button_Admin.png" />
+    <Content Include="Images\Icons\button_Dashboard.png" />
+    <Content Include="Images\Icons\button_ListDistributionInput.png" />
+    <Content Include="Images\Icons\button_ProgressReportInput.png" />
+    <Content Include="Images\Icons\button_ProgressReportOutput.png" />
+    <Content Include="Images\Icons\button_SalesBookInput.png" />
+    <Content Include="Images\Icons\christmas_lights.png" />
+    <Content Include="Images\Icons\dashboard.ico" />
+    <Content Include="Images\Icons\dashboard_Add.png" />
+    <Content Include="Images\Icons\dashboard_Brochure.png" />
+    <Content Include="Images\Icons\dashboard_cca.png" />
+    <Content Include="Images\Icons\dashboard_Close.png" />
+    <Content Include="Images\Icons\dashboard_Colours.png" />
+    <Content Include="Images\Icons\dashboard_crm.ico" />
+    <Content Include="Images\Icons\dashboard_Done.png" />
+    <Content Include="Images\Icons\dashboard_Email.png" />
+    <Content Include="Images\Icons\dashboard_Hide.png" />
+    <Content Include="Images\Icons\dashboard_Info.png" />
+    <Content Include="Images\Icons\dashboard_InfoIcon.png" />
+    <Content Include="Images\Icons\dashboard_LeftGreenArrow.png" />
+    <Content Include="Images\Icons\dashboard_ListGenStats.png" />
+    <Content Include="Images\Icons\dashboard_Log.png" />
+    <Content Include="Images\Icons\dashboard_NewtoOld.png" />
+    <Content Include="Images\Icons\dashboard_Notes.png" />
+    <Content Include="Images\Icons\dashboard_no_Brochure.png" />
+    <Content Include="Images\Icons\dashboard_OldtoNew.png" />
+    <Content Include="Images\Icons\dashboard_OpenNotes.png" />
+    <Content Include="Images\Icons\dashboard_PencilAndPaper.png" />
+    <Content Include="Images\Icons\dashboard_PencilAndPaper2.png" />
+    <Content Include="Images\Icons\dashboard_Refresh.png" />
+    <Content Include="Images\Icons\dashboard_RightGreenArrow.png" />
+    <Content Include="Images\Icons\dashboard_Save.png" />
+    <Content Include="Images\Icons\dashboard_Show.png" />
+    <Content Include="Images\Icons\dashboard_Territory.png" />
+    <Content Include="Images\Icons\delete_contact_dark.png" />
+    <Content Include="Images\Icons\delete_contact_light.png" />
+    <Content Include="Images\Icons\dma.png" />
+    <Content Include="Images\Icons\downArrow.png" />
+    <Content Include="Images\Icons\eligibility_comm.png" />
+    <Content Include="Images\Icons\excel.png" />
+    <Content Include="Images\Icons\finance_Recurring.png" />
+    <Content Include="Images\Icons\Flags\Africa_flag.png" />
+    <Content Include="Images\Icons\Flags\APAC_flag.png" />
+    <Content Include="Images\Icons\Flags\Australia_flag.png" />
+    <Content Include="Images\Icons\Flags\Boston_flag.png" />
+    <Content Include="Images\Icons\Flags\Brazil_flag.png" />
+    <Content Include="Images\Icons\Flags\Canada_flag.png" />
+    <Content Include="Images\Icons\Flags\East Coast_flag.png" />
+    <Content Include="Images\Icons\Flags\EME_flag.png" />
+    <Content Include="Images\Icons\Flags\Europe_flag.png" />
+    <Content Include="Images\Icons\Flags\India_flag.png" />
+    <Content Include="Images\Icons\Flags\Latin America_flag - Copy.png" />
+    <Content Include="Images\Icons\Flags\Latin America_flag.png" />
+    <Content Include="Images\Icons\Flags\Middle East_flag.png" />
+    <Content Include="Images\Icons\Flags\Norwich_flag.png" />
+    <Content Include="Images\Icons\Flags\San Diego_flag.png" />
+    <Content Include="Images\Icons\Flags\USA_flag.png" />
+    <Content Include="Images\Icons\Flags\West Coast_flag.png" />
+    <Content Include="Images\Icons\footprint.png" />
+    <Content Include="Images\Icons\gif.gif" />
+    <Content Include="Images\Icons\googleDocs.png" />
+    <Content Include="Images\Icons\gridView_approve.png" />
+    <Content Include="Images\Icons\gridView_CancelEdit.png" />
+    <Content Include="Images\Icons\gridView_ChangeIssue.png" />
+    <Content Include="Images\Icons\gridView_Delete.png" />
+    <Content Include="Images\Icons\gridView_Down.png" />
+    <Content Include="Images\Icons\gridView_Edit.png" />
+    <Content Include="Images\Icons\gridView_toCCA.png" />
+    <Content Include="Images\Icons\gridView_Up.png" />
+    <Content Include="Images\Icons\gridView_Update.png" />
+    <Content Include="Images\Icons\h_br.png" />
+    <Content Include="Images\Icons\ie.png" />
+    <Content Include="Images\Icons\inspect_LeftBlueArrow.png" />
+    <Content Include="Images\Icons\inspect_LeftGrayArrow.png" />
+    <Content Include="Images\Icons\inspect_RightBlueArrow.png" />
+    <Content Include="Images\Icons\inspect_RightGrayArrow.png" />
+    <Content Include="Images\Icons\listDist_AddNewIssue.png" />
+    <Content Include="Images\Icons\listDist_AddNewList.png" />
+    <Content Include="Images\Icons\listDist_Issue.png" />
+    <Content Include="Images\Icons\loading.gif" />
+    <Content Include="Images\Icons\lock.png" />
+    <Content Include="Images\Icons\lock_i.png" />
+    <Content Include="Images\Icons\login_GoButton.png" />
+    <Content Include="Images\Icons\medal_bronze.png" />
+    <Content Include="Images\Icons\medal_gold.png" />
+    <Content Include="Images\Icons\medal_silver.png" />
+    <Content Include="Images\Icons\mht.png" />
+    <Content Include="Images\Icons\minus.png" />
+    <Content Include="Images\Icons\misc_FooterSeperator.gif" />
+    <Content Include="Images\Icons\mng_comm.png" />
+    <Content Include="Images\Icons\pdf.png" />
+    <Content Include="Images\Icons\plus.png" />
+    <Content Include="Images\Icons\powerpoint.png" />
+    <Content Include="Images\Icons\progressReport_FastNewReport.png" />
+    <Content Include="Images\Icons\prosReports_AddProspect.png" />
+    <Content Include="Images\Icons\qr_Down.png" />
+    <Content Include="Images\Icons\qr_Equal.png" />
+    <Content Include="Images\Icons\qr_Unknown.png" />
+    <Content Include="Images\Icons\qr_Up.png" />
+    <Content Include="Images\Icons\restore.png" />
+    <Content Include="Images\Icons\salesBook_AddNewBook.png" />
+    <Content Include="Images\Icons\salesBook_AddNewSale.png" />
+    <Content Include="Images\Icons\salesBook_AddRedLine.png" />
+    <Content Include="Images\Icons\salesBook_ExportToExcel.png" />
+    <Content Include="Images\Icons\salesBook_OpenSearch.png" />
+    <Content Include="Images\Icons\salesBook_PrinterFriendlyVersion.png" />
+    <Content Include="Images\Icons\salesBook_RedLineOrders.png" />
+    <Content Include="Images\Icons\salesBook_SpaceSold.png" />
+    <Content Include="Images\Icons\separator.old.png" />
+    <Content Include="Images\Icons\separator.png" />
+    <Content Include="Images\Icons\small_arrow.png" />
+    <Content Include="Images\Icons\Snow\snowA.gif" />
+    <Content Include="Images\Icons\Snow\snowB.gif" />
+    <Content Include="Images\Icons\Snow\snowC.gif" />
+    <Content Include="Images\Icons\Snow\snowD.gif" />
+    <Content Include="Images\Icons\Snow\snowE.png" />
+    <Content Include="Images\Icons\Snow\snowF.gif" />
+    <Content Include="Images\Icons\Snow\snowG.gif" />
+    <Content Include="Images\Icons\Snow\snowH.gif" />
+    <Content Include="Images\Icons\Snow\snowI.png" />
+    <Content Include="Images\Icons\Snow\snowJ.png" />
+    <Content Include="Images\Icons\Snow\snowK.gif" />
+    <Content Include="Images\Icons\Snow\snowL.gif" />
+    <Content Include="Images\Icons\Snow\snowM.gif" />
+    <Content Include="Images\Icons\Snow\snowN.gif" />
+    <Content Include="Images\Icons\Snow\snowO.png" />
+    <Content Include="Images\Icons\Snow\snowP.png" />
+    <Content Include="Images\Icons\Snow\snowR.gif" />
+    <Content Include="Images\Icons\Snow\snowS.gif" />
+    <Content Include="Images\Icons\test.png" />
+    <Content Include="Images\Icons\time_now.png" />
+    <Content Include="Images\Icons\trollface.gif" />
+    <Content Include="Images\Icons\unknown.png" />
+    <Content Include="Images\Icons\upArrow.png" />
+    <Content Include="Images\Icons\watch.png" />
+    <Content Include="Images\Icons\word.png" />
+    <Content Include="Images\Leads\ajax-loader.gif" />
+    <Content Include="Images\Leads\bg_contact_card.png" />
+    <Content Include="Images\Leads\company_info.png" />
+    <Content Include="Images\Leads\contact_card.png" />
+    <Content Include="Images\Leads\contact_card_verified.png" />
+    <Content Include="Images\Leads\create_new_project.png" />
+    <Content Include="Images\Leads\ico_add.png" />
+    <Content Include="Images\Leads\ico_add_context.png" />
+    <Content Include="Images\Leads\ico_add_leads.png" />
+    <Content Include="Images\Leads\ico_add_user.png" />
+    <Content Include="Images\Leads\ico_arrow_right.png" />
+    <Content Include="Images\Leads\ico_attention.png" />
+    <Content Include="Images\Leads\ico_back.png" />
+    <Content Include="Images\Leads\ico_blue_tick.png" />
+    <Content Include="Images\Leads\ico_broom.png" />
+    <Content Include="Images\Leads\ico_build_emails.png" />
+    <Content Include="Images\Leads\ico_bullet_blue.png" />
+    <Content Include="Images\Leads\ico_bullet_gray.png" />
+    <Content Include="Images\Leads\ico_bullet_green.png" />
+    <Content Include="Images\Leads\ico_bullet_yellow.png" />
+    <Content Include="Images\Leads\ico_cancel.png" />
+    <Content Include="Images\Leads\ico_chrome.png" />
+    <Content Include="Images\Leads\ico_clipboard.png" />
+    <Content Include="Images\Leads\ico_close.png" />
+    <Content Include="Images\Leads\ico_colour.png" />
+    <Content Include="Images\Leads\ico_columns.png" />
+    <Content Include="Images\Leads\ico_connect.png" />
+    <Content Include="Images\Leads\ico_contact_card.png" />
+    <Content Include="Images\Leads\ico_contact_viewer.png" />
+    <Content Include="Images\Leads\ico_copy_down.png" />
+    <Content Include="Images\Leads\ico_ctcstatus_0.png" />
+    <Content Include="Images\Leads\ico_ctcstatus_1.png" />
+    <Content Include="Images\Leads\ico_ctcstatus_2.png" />
+    <Content Include="Images\Leads\ico_datageek.png" />
+    <Content Include="Images\Leads\ico_datageek_small.png" />
+    <Content Include="Images\Leads\ico_delete.png" />
+    <Content Include="Images\Leads\ico_detailed.png" />
+    <Content Include="Images\Leads\ico_details.png" />
+    <Content Include="Images\Leads\ico_disconnect.png" />
+    <Content Include="Images\Leads\ico_documents.png" />
+    <Content Include="Images\Leads\ico_edit.png" />
+    <Content Include="Images\Leads\ico_editor.png" />
+    <Content Include="Images\Leads\ico_excel.png" />
+    <Content Include="Images\Leads\ico_exclaim_green.png" />
+    <Content Include="Images\Leads\ico_exclaim_red.png" />
+    <Content Include="Images\Leads\ico_exclaim_yellow.png" />
+    <Content Include="Images\Leads\ico_feed.png" />
+    <Content Include="Images\Leads\ico_gmail.png" />
+    <Content Include="Images\Leads\ico_gmail_24.png" />
+    <Content Include="Images\Leads\ico_gmail_large.png" />
+    <Content Include="Images\Leads\ico_go_to.png" />
+    <Content Include="Images\Leads\ico_green_tick.png" />
+    <Content Include="Images\Leads\ico_history.png" />
+    <Content Include="Images\Leads\ico_hunter.png" />
+    <Content Include="Images\Leads\ico_import_leads.png" />
+    <Content Include="Images\Leads\ico_info.png" />
+    <Content Include="Images\Leads\ico_invalid_lead.png" />
+    <Content Include="Images\Leads\ico_kill.png" />
+    <Content Include="Images\Leads\ico_kill_lead.png" />
+    <Content Include="Images\Leads\ico_linked_in.png" />
+    <Content Include="Images\Leads\ico_merge_contacts.png" />
+    <Content Include="Images\Leads\ico_move.png" />
+    <Content Include="Images\Leads\ico_note.png" />
+    <Content Include="Images\Leads\ico_note_big.png" />
+    <Content Include="Images\Leads\ico_ok.png" />
+    <Content Include="Images\Leads\ico_outlook.png" />
+    <Content Include="Images\Leads\ico_outlook_big.png" />
+    <Content Include="Images\Leads\ico_plus.png" />
+    <Content Include="Images\Leads\ico_preview.png" />
+    <Content Include="Images\Leads\ico_remove_dnc.png" />
+    <Content Include="Images\Leads\ico_restore.png" />
+    <Content Include="Images\Leads\ico_schedule.png" />
+    <Content Include="Images\Leads\ico_search.png" />
+    <Content Include="Images\Leads\ico_select.png" />
+    <Content Include="Images\Leads\ico_settings.png" />
+    <Content Include="Images\Leads\ico_settings_green.png" />
+    <Content Include="Images\Leads\ico_show_all_contacts.png" />
+    <Content Include="Images\Leads\ico_shuffle.png" />
+    <Content Include="Images\Leads\ico_tab_leads.png" />
+    <Content Include="Images\Leads\ico_tab_tools.png" />
+    <Content Include="Images\Leads\ico_tag.png" />
+    <Content Include="Images\Leads\ico_trash.png" />
+    <Content Include="Images\Leads\ico_txt.png" />
+    <Content Include="Images\Leads\ico_unknown.png" />
+    <Content Include="Images\Leads\ico_valid_lead.png" />
+    <Content Include="Images\Leads\ico_verified.png" />
+    <Content Include="Images\Leads\ico_warning.png" />
+    <Content Include="Images\Leads\ico_word.png" />
+    <Content Include="Images\Leads\ico_word_big.png" />
+    <Content Include="Images\Leads\ico_world_manage.png" />
+    <Content Include="Images\Leads\ico_world_users.png" />
+    <Content Include="Images\Leads\old\blocked_popups.png" />
+    <Content Include="Images\Leads\old\contact_card_verified.png" />
+    <Content Include="Images\Leads\old\ico_flag.png" />
+    <Content Include="Images\Leads\old\ico_gmail_old.png" />
+    <Content Include="Images\Leads\old\ico_history_small.png" />
+    <Content Include="Images\Leads\old\ico_link.png" />
+    <Content Include="Images\Leads\old\ico_outlook.png" />
+    <Content Include="Images\Leads\old\ico_outlook_good.png" />
+    <Content Include="Images\Leads\old\ico_project.png" />
+    <Content Include="Images\Leads\old\ico_verified.png" />
+    <Content Include="Images\Leads\old\ico_website.png" />
+    <Content Include="Images\Leads\other_contacts.png" />
+    <Content Include="Images\Leads\personal_notes.png" />
+    <Content Include="Images\Leads\radprogressarea.png" />
+    <Content Include="Images\Leads\sprites\r_cal.gif" />
+    <Content Include="Images\Leads\sprites\r_tv.gif" />
+    <Content Include="Images\Leads\this_contact_info.png" />
+    <Content Include="Images\Misc\above15names.png" />
+    <Content Include="Images\Misc\admin_userRolesBreakdown.png" />
+    <Content Include="Images\Misc\ajax-loader.gif" />
+    <Content Include="Images\Misc\below15names.png" />
+    <Content Include="Images\Misc\bizclik_logo.png" />
+    <Content Include="Images\Misc\bizclik_logo_dark.png" />
+    <Content Include="Images\Misc\BlinkingChristmasLights.gif" />
+    <Content Include="Images\Misc\bostonCam.jpg" />
+    <Content Include="Images\Misc\connection_error.png" />
+    <Content Include="Images\Misc\dashboard_logo.png" />
+    <Content Include="Images\Misc\dashboard_no_Brochure.png" />
+    <Content Include="Images\Misc\datageek_logo.old.png" />
+    <Content Include="Images\Misc\datageek_logo.png" />
+    <Content Include="Images\Misc\Graph Skins\black.png" />
+    <Content Include="Images\Misc\Graph Skins\deepblue.png" />
+    <Content Include="Images\Misc\Graph Skins\deepgray.png" />
+    <Content Include="Images\Misc\Graph Skins\deepgreen.png" />
+    <Content Include="Images\Misc\Graph Skins\deepred.png" />
+    <Content Include="Images\Misc\Graph Skins\default.png" />
+    <Content Include="Images\Misc\Graph Skins\forest.png" />
+    <Content Include="Images\Misc\Graph Skins\hay.png" />
+    <Content Include="Images\Misc\Graph Skins\lightblue.png" />
+    <Content Include="Images\Misc\Graph Skins\lightgreen.png" />
+    <Content Include="Images\Misc\Graph Skins\mac.png" />
+    <Content Include="Images\Misc\Graph Skins\office2007.png" />
+    <Content Include="Images\Misc\Graph Skins\outlook.png" />
+    <Content Include="Images\Misc\Graph Skins\sunset.png" />
+    <Content Include="Images\Misc\Graph Skins\telerik.png" />
+    <Content Include="Images\Misc\Graph Skins\vista.png" />
+    <Content Include="Images\Misc\Graph Skins\webblue.png" />
+    <Content Include="Images\Misc\grd_alt.png" />
+    <Content Include="Images\Misc\grd_head.png" />
+    <Content Include="Images\Misc\offline.png" />
+    <Content Include="Images\Misc\offline2.png" />
+    <Content Include="Images\Misc\offline3.png" />
+    <Content Include="Images\Misc\offline4.png" />
+    <Content Include="Images\Misc\pageMoved.png" />
+    <Content Include="Images\Misc\RAGHub.png" />
+    <Content Include="Images\Misc\reports_areaGraph.png" />
+    <Content Include="Images\Misc\reports_barGraph.png" />
+    <Content Include="Images\Misc\reports_bubbleGraph.png" />
+    <Content Include="Images\Misc\reports_lineGraph.png" />
+    <Content Include="Images\Misc\reports_splineAreaGraph.png" />
+    <Content Include="Images\Misc\reports_splineGraph.png" />
+    <Content Include="Images\Misc\SnowBlur\snow_blur_1.png" />
+    <Content Include="Images\Misc\SnowBlur\snow_blur_2.png" />
+    <Content Include="Images\Misc\SnowBlur\snow_blur_3.png" />
+    <Content Include="Images\Misc\SnowBlur\snow_blur_4.png" />
+    <Content Include="Images\Misc\spinner.gif" />
+    <Content Include="Images\Misc\survey-header.png" />
+    <Content Include="Images\Misc\table-images\back.png" />
+    <Content Include="Images\Misc\table-images\blurry.jpg" />
+    <Content Include="Images\Misc\table-images\botleft.png" />
+    <Content Include="Images\Misc\table-images\botright.png" />
+    <Content Include="Images\Misc\table-images\gradback.png" />
+    <Content Include="Images\Misc\table-images\gradhead.png" />
+    <Content Include="Images\Misc\table-images\gradhover.png" />
+    <Content Include="Images\Misc\table-images\header.jpg" />
+    <Content Include="Images\Misc\table-images\left.png" />
+    <Content Include="Images\Misc\table-images\pattern-head.png" />
+    <Content Include="Images\Misc\table-images\pattern.gif" />
+    <Content Include="Images\Misc\table-images\pattern.png" />
+    <Content Include="Images\Misc\table-images\patternb-head.png" />
+    <Content Include="Images\Misc\table-images\patternb.png" />
+    <Content Include="Images\Misc\table-images\right.png" />
+    <Content Include="Images\Misc\titleBarAlpha.png" />
+    <Content Include="Images\Misc\titleBarAlphaShort.png" />
+    <Content Include="Images\Misc\titleBarAlphaVeryShort.png" />
+    <Content Include="Images\Misc\titleBarExtraExtraLongAlpha.png" />
+    <Content Include="Images\Misc\titleBarExtraLongAlpha.png" />
+    <Content Include="Images\Misc\titleBarLong.png" />
+    <Content Include="Images\Misc\title_overlay.png" />
+    <Content Include="Images\Misc\uploading.gif" />
+    <Content Include="Images\Misc\VersusHub.png" />
+    <Content Include="Images\Misc\wdm_banner.png" />
+    <Content Include="Images\Misc\wdm_logo.png" />
+    <Content Include="Images\Misc\wdm_logo_alpha.png" />
+    <Content Include="Images\Misc\widget_example.png" />
+    <Content Include="Images\SmartSocial\bizclik_powered_logo.png" />
+    <Content Include="Images\SmartSocial\ico_brochure.png" />
+    <Content Include="Images\SmartSocial\ico_cross.png" />
+    <Content Include="Images\SmartSocial\ico_email.png" />
+    <Content Include="Images\SmartSocial\ico_facebook.png" />
+    <Content Include="Images\SmartSocial\ico_infographic.png" />
+    <Content Include="Images\SmartSocial\ico_logo.png" />
+    <Content Include="Images\SmartSocial\ico_logo_alpha.png" />
+    <Content Include="Images\SmartSocial\ico_logo_alpha_small.png" />
+    <Content Include="Images\SmartSocial\ico_other.png" />
+    <Content Include="Images\SmartSocial\ico_phone.png" />
+    <Content Include="Images\SmartSocial\ico_read_receipt.png" />
+    <Content Include="Images\SmartSocial\ico_remove.png" />
+    <Content Include="Images\SmartSocial\ico_share.png" />
+    <Content Include="Images\SmartSocial\ico_tick.png" />
+    <Content Include="Images\SmartSocial\ico_twitter.png" />
+    <Content Include="Images\SmartSocial\ico_view.png" />
+    <Content Include="Images\SmartSocial\ico_web_copy.png" />
+    <Content Include="Images\SmartSocial\ico_widget.png" />
+    <Content Include="Images\SmartSocial\left_arrow.png" />
+    <Content Include="Images\SmartSocial\logo_full.png" />
+    <Content Include="Images\SmartSocial\logo_full_old.png" />
+    <Content Include="Images\SmartSocial\logo_large.png" />
+    <Content Include="Images\SmartSocial\old\1.png" />
+    <Content Include="Images\SmartSocial\old\bizclik_logo.png" />
+    <Content Include="Images\SmartSocial\old\logo_full.png" />
+    <Content Include="Images\SmartSocial\old\pictures.png" />
+    <Content Include="Images\SmartSocial\old\press_release.png" />
+    <Content Include="Images\SmartSocial\old\share_facebook.png" />
+    <Content Include="Images\SmartSocial\old\social_media_tips.png" />
+    <Content Include="Images\SmartSocial\old\social_media_tips1.png" />
+    <Content Include="Images\SmartSocial\old\tweets.png" />
+    <Content Include="Images\SmartSocial\right_arrow.png" />
+    <Content Include="Images\SmartSocial\social_media_tips.png" />
+    <Content Include="Images\SmartSocial\tick.png" />
+    <Content Include="JavaScript\alertify.js" />
+    <Content Include="JavaScript\christmaslights.js" />
+    <Content Include="JavaScript\d3.js" />
+    <Content Include="JavaScript\db.js" />
+    <Content Include="JavaScript\jq.js" />
+    <Content Include="JavaScript\rotate.js" />
+    <Content Include="JavaScript\snow.js" />
+    <Content Include="JavaScript\snowstorm.js" />
+    <Content Include="JavaScript\telerik.js" />
+    <Content Include="lb.aspx" />
+    <Content Include="License-LGPL.txt" />
+    <Content Include="Login.aspx" />
+    <Content Include="Mailing\FinanceAlertMailer.aspx" />
+    <Content Include="Mailing\FinanceSummaryMailer.aspx" />
+    <Content Include="Mailing\GroupDSRMailer.aspx" />
+    <Content Include="Mailing\LeadsNotificationMailer.aspx" />
+    <Content Include="Mailing\LeadsStatsMailer.aspx" />
+    <Content Include="Mailing\PRLiveStatsMailer.aspx" />
+    <Content Include="Mailing\PRNewReports.aspx" />
+    <Content Include="Mailing\ProspectSummaryMailer.aspx" />
+    <Content Include="Mailing\PRRevenueSummaryMailer.aspx" />
+    <Content Include="Mailing\PRSummaryMailer.aspx" />
+    <Content Include="Mailing\RSGMailer.aspx" />
+    <Content Include="MailTemplates\Editorial\Footprint-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Portuguese-Footprint-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Portuguese-ProfileLive-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\ProfileLive-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Spanish-Footprint-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Spanish-ProfileLive-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Widget Mention Versions\Portuguese-Footprint-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Widget Mention Versions\Portuguese-ProfileLive-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Widget Mention Versions\ProfileLive-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Widget Mention Versions\Spanish-Footprint-MailTemplate.txt" />
+    <Content Include="MailTemplates\Editorial\Widget Mention Versions\Spanish-ProfileLive-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\CFO-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\DebtRecovery-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\FeatCompNotification-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\FinalNotice-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\Portuguese-PostMag-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\Portuguese-PreMag-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\PostMag-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\PreMag-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\Spanish-PostMag-MailTemplate.txt" />
+    <Content Include="MailTemplates\Finance\Spanish-PreMag-MailTemplate.txt" />
+    <Content Include="MailTemplates\PRLiveStatsMail-whitelist.txt" />
+    <Content Include="MailTemplates\ResetAllPasswordsMsg.txt" />
+    <Content Include="MailTemplates\RetrievePasswordMsg.txt" />
+    <Content Include="MailTemplates\SalesBook\India-NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\NotPaidFiller-PO-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\NotPaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Paid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\PaidFiller-PO-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\PaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Portuguese-NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Portuguese-NotPaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Portuguese-Paid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Portuguese-PaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Spanish-NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Spanish-NotPaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Spanish-Paid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Spanish-PaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\India-NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\NotPaidFiller-PO-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\NotPaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Paid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\PaidFiller-PO-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\PaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Portuguese-NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Portuguese-NotPaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Portuguese-Paid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Portuguese-PaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Spanish-NotPaid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Spanish-NotPaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Spanish-Paid-MailTemplate.txt" />
+    <Content Include="MailTemplates\SalesBook\Widget Mention Versions\Spanish-PaidFiller-WFC-MailTemplate.txt" />
+    <Content Include="MailTemplates\Signatures\aasamen-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\aashford-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\charvey-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\fbrancato-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\gallen-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\mcflores-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\mdade-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\rspence-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\arossillo-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\cblack-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\ecouch-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\eestrada-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\igomez-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\jblakey-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\jblouin-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\jkimmel-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\jpribyl-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\jrobinson-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\lcanter-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\lryan-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\mgourlay-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\mmuckerheide-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\rcastrejon-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\rreis-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\sfrench-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\smarcelo-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\stalarico-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\suzthompson-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\test-Signature.txt" />
+    <Content Include="MailTemplates\Signatures\Terminated\tfelder-Signature.txt" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Apr14-InstantTradingCo%28Pty%29Ltd,TradingasCecilVinegarWorks.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Apr14-KaztecEngineering.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Apr14-MTNZambia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Apr14-NAMCOR.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Apr14-RaniInvestment.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-AlroShipping.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-EmperorsPalace.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-Farm&amp;City.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-HewlettPackard.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-InyatsiConstruction.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-NandosGrocery.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-SevenEnergy.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-SRIC.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-TaskSystems.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug13-ThreeWaysShipping.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug14-Metorex.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Aug14-PRASA.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-ARPTravelGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-DrGeorgeMukhariAcademicHospital.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-FirstQuantumMinerals.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-IBMCentralAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-KafubuWaterandSewerageCompany.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-NWSC.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-ProflightZambia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-Ren-FormCC.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-VodacomBusinessNigeria.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec13-WhassanNigeriaLtd%28WENL%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec14-IPCCoal.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec14-KhoemacauCopperMiningPtyLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec14-MedtechEthiopia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Dec14-ShreePropertyHoldings.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-BluhmBurtonEngineeringPtyLtd%28BBE%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-BUAGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-CastleBrewing.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-InyatsiConstructionSwaziland.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-NobleAzaniaGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-NobleSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-OandoPlc.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb14-Servcor.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb15-ComarcoGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb15-SymbionPower.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb15-UniconDevelopment.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Feb15-WaterAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-ARPTravelGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-AssociatedFruitProcesors.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-EBHNamibia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-FirstQuantumMinerals.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-GothicConstruction.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-JumiaNigeria.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-SlotSystemsLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-SouthernEngineeringCompanyLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan14-SunningdaleDairy.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan15-AfricanCarbonEnergy.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan15-ElAlanConstructionCompany%28Nigeria%29Ltd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan15-HotelPartnersAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan15-Jendamark.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan15-MaerskLineEastAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jan15-TechnoBrain.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-AEGPowerSolutions.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-CapeTownInternationalConventionCentre%28CTICC%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-DurbanICC.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-EastLondonAirport.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-FirstDistribution.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-GreatNorthTransport.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-HolcimMauritius.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-KenblestGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-KevianKenya.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-ManitouGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-NovartisSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-RossBreedersAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-Tarcon.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-TechnoBrain.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-TMS.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-Trident.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-VeeamAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul13-ZululandDistrictMunicpality.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-GuinnessGhanaBreweriesLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-HeinekeninEthiopia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-KaztecEngineering.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-KirloskarOilEnginesLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-Likusasa.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-MajestyOilMills.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-Makro.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-PalaboraCopper%28Pty%29Ltd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jul14-VodacomBusinessAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun13-HellmanWorldwideLogistics.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun14-ALE.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun14-Freightmore.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun14-KaztecEngineering.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun14-Makro.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun14-NationalFoodsHoldings.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Jun14-VenetiaMine.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar14-Dendairy.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar14-GlobalProcessandPipelineServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar14-KristonLallyEPCNigeriaLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar14-NobleSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar14-OrientalEnergyResourcesLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar14-SKAProjectSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Mar15-PortlandPaints&amp;ProductsNigeriaPLC.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-May14-CardinalDrillingServicesLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-May14-OptimaEnergyResourcesLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-May14-Sefalana.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-May14-VenetiaMine.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-ApexSteelLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-CarlsonRezidorHotelGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-CarouselCasino.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-DCDWindTowers.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-Meatco.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-Neotel.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-REAUganda.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-RIVTAFNigeriaLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-SabilaAir&amp;Sea%28PTY%29Ltd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-SameerAfricaLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-SasfinPremierLogistics.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-SunbirdTourismMalawi.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov13-Zantel.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov14-TetraPak.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Nov14-WananchiGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-AlamGroupofCompanies.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-AlconNigeriaLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-CCBRT.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-Hidada.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-JindalAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-KasaprekoCompanyLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-KhayelitshaDistrictHospital.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-Multilog.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-NarayanaHealth.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-OilservLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-Pelfaco.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-RIVTAF.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-SameerAfricaLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-Talbot&amp;Talbot.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-TheElginGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct13-UnitedRefineries.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct14-BCMGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Oct14-GrandCoteOperations.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-ASUSSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-BokomoBotswana.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-CrestaHotels.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-FocusFinancialServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-NarayanaHealth.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-NauticAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-OilservLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-PBE-MineRadioSystems.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-RainbowTourismGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-RoadsAuthority.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-SamsungElectronicsAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-SamsungSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-SGSNigeria.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep13-TetradHoldings.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep14-LumotechSouthAfrica.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep14-MedtechEthiopia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep14-Metorex.html" />
+    <Content Include="MailTemplates\Widgets\w3-AF-Sep14-SENET.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-Data#3.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-EcoDynamics.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-LianBengConstruction%281988%29PteLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-RSG–ReayServicesGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-ShanghaiTunnelEngineeringC923A.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-Shimizu-WestgateProfile.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Apr14-TSCGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Aug13-Spritzer.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-AirpacBukomOilfieldServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-BISIndustries.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-CityofGoldCoast.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-DuxtonHotelsPerth.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-JRRichards&amp;Sons.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-MelbourneWater.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Dec13-NorthConstructionandBuilding.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-AzzurriCommunications.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-BCSGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-Bothar.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-ContractResources.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-FratelliCosulich.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-GMPPharmaceuticals.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-HNZGlobal.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-Jonker.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-LionGlobalOffshore.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-ShanghaiTunnelEngineeringCoLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-SouthernCrossCare%28SA&amp;NT%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-SsangyongE&amp;CContract921.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-ThriftyCarRental.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Feb14-TranscityJV-LegacyWayProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-BlueCatNetworks.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-ConsolidatedContractorsCompany-MCJV.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-EquisetConstructionAustralia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-Fabtech.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-GeotechDrilling.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-K2SpecialistServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-KinCare.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-MurrumbidgeeLHD.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-PAHPharmacyDivision.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-PrincessAlexandraHospital.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-RCSEngineering.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-SeascapeSurveys.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-TranscityJV-LegacyWayProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Jan14-Zambrero.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-BuildcorpCommercial.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-LianBengConstruction%281988%29PteLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-LumChangBuildingContractors.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-OvertheWire.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-SaxonEnergyServicesAustralia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-Shimizu-WestgateProfile.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-Sommer&amp;StaffConstructionsPtyLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-Suntrix.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Mar14-WatcoWARail.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-AccionaInfrastructure-LegacyWayTunnelProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-APMGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-BlueScopeWaterAustralia.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-CalairPipeSystems.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-DarwinPortCorporation.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-Goodline.html" />
+    <Content Include="MailTemplates\Widgets\w3-AU-Nov13-LibertyIndustrial.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-AGFA.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-Aviagem.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-BepoComponentesAutomotivos.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-Cocelpa.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-CRALMEIDAConstrutora.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-Dan-HebertEngenharia.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-LaboratorioSabinClinico.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-Refrix.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Apr14-VivendaDoCamarao.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Dec13-ANIB.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Dec13-DentalCremer.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Dec13-DixtalBiomédicaIndústriaeComércioLtda..html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Dec13-Emccamp.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Dec13-LockEngenharia.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Dec13-MotaMachado.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Feb14-AfonsoFrancaEngenharia.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Feb14-HospitalAnchieta.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Feb14-Indebras.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Jan14-AlamoEngenharia.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Jan14-DivinoFogao.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Jan14-HospitalMaedeDeus.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Mar14-ArsenaldaMarinhadoRiodeJaneiro.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Mar14-CBLAlimentos%28leitebetania%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Mar14-FiniGuloseimas.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Mar14-LaboratorioSabinClinico.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Mar14-TroxdoBrasil.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Mar14-VivendaDoCamarao.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-May14-ABRIESP.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-May14-LevorinPneus.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-May14-Mavalerio.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-May14-SucosdoBrasil.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Nov13-BrazilEnergy.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Nov13-EstaleiroJurong.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Nov13-GnatusInternationalLtda.html" />
+    <Content Include="MailTemplates\Widgets\w3-BR-Nov13-PETROSYNERGY.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-CanadianUtilityConstruction.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-CentreforAddictionandMentalHealth%28CAMH%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-DakotaHomes.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-Dynaplas.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-HorizonHealthNetwork.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-HylifeFoods.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-ICSI.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-PolocorpInc..html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-RakowskiCartage&amp;WreckingLTD.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-RegionofPeelHanlanWaterProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-SingerValve.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-TractelNorthAmerica.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Apr14-WhitewaveFoods.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-AFSC.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-AquaterraCorp.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-Canaroma.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-CityofEdmonton-LightRailProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-CityofSurrey.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-HeroCertifiedBurgers.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-QuickMill.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-ShahTradingCompany.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-SoutheastStoneyTrail.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Dec13-YohoResources.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-BelmontMeatProducts.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-DansunJardin.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-FancyPokket.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-GulfCoastShippingGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-HeatherbraeBuilders.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-I.Thibault.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-IBIGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-Interpaving.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Feb14-NSTContractingLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-Cementation.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-CityofBathurst.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-ExcelsiorEngineeringLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-FiaGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-Hydra-Slide.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-NewBrunswickLiquorCorporation.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-TitaniumContracting.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jan14-TremtonConstruction.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Jul14-UtilitySolutionsCorporation.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-BNSFLogistics%28AlbacorShipping%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-C-COMSatelliteSystems.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-Dynaplas.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-Graffconcrete.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-HylifeFoods.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-ICSI.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-ProvidenceHealthCare.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-RakowskiCartage&amp;WreckingLTD.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Mar14-TLPenner.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-BostonPizza.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-Cameco.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-CentreforAddictionandMentalHealth%28CAMH%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-DeepFoundationContrators.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-EMCONServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-EurekaPumpsAmericasInc..html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-NorthernContracting.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-NorthernCrossYukon.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-NovaCopperInc..html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-PenaltaGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-Promens.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-RegionofPeelHanlanWaterProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-TheCentralGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-TheRegionalMunicipalityofYork.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-May14-WindsorEssexCatholicDistrictSchoolBoard.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Nov13-AthabascaBasinDevelopment.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Nov13-Beaudoin.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Nov13-ColdBox.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Nov13-Durabuilt.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Nov13-FlynnCanada.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Nov13-SoucyGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-CA-Sep14-SharpEnergy.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Apr14-EnterpriseIreland.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Apr14-InternationalMarineandDredgingConsultants.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Apr14-Kellogg’sDistributionDivision,UK&amp;Ireland.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Apr14-MariaMallabandCareGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Apr14-ScanBurger.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Aug14-CEMEX.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Aug14-ClevelandPotash.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Aug14-EuroMines.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Aug14-Fosroc.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Aug14-WorldDutyFreeGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec13-BritishMarineFederation.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec13-FairlineBoatsLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec13-PrincessYachtsInternationalPlc.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec13-TescoDistribution.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec14-Allnex.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec14-DalkiaPolska.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec14-IdexxWater.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec14-LundinMining.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec14-Mariani.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Dec14-MusgraveRetailPartnersIreland.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-DelawareConsulting.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-EnterpriseIreland.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-Envac.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-Kandia-DulceS.A.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-Sibylla.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-SvenskaTacoBar.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-UKMail.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb14-UnipartLogistics.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb15-Rawlplug.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Feb15-YorkshireWater.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-AKDEngineering.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-DecomNorthSea.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-HTSmaskinteknikkas.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-MammoetDecomB.V..html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-OSRL-OilSpillResponseLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-Selver.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan14-Össu.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan15-ArvatoSCMGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan15-Assarel-Medet.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan15-BTSupplyChain.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jan15-Unit45.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul13-BillerudKorsnas.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul13-K2.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul13-KPSteel.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul13-LafargeTarmac.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-AmRestSpain.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-Capula.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-Coinadrink.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-ColtResources.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-DanyaFoods.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-FPMcCann.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-LanesGroupPlc.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-SSSManagementServicesLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-ThamesWater.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-TTSPortEquipment.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-VarnerGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jul14-VianetLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jun14-CostaExpress.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jun14-HPPPSLogisticsEMEA.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jun14-ThamesWater.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jun14-VarnerGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Jun14-VeoliaWaterTechnologies.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-AbleUK.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-AFDecomOffshore.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-BelGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-Envac.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-HeidiChocolate.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-JeronimoMartinsPolska%28Biedronkabrand%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-Recycling.com.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-Red7MarineLimited.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-SensysTrafficAB.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-SolvingEfeso.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-STL.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar14-UKMail.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar15-DundeePreciousMetals.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Mar15-FertinPharma.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-CoopLogistik.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-DoosanEnpureLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-ECNlive.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-GroupDeCloedt.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-LINPACPackaging.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-Markem-Imaje.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-OffshoreMarineManagement.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-May14-ROCKWOOLInternationalA-S.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov13-KNAPPAG.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-Charcon.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-CompassMineralsUKLtd.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-ConfectionaryHolding.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-EnkayExpressLogistica.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-EuroMines.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-IBSPaperPerformanceGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-LundinMining.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-OfficeDepot.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-OriflameLogistics.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-TheFlexitallicGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Nov14-TheJosephGallagherGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct13-Amilina.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct13-StenaRoRo.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct14-Charcon.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct14-EldoradoGold.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct14-HarryRamsdens.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct14-IBMSupplyChain.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct14-InvestKL.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Oct14-KNAPPAB.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep13-LandEngineeringServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-AmsterdamAirportSchipholCargo.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-BoultingGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-CEMEX.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-Cisco.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-ClevelandPotash.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-HPPPSLogisticsEMEA.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-SMSElectronics.html" />
+    <Content Include="MailTemplates\Widgets\w3-EU-Sep14-SopremaUK.html" />
+    <Content Include="MailTemplates\Widgets\w3-IN-Oct13-BakersCircle.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr13-BasfMexicana.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr13-CementosLafargeHonduras.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr13-ClariantdeMexico.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr13-GrupoConstruccionesyServicioS.A.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr13-HospitalGeneraldeMedellin.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr13-Invertec.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-AspenLabs.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-Aviagen.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-CLINICAUNIVERSIDADDELASABANA.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-GrupoMexico.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-HospitalDeDiagnostico.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-OFFIMEDICASSA.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Apr14-RocaFosforicaMexicana.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Dec13-ClinicaDavilayServiciosMedicosS.A..html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Dec13-EurestMexico.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Dec13-GerardoOrtiz.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Dec13-InversionesEscala.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Dec13-LaboratorioPetrizzioS.A..html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Dec13-LenovoS.deR.L.deC.V..html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Feb14-GeneralMotorsColmotores.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Feb14-GrupoMexico.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Feb14-RocaFosforicaMexicana.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Jan14-AlianzaenEnergíayAmbienteconCentroamérica%28AEA%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Jan14-LenovoS.deR.L.deC.V..html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Jan14-LitoempaquesS.A.S..html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Jul13-AAMMaquiladoraMexico%28AmericanAxle%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Jun13-IndustriadeAsientoSuperior.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Jun14-ClinicaVespucio.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Mar13-GrupoGondi.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-May13-SANLUISRassiniFrenos.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-May13-SuperiorIndustriesdeMexico.html" />
+    <Content Include="MailTemplates\Widgets\w3-LA-Nov13-HinoMotorsManufacturingColombia.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Apr14-Alcatel-Lucent’sCloudBand™NFVPlatform.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Apr14-Batelco.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Apr14-CarlsonRezidorMiddleEast.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Dec13-Lamprellplc.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Dec14-GalaxyTrading.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Dec14-Ramboll.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Dec14-TurkTelekomInternational.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Feb14-AbuDhabiTerminals.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Feb15-DohaGreenLineProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jan14-Lamprellplc.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jan15-AlZahraHospital.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jan15-CemexUAE.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jan15-JBKControls.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jan15-JLL.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jul14-EmrillServicesLLC.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jul14-Imdaad.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Jun14-BelhasaProjectsLLC.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Mar14-AbuDhabiTerminals.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Mar14-Batelco.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-May14-Batelco.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Oct14-HalaSupplyChainServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Sep14-AlYousufGreenTech.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Sep14-JannahHotels&amp;Resorts.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Sep14-SKAInternational.html" />
+    <Content Include="MailTemplates\Widgets\w3-MI-Sep14-UnibetonReadyMix.html" />
+    <Content Include="MailTemplates\Widgets\w3-NO-Nov13-WrightFoods.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-AlexandriaRenew.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-AllStatesRefractoryContractors.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-AtlasCopcoDrilling.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-BaltimoreCountySchools.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-CessnaAircraft.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-HeathconsultantsInc.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-NationalVanLines.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-Propak.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-RivannaWaterandSewerAuthority.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-Synagro.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-TreasureValleyCoffee.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-TubularServices.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Apr14-WrightBrothersConstruction.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-CECOPipeline.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-FifthGearinc.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-FinelineConstruction.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-LanzoCompanies.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-MicroTech.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-PackersSanitationServices,Inc..html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Dec13-TFSolutions%28TFS%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Feb14-EurofinsEatonAnalytical.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Feb14-LippertComponents.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Feb14-MagnaMachine.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Feb14-NewEnglandControls.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Feb14-PittsburgWater&amp;SewageAuthority.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-ArmstrongCoal.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-GetAcross80ConstructionCampaign.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-IdahoStateUniversity.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-IDEEquipment-IntegratedDrillingEquipment.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-L.A.LightRailProject.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-OnBrand24.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-PackersSanitationServices,Inc..html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-ParksonCorporation.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-SaintAnselmCollege.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-Ultrafryer.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Jan14-WashingtonStateDOT%28TheAlaskanWayProject%29.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-AkronUniversity.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-BayShoreSystems.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-EagleCrusher.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-HumboldtCountyPW.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-KeenTransport.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-NorthAmericanConstructionGroup.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-PortTownsendPaperCorp.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-SouthwestIndustrialRigging.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-Synagro.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-UrencoUSA.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Mar14-Van-Rob.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-BemisManufacturing.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-CityofMesaandtheChicagoCubsSpringTrainingFacility.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-CummingsWesport.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-ElioMotors.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-GeorgePJohnsonCompany.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-KWSMFG.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-PascoCountyUtilities.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-Patterson&amp;Wilder-PrimorisPipeline.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-RockwellDiamonds.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-TENOVA.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-May14-WeatherlyInternational.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-AE2S-WesternAreaWaterSupply.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-CapitalCorridor.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-CBCPipeline.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-HuntingtonHillsCenter.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-IllnoisTollway.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-MarkCerrone.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-MountainValleySpringWater.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-NCDOT.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-PAMLLLC.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-PreferredSands.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-VectoraTransportation.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Nov13-WestmorelandCoal.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Oct13-Chempoint.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Oct14-AuburnConstructors.html" />
+    <Content Include="MailTemplates\Widgets\w3-US-Oct14-ONEsourceFacilitySolutions.html" />
+    <Content Include="MailTemplates\Widgets\widget-english.txt" />
+    <Content Include="MailTemplates\Widgets\widget-portuguese.txt" />
+    <Content Include="MailTemplates\Widgets\widget-spanish.txt" />
+    <Content Include="Maintenance.aspx" />
+    <Content Include="Moved.aspx" />
+    <Content Include="MP3\cycle.mp3" />
+    <Content Include="MP3\pinball.mp3" />
+    <Content Include="MP3\popcorn.mp3" />
+    <Content Include="MP3\Saul_Prospect_new.mp3" />
+    <Content Include="MP3\VN860424.MP3" />
+    <Content Include="Oops.aspx" />
+    <Content Include="PageInMaintenance.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="SO.aspx" />
+    <Content Include="TestPage.aspx" />
+    <Content Include="UnauthorisedAccess.aspx" />
+    <Content Include="UnblockPopUps.aspx" />
+    <Content Include="UserControls\CompanyManager.ascx" />
+    <Content Include="UserControls\ContactEmailManager.ascx" />
+    <Content Include="UserControls\ContactManager.ascx" />
+    <Content Include="UserControls\ContactManagerOld.ascx" />
+    <Content Include="UserControls\ContactNotesManager.ascx" />
+    <Content Include="UserControls\ContactTemplate.ascx" />
+    <Content Include="UserControls\db_footer.ascx" />
+    <Content Include="UserControls\db_footer.old.ascx" />
+    <Content Include="UserControls\db_header.ascx" />
+    <Content Include="UserControls\db_header.old.ascx" />
+    <Content Include="UserControls\GmailAuthenticator.ascx" />
+    <Content Include="UserControls\OfficeToggler.ascx" />
+    <Content Include="UserControls\PageSuiteBizClikAPI.asmx" />
+    <Content Include="ZedGraphImages\AfricaVersus.png" />
+    <Content Include="ZedGraphImages\America%27sVersus.png" />
+    <Content Include="ZedGraphImages\ANZVersus.png" />
+    <Content Include="ZedGraphImages\APACVersus.png" />
+    <Content Include="ZedGraphImages\AsiaVersus.png" />
+    <Content Include="ZedGraphImages\AustraliaVersus.png" />
+    <Content Include="ZedGraphImages\Body_areaSPAGaugeChart3f064d17-5e40-4bc3-8cfb-a0535eee70d7.png" />
+    <Content Include="ZedGraphImages\Body_areaSPAGaugeChart85019ce5-0983-4e41-8543-0ffedd2a4aef.png" />
+    <Content Include="ZedGraphImages\Body_areaSPAGaugeCharta9aad630-63b8-4b0f-ba53-0d25ae90f718.png" />
+    <Content Include="ZedGraphImages\Body_areaSPAGaugeChartc2e37a62-e295-41c7-b575-8843df53c46c.png" />
+    <Content Include="ZedGraphImages\bostonVersus.png" />
+    <Content Include="ZedGraphImages\BrazilVersus.png" />
+    <Content Include="ZedGraphImages\CanadaVersus.png" />
+    <Content Include="ZedGraphImages\East CoastVersus.png" />
+    <Content Include="ZedGraphImages\EMEVersus.png" />
+    <Content Include="ZedGraphImages\EuropeVersus.png" />
+    <Content Include="ZedGraphImages\groupVersus.png" />
+    <Content Include="ZedGraphImages\IndiaVersus.png" />
+    <Content Include="ZedGraphImages\Latin AmericaVersus.png" />
+    <Content Include="ZedGraphImages\Middle EastVersus.png" />
+    <Content Include="ZedGraphImages\MumbaiVersus.png" />
+    <Content Include="ZedGraphImages\norwichVersus.png" />
+    <Content Include="ZedGraphImages\San DiegoVersus.png" />
+    <Content Include="ZedGraphImages\sanDiegoVersus.png" />
+    <Content Include="ZedGraphImages\scriptalert%28%27banana%27%29%3bscriptVersus.png" />
+    <Content Include="ZedGraphImages\test123Versus.png" />
+    <Content Include="ZedGraphImages\TestVersus.png" />
+    <Content Include="ZedGraphImages\torontoVersus.png" />
+    <Content Include="ZedGraphImages\USAVersus.png" />
+    <Content Include="ZedGraphImages\West CoastVersus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Start\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\1149" />
+    <Content Include="App_Data\1152" />
+    <Content Include="App_Data\221" />
+    <Content Include="App_Data\406" />
+    <Content Include="App_Data\GmailAPIAuthTokens\System.String-oauth_221" />
+    <Content Include="App_Data\RadSpell\en-US.tdf" />
+    <Content Include="App_Data\RadUploadTemp\RadUploadTestFile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dashboard\3MonthPlannerSummary\web.config" />
+    <Content Include="Dashboard\3MonthPlanner\web.config" />
+    <Content Include="Dashboard\8WeekReport\web.config" />
+    <Content Include="Dashboard\8WeekSummary\web.config" />
+    <Content Include="Dashboard\AccountManagement\web.config" />
+    <Content Include="Dashboard\BackBudget\web.config" />
+    <Content Include="Dashboard\CashReport\web.config" />
+    <Content Include="Dashboard\ChangePW\web.config" />
+    <Content Include="Dashboard\CommissionForms\Docs\Commission Rules V2.docx" />
+    <Content Include="Dashboard\CommissionForms\Docs\Commission Rules V3.docx" />
+    <Content Include="Dashboard\CommissionForms\Docs\Commission Rules V4.docx" />
+    <Content Include="Dashboard\CommissionForms\Docs\web.config" />
+    <Content Include="Dashboard\CommissionForms\web.config" />
+    <Content Include="Dashboard\DataHubReport\web.config" />
+    <Content Include="Dashboard\DSR\web.config" />
+    <Content Include="Dashboard\EditorialTracker\web.config" />
+    <Content Include="Dashboard\Finance\Docs\Dashboard Finance Guide 2014.pptx" />
+    <Content Include="Dashboard\Finance\Docs\Finance Accounts Export-Template.xlsx" />
+    <Content Include="Dashboard\Finance\Docs\Finance Mail Examples %28Finance Mailing Options%29.docx" />
+    <Content Include="Dashboard\Finance\Docs\Finance Outstanding Sales-Template.xlsx" />
+    <Content Include="Dashboard\Finance\Docs\Thumbs.db" />
+    <Content Include="Dashboard\Finance\Docs\web.config" />
+    <Content Include="Dashboard\Finance\web.config" />
+    <Content Include="Dashboard\GPR\web.config" />
+    <Content Include="Dashboard\GPR\XL\GroupPerformance.xlsx" />
+    <Content Include="Dashboard\GPR\XL\web.config" />
+    <Content Include="Dashboard\GSD\web.config" />
+    <Content Include="Dashboard\HomeHub\web.config" />
+    <Content Include="Dashboard\Leads\Files\Docs\Leads Import Template v1.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Docs\Leads Import Template v2.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Docs\Leads Import Template v3.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\gwhiteca\crm trail Maritime focus.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\gwhiteca\Leads Import Template v1.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\01.11.2017-2017.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\07.11.17.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\1.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\12-05-17.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\2.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\28-04-17.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\2nd_degs latam mining-2017-11-17T09-21-18.037Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\30_11_17.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\africacom-2016-10-16 %281%29.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\Babs 6.11.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\Babzyne.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\car.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\cpo-2017-11-22T15-42-31.417Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\Email Hunter Leads 20.5.16.xls" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\FINTNew_extraction %282%29.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\hunter.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\imp.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\imp2.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\latam_ energy-2017-11-22T11_27_01.624Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\lead.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\Leads Import Template v3.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\Leads Import Template v4.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\li_world fintech new-2018-05-18T12_08_27.676Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\manufacturing_2nd, 3rd-2017-11-15T16_33_58.938Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\qsr-2017-04-25.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\sat-sun_11&amp;amp%3b12 nov-2017-11-12T13-41-07.432Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\sat_18.11-2017-11-20T10_14_01.863Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\skrapp import medium.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\skrapp import small.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\skrapp import.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\TECH&amp;TELCOPT5.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Excel\jpickering\uni-2017-11-09T17-24-39.848Z.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Templates\Data Pull Template.xlsx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\a5.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\aa4.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\aaaaaaa2.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\aaaaaaa3.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Cold Email Blast 1.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Cold Email Intro 123.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Construction - CEO-COO Showcase Mailer Template.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Construction - Mission Critical Mailer Template.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Construction - Transformation Mailer Template.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\F&amp;B Cluster Template no imgs.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\F&amp;B Cluster Template.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\IMG Hyperlink Test.docx" />
+    <Content Include="Dashboard\Leads\Files\Templates\jpickering\Thumbs.db" />
+    <Content Include="Dashboard\Leads\web.config" />
+    <Content Include="Dashboard\League\web.config" />
+    <Content Include="Dashboard\LHAReport\web.config" />
+    <Content Include="Dashboard\ListDistribution\web.config" />
+    <Content Include="Dashboard\LogViewer\web.config" />
+    <Content Include="Dashboard\MagsManager\web.config" />
+    <Content Include="Dashboard\MailAddresses\web.config" />
+    <Content Include="Dashboard\MediaSales\web.config" />
+    <Content Include="Dashboard\MWD\web.config" />
+    <Content Include="Dashboard\OfficeManager\web.config" />
+    <Content Include="Dashboard\PRGroupSummary\web.config" />
+    <Content Include="Dashboard\PRInput\Thumbs.db" />
+    <Content Include="Dashboard\PRInput\web.config" />
+    <Content Include="Dashboard\PrinterVersion\web.config" />
+    <Content Include="Dashboard\ProspectReports\web.config" />
+    <Content Include="Dashboard\PROutput\web.config" />
+    <Content Include="Dashboard\QuarterlyReport\web.config" />
+    <Content Include="Dashboard\ReportGenerator\web.config" />
+    <Content Include="Dashboard\Roles\web.config" />
+    <Content Include="Dashboard\RSG\web.config" />
+    <Content Include="Dashboard\SBInput\web.config" />
+    <Content Include="Dashboard\SBInput\XL\Sales Book Sales-Template.xlsx" />
+    <Content Include="Dashboard\SBInput\XL\web.config" />
+    <Content Include="Dashboard\SBOutput\web.config" />
+    <Content Include="Dashboard\Search\web.config" />
+    <Content Include="Dashboard\Search\XL\web.config" />
+    <Content Include="Dashboard\Search\XL\xltemplate.xlsx" />
+    <Content Include="Dashboard\SigTest\web.config" />
+    <Content Include="Dashboard\SmartSocial\Thumbs.db" />
+    <Content Include="Dashboard\SmartSocial\web.config" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Africa\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Australia\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Brazil\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Canada\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Europe\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Latin America\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Middle East\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\USA\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\CCAs\West Coast\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\Charts\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\Regions\Thumbs.db" />
+    <Content Include="Dashboard\SOA\Images\web.config" />
+    <Content Include="Dashboard\SOA\PPT\template_lg.pptx" />
+    <Content Include="Dashboard\SOA\PPT\template_lg.pptx_2015" />
+    <Content Include="Dashboard\SOA\PPT\template_s.pptx" />
+    <Content Include="Dashboard\SOA\PPT\template_s.pptx_2015" />
+    <Content Include="Dashboard\SOA\PPT\Thumbs.db" />
+    <Content Include="Dashboard\SOA\PPT\web.config" />
+    <Content Include="Dashboard\SOA\web.config" />
+    <Content Include="Dashboard\StatusSummary\web.config" />
+    <Content Include="Dashboard\SurveyFeedbackViewer\web.config" />
+    <Content Include="Dashboard\SurveyFeedbackViewer\XL\Survey Feedback-Template.xlsx" />
+    <Content Include="Dashboard\Teams\web.config" />
+    <Content Include="Dashboard\Training\Admin\Files\1.xlsx" />
+    <Content Include="Dashboard\Training\Admin\Files\test %281%29.docx" />
+    <Content Include="Dashboard\Training\Admin\Files\Thumbs.db" />
+    <Content Include="Dashboard\Training\Admin\Files\Training Ready Steady Go.xlsx" />
+    <Content Include="Dashboard\Training\Admin\Files\web.config" />
+    <Content Include="Dashboard\Training\Admin\web.config" />
+    <Content Include="Dashboard\Training\Presentations\Pres\&amp;banana.doc" />
+    <Content Include="Dashboard\Training\Presentations\Pres\3 Day Training Notes.doc" />
+    <Content Include="Dashboard\Training\Presentations\Pres\B.  Members Mail Blast.doc" />
+    <Content Include="Dashboard\Training\Presentations\Pres\Back To Basics 2012.pptx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\L. PM Script.docx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\New Training Presentation 2013.pptx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\Presentation1.pptx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\Profiles Intro.pptx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\Thumbs.db" />
+    <Content Include="Dashboard\Training\Presentations\Pres\Training Presentation 2012.pptx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\Training RSG.xlsx" />
+    <Content Include="Dashboard\Training\Presentations\Pres\web.config" />
+    <Content Include="Dashboard\Training\Presentations\Thumbs.db" />
+    <Content Include="Dashboard\Training\Presentations\web.config" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\A. Media Partnership Email.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\E. Prospect Contract.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\H. Endorsement Letter.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\I. Content Strategy.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\J. Suspect Script.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\K. Prospect Script.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other &amp; stuff\web.config" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ConstructionDigital-AfricaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ConstructionDigital-CanadaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ConstructionDigital-EuropeSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ConstructionDigital-MiddleEastSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ConstructionDigital-UKSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ConstructionDigital-USSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-AfricaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-AsiaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-CanadaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-EuropeSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-MiddleEastSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-UKSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\EnergyDigital-USSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\Food&amp;DrinkDigital-AfricaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\Food&amp;DrinkDigital-CanadaSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\Food&amp;DrinkDigital-EuropeSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\Food&amp;DrinkDigital-MiddleEastSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\Food&amp;DrinkDigital-UKSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\Food&amp;DrinkDigital-USSupplierTemplate.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ManufacturingDigital-AfricaSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ManufacturingDigital-CanadaSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ManufacturingDigital-EuropeSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ManufacturingDigital-MiddleEastSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ManufacturingDigital-UKSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\ManufacturingDigital-USSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\RetailDigital-AfricaSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\RetailDigital-CanadaSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\RetailDigital-EuropeSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\RetailDigital-MiddleEastSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\RetailDigital-UKSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\RetailDigital-USSupplierList.xls" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-ABR.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-BRE.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Construction.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Energy.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Food&amp;Drink.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Healthcare.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Manufacturing.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Retail.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-SupplyChain.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\SupplierList-Technology.pdf" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Other\web.config" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\A. Media Partnership Email.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\B.  Members Mail Blast.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\C.  Suspect Email Intro.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\D. Suspect  Email Close.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\E. Prospect Contract.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\F. PM Email Intro.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\G. PM Email List Chase.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\H. Endorsement Letter.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\I. Content Strategy.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\J. Suspect Script.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\K. Prospect Script.doc" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\L. PM Script.docx" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\Training\web.config" />
+    <Content Include="Dashboard\Training\ToolBox\Docs\web.config" />
+    <Content Include="Dashboard\Training\ToolBox\web.config" />
+    <Content Include="Dashboard\Training\Videos\Vid\Thumbs.db" />
+    <Content Include="Dashboard\Training\Videos\web.config" />
+    <Content Include="Dashboard\Training\web.config" />
+    <Content Include="Dashboard\UserList\web.config" />
+    <Content Include="Dashboard\web.config" />
+    <Content Include="Dashboard\WeeklyGroupSummary\web.config" />
+    <Content Include="Images\Backgrounds\Thumbs.db" />
+    <Content Include="Images\Icons\Flags\Thumbs.db" />
+    <Content Include="Images\Icons\Snow\Thumbs.db" />
+    <Content Include="Images\Icons\Thumbs.db" />
+    <Content Include="Images\Leads\old\Thumbs.db" />
+    <Content Include="Images\Leads\sprites\Thumbs.db" />
+    <Content Include="Images\Leads\Thumbs.db" />
+    <Content Include="Images\Misc\Graph Skins\Thumbs.db" />
+    <Content Include="Images\Misc\SnowBlur\Thumbs.db" />
+    <Content Include="Images\Misc\table-images\Thumbs.db" />
+    <Content Include="Images\Misc\Thumbs.db" />
+    <Content Include="Images\SmartSocial\old\Thumbs.db" />
+    <Content Include="Images\SmartSocial\Thumbs.db" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="Logs\Thumbs.db" />
+    <Content Include="Logs\web.config" />
+    <Content Include="MailTemplates\web.config" />
+    <Content Include="Masterpages\dbm.master" />
+    <Content Include="Masterpages\dbm_leads.master" />
+    <Content Include="Masterpages\dbm_leads_win.master" />
+    <Content Include="Masterpages\dbm_print.master" />
+    <Content Include="Masterpages\dbm_ss.master" />
+    <Content Include="Masterpages\dbm_win.master" />
+    <Content Include="Masterpages\Thumbs.db" />
+    <Content Include="ZedGraphImages\Thumbs.db" />
+    <Content Include="ZedGraphImages\web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataGeek.BusinessLogic\DataGeek.BusinessLogic.csproj">
+      <Project>{83383132-e331-4e6b-8245-52b8c1468615}</Project>
+      <Name>DataGeek.BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60580</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60580/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,28 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %feature% will be replaced with the feature company name
+  %issue_date% will be replaced with the date of the issue
+  %outstanding% will be replaced with the sale outstanding value
+  %finance_contact_e% will be replaced with the e-mail of the finance contact responsible for receipts
+  %finance_contact_p% will be replaced with the phone of the finance contact responsible for receipts
+  %signature% will be replaced with a custom signature of the user who sent the mails
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the lower half of this message.)</b>
+
+Dear %name%,
+
+I am reaching out to you directly to resolve a payment issue with your company.
+ 
+You may recall the advertisement you placed on the feature article we ran on %feature% in %issue_date%.
+ 
+As a global publisher, our finance system sends alerts when any account falls into the 'seriously delinquent' category. Like all businesses, we rely on customers paying their bills in accordance with the agreed terms and conditions. Unfortunately, our system shows your account is now seriously overdue for the amount of <b>%outstanding%</b>.
+ 
+This overdue account puts us in a very embarrassing situation given the work we completed was on behalf of your client %feature%. Per the terms and conditions, all orders were expected to be settled some time ago with payment prior to publication.
+ 
+In order for us to finalize the %feature% report, we must have all accounts settled. As such, it is imperative we receive payment immediately.
+ 
+Please contact our finance team member by email at %finance_contact_e% or directly by phone at %finance_contact_p% with payment details.</font>
+
+%signature%

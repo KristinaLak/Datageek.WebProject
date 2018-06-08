@@ -1,0 +1,2 @@
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.Website\obj\Debug\DataGeek.Website.csprojAssemblyReference.cache
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.Website\obj\Debug\DataGeek.Website.csproj.CoreCompileInputs.cache

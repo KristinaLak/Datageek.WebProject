@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGeek.Web", "DataGeek.Web\DataGeek.Web.csproj", "{7664EFE4-F9CB-4B70-8EA6-FAFA36967237}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalLibraries", "ExternalLibraries", "{9B5C0525-D64F-4B41-BA9E-141F7F266A0A}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalLibraries\ActiveUp.Net.Common.dll = ExternalLibraries\ActiveUp.Net.Common.dll
+		ExternalLibraries\ActiveUp.Net.Imap4.dll = ExternalLibraries\ActiveUp.Net.Imap4.dll
+		ExternalLibraries\ActiveUp.Net.Mail.dll = ExternalLibraries\ActiveUp.Net.Mail.dll
+		ExternalLibraries\ActiveUp.Net.Smtp.dll = ExternalLibraries\ActiveUp.Net.Smtp.dll
+		ExternalLibraries\AjaxControlToolkit.dll = ExternalLibraries\AjaxControlToolkit.dll
+		ExternalLibraries\App_Licenses.dll = ExternalLibraries\App_Licenses.dll
+		ExternalLibraries\AWS.Extensions.dll = ExternalLibraries\AWS.Extensions.dll
+		ExternalLibraries\AWSSDK.dll = ExternalLibraries\AWSSDK.dll
+		ExternalLibraries\BouncyCastle.Crypto.dll = ExternalLibraries\BouncyCastle.Crypto.dll
+		ExternalLibraries\DocumentFormat.OpenXml.dll = ExternalLibraries\DocumentFormat.OpenXml.dll
+		ExternalLibraries\Google.Apis.Auth.dll = ExternalLibraries\Google.Apis.Auth.dll
+		ExternalLibraries\Google.Apis.Auth.PlatformServices.dll = ExternalLibraries\Google.Apis.Auth.PlatformServices.dll
+		ExternalLibraries\Google.Apis.Calendar.v3.dll = ExternalLibraries\Google.Apis.Calendar.v3.dll
+		ExternalLibraries\Google.Apis.Core.dll = ExternalLibraries\Google.Apis.Core.dll
+		ExternalLibraries\Google.Apis.dll = ExternalLibraries\Google.Apis.dll
+		ExternalLibraries\Google.Apis.Gmail.v1.dll = ExternalLibraries\Google.Apis.Gmail.v1.dll
+		ExternalLibraries\Google.Apis.PlatformServices.dll = ExternalLibraries\Google.Apis.PlatformServices.dll
+		ExternalLibraries\log4net.dll = ExternalLibraries\log4net.dll
+		ExternalLibraries\MailChimp.Net.V3.dll = ExternalLibraries\MailChimp.Net.V3.dll
+		ExternalLibraries\Microsoft.Threading.Tasks.dll = ExternalLibraries\Microsoft.Threading.Tasks.dll
+		ExternalLibraries\Microsoft.Threading.Tasks.Extensions.Desktop.dll = ExternalLibraries\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+		ExternalLibraries\Microsoft.Threading.Tasks.Extensions.dll = ExternalLibraries\Microsoft.Threading.Tasks.Extensions.dll
+		ExternalLibraries\MimeKit.dll = ExternalLibraries\MimeKit.dll
+		ExternalLibraries\MySql.Data.dll = ExternalLibraries\MySql.Data.dll
+		ExternalLibraries\MySql.Data.Entity.dll = ExternalLibraries\MySql.Data.Entity.dll
+		ExternalLibraries\MySql.Data.Entity.EF6.dll = ExternalLibraries\MySql.Data.Entity.EF6.dll
+		ExternalLibraries\MySql.Web.dll = ExternalLibraries\MySql.Web.dll
+		ExternalLibraries\Newtonsoft.Json.dll = ExternalLibraries\Newtonsoft.Json.dll
+		ExternalLibraries\System.IO.dll = ExternalLibraries\System.IO.dll
+		ExternalLibraries\System.Net.Http.dll = ExternalLibraries\System.Net.Http.dll
+		ExternalLibraries\System.Net.Http.Extensions.dll = ExternalLibraries\System.Net.Http.Extensions.dll
+		ExternalLibraries\System.Net.Http.Formatting.dll = ExternalLibraries\System.Net.Http.Formatting.dll
+		ExternalLibraries\System.Net.Http.Primitives.dll = ExternalLibraries\System.Net.Http.Primitives.dll
+		ExternalLibraries\System.Net.Http.WebRequest.dll = ExternalLibraries\System.Net.Http.WebRequest.dll
+		ExternalLibraries\System.Runtime.dll = ExternalLibraries\System.Runtime.dll
+		ExternalLibraries\System.Threading.Tasks.dll = ExternalLibraries\System.Threading.Tasks.dll
+		ExternalLibraries\_vti_cnf\Telerik.Charting.dll = ExternalLibraries\_vti_cnf\Telerik.Charting.dll
+		ExternalLibraries\_vti_cnf\Telerik.Web.UI.dll = ExternalLibraries\_vti_cnf\Telerik.Web.UI.dll
+		ExternalLibraries\Telerik.Web.UI.dll = ExternalLibraries\Telerik.Web.UI.dll
+		ExternalLibraries\Telerik.Web.UI.Skins.dll = ExternalLibraries\Telerik.Web.UI.Skins.dll
+		ExternalLibraries\Telerik.Windows.Documents.Core.dll = ExternalLibraries\Telerik.Windows.Documents.Core.dll
+		ExternalLibraries\Telerik.Windows.Documents.Flow.dll = ExternalLibraries\Telerik.Windows.Documents.Flow.dll
+		ExternalLibraries\Telerik.Windows.Zip.dll = ExternalLibraries\Telerik.Windows.Zip.dll
+		ExternalLibraries\_vti_cnf\ZedGraph.dll = ExternalLibraries\_vti_cnf\ZedGraph.dll
+		ExternalLibraries\ZedGraph.dll = ExternalLibraries\ZedGraph.dll
+		ExternalLibraries\_vti_cnf\ZedGraph.Web.dll = ExternalLibraries\_vti_cnf\ZedGraph.Web.dll
+		ExternalLibraries\ZedGraph.Web.dll = ExternalLibraries\ZedGraph.Web.dll
+		ExternalLibraries\Zlib.Portable.dll = ExternalLibraries\Zlib.Portable.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGeek.BusinessLogic", "DataGeek.BusinessLogic\DataGeek.BusinessLogic.csproj", "{83383132-E331-4E6B-8245-52B8C1468615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGeek.Website", "DataGeek.Website\DataGeek.Website.csproj", "{504407E4-8191-457B-A8B5-AE15EBF5C740}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7664EFE4-F9CB-4B70-8EA6-FAFA36967237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7664EFE4-F9CB-4B70-8EA6-FAFA36967237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7664EFE4-F9CB-4B70-8EA6-FAFA36967237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7664EFE4-F9CB-4B70-8EA6-FAFA36967237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83383132-E331-4E6B-8245-52B8C1468615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83383132-E331-4E6B-8245-52B8C1468615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83383132-E331-4E6B-8245-52B8C1468615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83383132-E331-4E6B-8245-52B8C1468615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504407E4-8191-457B-A8B5-AE15EBF5C740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504407E4-8191-457B-A8B5-AE15EBF5C740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504407E4-8191-457B-A8B5-AE15EBF5C740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504407E4-8191-457B-A8B5-AE15EBF5C740}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55E8EA27-8037-44F0-B611-6345C18A7560}
+	EndGlobalSection
+EndGlobal

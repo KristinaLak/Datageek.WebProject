@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="dbm.master.cs" Inherits="dbm" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register src="~/usercontrols/db_header.ascx" TagName="Header" TagPrefix="uc" %>
+<%@ Register src="~/usercontrols/db_footer.ascx" TagName="Footer" TagPrefix="uc" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head ID="main_head" runat="server">
+        <title></title>
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+        <meta name="description" content="BizClik Media DataGeek"/>
+        <meta name="keywords" content="BizClik,Media,BizClik Media,DataGeek,Data,Geek"/>
+        <asp:ContentPlaceHolder ID="Head" runat="server"/>
+        <script src="/javascript/db.js?v1" type="text/javascript"></script>
+        <script src="/javascript/jq.js?v1" type="text/javascript"></script>
+        <script src="/javascript/alertify.js?v1" type="text/javascript"></script>
+        <script src="/javascript/telerik.js?v1" type="text/javascript"></script>
+        <link rel="shortcut icon" href="~/images/leads/ico_datageek.png"/>
+        <link rel="stylesheet" type="text/css" href="/css/dashboard.css?dbv1"/>
+        <link rel="stylesheet" type="text/css" href="/css/alertify/alertify.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/alertify/themes/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/leads-title.css?leadsv5"/>
+    </head>
+    <body ID="main_body" runat="server">
+        <form runat="server">
+            <ajax:ToolkitScriptManager runat="server" CombineScripts="false"/>
+            <uc:Header ID="Header" runat="server"/>
+            <asp:ContentPlaceHolder ID="Body" runat="server"/>
+            <uc:Footer ID="Footer" runat="server"/>
+
+            <%--Must be declared after ContentPlaceHolder--%>
+            <telerik:RadWindowManager ID="rwm_master" runat="server" VisibleStatusbar="false" AnimationDuration="600" Behaviors="Close, Move" VisibleTitlebar="true" AutoSize="true" 
+            ShowContentDuringLoad="false" OnClientAutoSizeEnd="CenterRadWindow" Skin="Metro"> 
+            <Windows>
+                <telerik:RadWindow ID="rw_view_cpy_ctc" runat="server" Title="View Company and Contacts" AutoSize="false" Animation="Fade" Height="700" Width="1050" MaxHeight="800"/>
+                <telerik:RadWindow ID="rw_lead_overview" runat="server" Title="Lead Overview" AutoSize="false" Animation="Fade" Height="650" Width="1220" MaxHeight="800"/>
+            </Windows>
+            </telerik:RadWindowManager>
+        </form>
+    </body>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40205898-1', 'wdmgroup.com');
+      ga('send', 'pageview');
+
+      function rwm_master_radopen(url, window) {
+          var manager = $find("<%= rwm_master.ClientID %>");
+          return manager.open(url, window);
+      }
+    </script>
+</html>

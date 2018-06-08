@@ -1,0 +1,108 @@
+.GeneralTitle {
+    color:#464646;
+    font-size:30px; 
+    display:block;
+}
+.GeneralText {
+    color:#656565;
+    font-size:14px;
+    line-height:1.5;
+}
+.MagTypeTitle {
+    display:block;
+    font-weight:bolder;
+    color:#333333;
+    padding:22px;
+}
+.CompanyNameTitle {
+    display:block;
+    font-weight:bolder;
+    color:#333333;
+    margin:13px 0px 6px 0px;
+}
+.CompanyDescText {
+    color:#656565;
+    font-size:13px;
+}
+.MagLink {
+    outline:none;
+    border:none;
+    box-shadow:6px 6px 5px #888888;
+    zoom:1;
+    border-collapse:separate;
+}
+.CompletedProjectTitle {
+    color:#464646;
+    font-size:28px; 
+    display:block;
+    padding-top:48px;
+    padding-bottom:20px;
+}
+.FourFourTitle {
+    color:#464646;
+    font-size:28px; 
+    display:block;
+    padding:60px;
+}
+.LeaveFeedbackTitle {
+    color:#ffffff;
+    font-size:26px; 
+    margin-bottom:30px;
+    display:block;
+}
+.LeaveFeedbackThanks {
+    color:#ffffff;
+    font-size:30px; 
+    display:block;
+}
+.LeaveNameTitle {
+    color:#ffffff;
+    font-size:20px; 
+    margin-bottom:30px;
+    display:block;
+}
+.ProjectDetailTitle {
+    color:#999999;
+    display:block;
+    font-size:14px;
+    font-weight:100;
+    text-align:center;
+    margin:6px;
+}
+.ProjectDetailText {
+    color:#ffffff;
+    font-size:14px;
+    font-weight:bolder;
+    display:block;
+    text-align:center;
+    margin:6px;
+}
+.PublicLinkTitle {
+    color:#363636;
+    display:block;
+    font-size:14px;
+    font-weight:100;
+    margin:12px;
+    float:left;
+}
+.FeedbackLabel {
+    color:white;
+    float:left;
+    font-size:15px;
+}
+.RequiredLabelFeedback {
+    color:#b80000;
+    background:#f68d22;
+    padding:6px 10px 6px 10px;
+    margin:6px 0px 6px 0px;
+    border-radius:5px;
+    float:left;
+}
+.RequiredLabelForm {
+    color:#b80000;
+    background:#f68d22;
+    padding:6px 10px 6px 10px;
+    border-radius:5px;
+    font-size:12px;
+    margin:2px;
+}

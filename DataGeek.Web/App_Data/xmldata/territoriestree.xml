@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "All" />
+	<Node Text = "Africa" />
+	<Node Text = "Asia Pacific" />
+	<Node Text = "Australasia" />
+	<Node Text = "Canada" />
+	<Node Text = "Europe" />
+	<Node Text = "India" />
+	<Node Text = "Middle East" />
+	<Node Text = "South / Central America" />
+	<Node Text = "United Kingdom" />
+	<Node Text = "United States" />
+</Tree>

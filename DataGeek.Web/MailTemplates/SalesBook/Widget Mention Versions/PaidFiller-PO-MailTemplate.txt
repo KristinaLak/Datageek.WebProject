@@ -1,0 +1,26 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %issue% will be replaced with the issue name
+  %link% will be replaced with the link to the advert
+  %pageno% will be replaced with advert's page number
+  %feature% will be replaced with advert's feature name
+  %signature% will be replaced with a custom signature of the user who sent the mails
+  %design_contact% will be replaced with the e-mail of the design contact responsible for artwork
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Dear %name%,
+
+I am pleased to advise that the %issue% issue is now live and can be viewed by visiting our website via the attached link.
+
+%link%
+
+Our Design department did not receive any <b>approval of artwork</b> for this edition and have placed a filler in the magazine on Page %pageno%. As you will be liable for the cost of this filler, I would be grateful if you could forward your artwork to <a href="mailto:%design_contact%">%design_contact%</a> by return so your own advertisement can be featured in our digital magazine.
+
+In one to two weeks the brochure for %feature% will be completed and uploaded to our websites under Reports > Company Reports. %feature% will also receive their brochure in the form of a widget which they can upload to their website. All publications of this brochure will include your advertisement. 
+
+Thank you for your participation in our digital magazine.</font>
+
+%signature%

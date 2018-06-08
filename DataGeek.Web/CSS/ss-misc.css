@@ -1,0 +1,85 @@
+.rrClipRegion { /* remove border on RadRotator */ /*div*/
+    border:none !important;
+}
+.rrFlex .rrItemsList { /*ul*/
+    width:100% !important;
+}
+.rrFlex .rrItem { /*li*/
+}
+.rrNavButton {
+    cursor:pointer;
+    opacity:0.5;
+}
+.rrNavButton:hover {
+    opacity:1;
+}
+.rrMagLeftButton {
+    float:left;
+    margin:240px 0px 0px 0px;
+}
+.rrMagRightButton {
+    float:right;
+    margin:240px 0px 0px 0px;
+}
+.rrCsLeftButton {
+    float:left;
+    margin:130px 0px 0px 150px;
+}
+.rrCsRightButton {
+    float:right;
+    margin:130px 150px 0px 0px;
+}
+.RadPanelBar .rpRootGroup, /* remove borders on PanelBar*/ 
+.RadPanelBar .rpRootGroup .rpLink {
+    color:#5F5F5F;
+    text-decoration:none;
+    border:none !important;
+    border-bottom-width:0px !important;  
+    border-color:transparent !important;
+}  
+.RadPanelBar .rpOut {  
+    border-bottom-width:0px !important;
+}  
+.rpHeaderTemplate { /* hide PanelBar header*/ 
+    display:none !important;
+}
+.TelerikModalOverlay { /* make modal overlay darker */ 
+    background:black !important;
+    opacity:.6 !important;
+    -moz-opacity:.6 !important;
+}
+/* RadWindow remove border */
+.borderLessDialog.RadWindow { /* remove main borders */
+    border:none !important;
+    padding:0 !important;
+}
+.borderLessDialog.RadWindow .rwTitleBar { /* remove the titlebar widening */
+    margin:0 !important;
+}
+.borderLessDialog .rwTitleBar { /* remove the titlebar */
+    display:none !important;
+}
+.borderLessDialog .rwStatusBar { /* remove the statusbar */
+    display:none !important;
+}
+.borderLessDialog.RadWindow .rwContent { /* radwindow border override */
+    border:groove 1px gray !important;
+} 
+
+.share.RadWindow { /* remove main borders */
+    border:none !important;
+    padding:0 !important;
+    background:red !important;
+}
+.share.RadWindow .rwTitleBar { /* remove the titlebar widening */
+    margin:0 !important;
+}
+.share .rwTitleBar { /* remove the titlebar */
+    display:none !important;
+}
+.share .rwStatusBar { /* remove the statusbar */
+    display:none !important;
+}
+.share.RadWindow .rwContent { /* radwindow border override */
+    border:none;
+} 

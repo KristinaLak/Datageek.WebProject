@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "Bahrain" />                                                      
+	<Node Text = "Cyprus" />                                                       
+	<Node Text = "Gaza" />                                                         
+	<Node Text = "Iran" />                                                         
+	<Node Text = "Iraq" />                                                         
+	<Node Text = "Israel" />                                                       
+	<Node Text = "Jordan" />                                                       
+	<Node Text = "Kuwait" />                                                       
+	<Node Text = "Lebanon" />                                                      
+	<Node Text = "Oman" />                                                         
+	<Node Text = "Palestine" />                                                    
+	<Node Text = "Qatar" />                                                        
+	<Node Text = "Saudi Arabia" />                                                 
+	<Node Text = "Syria" />                                                        
+	<Node Text = "Turkey" />                                                       
+	<Node Text = "United Arab Emirates" />                                         
+	<Node Text = "West Bank" />                                                    
+	<Node Text = "Yemen" />                                                        
+</Tree>

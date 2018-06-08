@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+	<Node Text = "Channel Islands">
+		<Node Text = "Guernsey = GY" />
+		<Node Text = "Jersey = JE" />
+	</Node>
+	<Node Text = "East">
+		<Node Text = "Cambridge = CB" />
+		<Node Text = "Chelmsford = CM" />
+		<Node Text = "Colchester = CO" />
+		<Node Text = "Ipswich = IP" />
+		<Node Text = "Luton = LU" />
+		<Node Text = "Norwich = NR" />
+		<Node Text = "Peterborough = PE" />
+		<Node Text = "Romford = RM" />
+		<Node Text = "Southend-On-Sea = SS" />
+		<Node Text = "St Albans = AL" />
+		<Node Text = "Stevenage = SG" />
+		<Node Text = "Watford = WD" />
+	</Node>
+	<Node Text = "East Midlands">
+		<Node Text = "Derby = DE" />
+		<Node Text = "Leicester = LE" />
+		<Node Text = "Lincoln = LN" />
+		<Node Text = "Northampton = NN" />
+		<Node Text = "Nottingham = NG" />
+	</Node>
+	<Node Text = "London">
+		<Node Text = "Croydon = CR" />
+		<Node Text = "East Central London = EC" />
+		<Node Text = "East London = E_" />
+		<Node Text = "Enfield = EN" />
+		<Node Text = "Harrow = HA" />
+		<Node Text = "Ilford = IG" />
+		<Node Text = "North London = N_" />
+		<Node Text = "Northwest London = NW" />
+		<Node Text = "Southeast London = SE" />
+		<Node Text = "Southwest London = SW" />
+		<Node Text = "Sutton = SM" />
+		<Node Text = "Twickenham = TW" />
+		<Node Text = "Uxbridge = UB" />
+		<Node Text = "West Central London = WC" />
+		<Node Text = "West London = W_" />
+	</Node>
+	<Node Text = "North East">
+		<Node Text = "Darlington = DL" />
+		<Node Text = "Durham = DH" />
+		<Node Text = "Newcastle Upon Tyne = NE" />
+		<Node Text = "Sunderland = SR" />
+		<Node Text = "Teeside = TS" />
+	</Node>
+	<Node Text = "North West">
+		<Node Text = "Blackburn = BB" />
+		<Node Text = "Bolton = BL" />
+		<Node Text = "Carlisle = CA" />
+		<Node Text = "Chester = CH" />
+		<Node Text = "Crewe = CW" />
+		<Node Text = "Fylde Coast = FY" />
+		<Node Text = "Isle Of Man = IM" />
+		<Node Text = "Lancaster = LA" />
+		<Node Text = "Liverpool = L_" />
+		<Node Text = "Manchester = M_" />
+		<Node Text = "Oldham = OL" />
+		<Node Text = "Preston = PR" />
+		<Node Text = "Stockport = SK" />
+		<Node Text = "Warrington = WA" />
+		<Node Text = "Wigan = WN" />
+	</Node>
+	<Node Text = "Northern Ireland">
+		<Node Text = "Belfast = BT" />
+	</Node>
+	<Node Text = "Scotland">
+		<Node Text = "Aberdeen = AB" />
+		<Node Text = "Dumfries and Galloway = DG" />
+		<Node Text = "Dundee = DD" />
+		<Node Text = "Edinburgh = EH" />
+		<Node Text = "Falkirk = FK" />
+		<Node Text = "Glasgow = G_" />
+		<Node Text = "Hebrides = HS" />
+		<Node Text = "Inverness = IV" />
+		<Node Text = "Kilmarnock = KA" />
+		<Node Text = "Kirkcaldy = KY" />
+		<Node Text = "Kirkwall = KW" />
+		<Node Text = "Motherwell = ML" />
+		<Node Text = "Paisley = PA" />
+		<Node Text = "Perth = PH" />
+		<Node Text = "Tweedsdale = TD" />
+		<Node Text = "Zetland (Shetlands) = ZE" />
+	</Node>
+	<Node Text = "South East">
+		<Node Text = "Brighton = BN" />
+		<Node Text = "Bromley = BR" />
+		<Node Text = "Canterbury = CT" />
+		<Node Text = "Dartford = DA" />
+		<Node Text = "Guildford = GU" />
+		<Node Text = "Hemel Hempstead = HP" />
+		<Node Text = "Kingston-upon-Thames = KT" />
+		<Node Text = "Maidstone = ME" />
+		<Node Text = "Milton Keynes = MK" />
+		<Node Text = "Oxford = OX" />
+		<Node Text = "Portsmouth = PO" />
+		<Node Text = "Reading = RG" />
+		<Node Text = "Redhill = RH" />
+		<Node Text = "Slough = SL" />
+		<Node Text = "Southampton = SO" />
+		<Node Text = "Tonbridge = TN" />
+	</Node>
+	<Node Text = "South West">
+		<Node Text = "Bath = BA" />
+		<Node Text = "Bournemouth = BH" />
+		<Node Text = "Bristol = BS" />
+		<Node Text = "Dorchester = DT" />
+		<Node Text = "Exeter = EX" />
+		<Node Text = "Gloucester = GL" />
+		<Node Text = "Plymouth = PL" />
+		<Node Text = "Salisbury = SP" />
+		<Node Text = "Swindon = SN" />
+		<Node Text = "Taunton = TA" />
+		<Node Text = "Torquay = TQ" />
+		<Node Text = "Truro = TR" />
+	</Node>
+	<Node Text = "Wales">
+		<Node Text = "Cardiff = CF" />
+		<Node Text = "Llandrindod Wells = LD" />
+		<Node Text = "Llandudno = LL" />
+		<Node Text = "Newport = NP" />
+		<Node Text = "Shrewsbury = SY" />
+		<Node Text = "Swansea = SA" />
+	</Node>
+	<Node Text = "West Midlands">
+		<Node Text = "Birmingham = B_" />
+		<Node Text = "Coventry = CV" />
+		<Node Text = "Dudley = DY" />
+		<Node Text = "Hereford = HR" />
+		<Node Text = "Stoke-On-Trent = ST" />
+		<Node Text = "Telford = TF" />
+		<Node Text = "Walsall = WS" />
+		<Node Text = "Wolverhampton = WV" />
+		<Node Text = "Worcester = WR" />
+	</Node>
+	<Node Text = "Yorkshire and the Humber">
+		<Node Text = "Bradford = BD" />
+		<Node Text = "Doncaster = DN" />
+		<Node Text = "Halifax = HX" />
+		<Node Text = "Harrogate = HG" />
+		<Node Text = "Huddersfield = HD" />
+		<Node Text = "Hull (officially: Kingston-upon-Hull) = HU" />
+		<Node Text = "Leeds = LS" />
+		<Node Text = "Sheffield = S_" />
+		<Node Text = "Wakefield = WF" />
+		<Node Text = "York = YO" />
+	</Node>
+</Tree>

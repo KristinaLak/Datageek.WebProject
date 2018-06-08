@@ -1,0 +1,1 @@
+﻿<%@ Page ValidateRequest="false" Language="C#" AutoEventWireup="true" CodeFile="PageSuiteSender.aspx.cs" Inherits="PageSuiteSender" %>

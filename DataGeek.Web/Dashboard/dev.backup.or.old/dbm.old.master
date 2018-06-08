@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="dbm - Copy.master.cs" Inherits="dbm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>
+<%@ Register src="~/UserControls/db_header.ascx" tagname="Header" tagprefix="head" %>
+<%@ Register src="~/UserControls/db_footer.ascx" tagname="Footer" tagprefix="foot" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head ID="main_head" runat="server">
+        <title></title>
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+        <meta name="description" content="BizClik Media Dashboard"/>
+        <meta name="keywords" content="BizClik,Media,BizClik Media,Dashboard"/>
+        <asp:ContentPlaceHolder ID="Head" runat="server"/>
+        <script src="/JavaScript/db.js?v4" type="text/javascript"></script>
+        <script src="/JavaScript/jq.js?v2" type="text/javascript"></script>
+        <script src="/JavaScript/alertify.js?v1" type="text/javascript"></script>
+        <script src="/JavaScript/telerik.js" type="text/javascript"></script>
+        <link rel="shortcut icon" href="~/Images/Icons/dashboard.ico"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/dashboard.css?dbv2"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/Alertify/alertify.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/CSS/Alertify/themes/bootstrap.min.css"/>
+    </head>
+    <body ID="main_body" runat="server">
+        <form runat="server">
+            <ajax:ToolkitScriptManager runat="server" CombineScripts="false"/>
+            <head:Header ID="Header" runat="server" />
+            <asp:ContentPlaceHolder ID="Body" runat="server"/>
+            <foot:Footer ID="Footer" runat="server"/>
+        </form>
+    </body>
+    
+    <%--Snow--%>
+    <%--<script src="/JavaScript/snowstorm.js?v5" type="text/javascript"></script>--%>
+    <%--<script src="/JavaScript/snow.js" type="text/javascript"></script>--%>
+    <%--<script src="/JavaScript/rotate.js?v3" type="text/javascript"></script>--%>
+    <%--<script type="text/javascript">
+        var angle = 0;
+        var num_flakes = grab('Header_dd_snow_count').value;
+        if (num_flakes != 0 && parseInt(num_flakes) < 20) {
+            setInterval(function() {
+                angle += 3;
+                $("[id^=SNOW_flake]").rotate(angle);
+            }, 150);
+        }
+    </script>--%>
+    <asp:Literal ID="js_snowstorm" runat="server"/>
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40205898-1', 'wdmgroup.com');
+      ga('send', 'pageview');
+    </script>
+</html>

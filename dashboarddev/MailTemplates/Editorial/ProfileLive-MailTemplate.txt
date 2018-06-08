@@ -1,0 +1,30 @@
+** 
+  --- README ---
+  %name% will be replaced with the contact name
+  %issues_and_p#s% will be replaced with the issue name(s) and page numbers to adverts
+  %plural% adds Ss when plural
+  %links% will be replaced with the link(s) to the advert(s)
+  %cover_img% will be replaced with the cover hyperlink/image to the advert (if avail)
+  %signature% will be replaced with a custom signature of the user who sent the mails
+  %source% will be replaced with the name of the territory that the feature belongs to
+**
+
+%START%<font size="2"><b>(Please do not reply to this sender, this is an automated message. Instead use the contact details in the footer of this message.)</b>
+
+Good day %name%,
+
+I hope you are well. Please find the live version of your company profile%plural% in %issues_and_p#s% by clicking the link%plural% below.
+
+The article will be reproduced in a digital brochure for you to use on your website, for marketing material and tradeshows, etc.
+
+Once the brochure is completed in a few weeks, we will deliver this to you with your very own custom widget built specifically for your site. In order to make this as seamless as possible, we will also follow up to make sure you received it and answer any questions you may have about uploading it to your website.
+
+Please find your report%plural% featured here:
+
+%links%
+
+%cover_img%
+If you have any questions, please do not hesitate to get in touch. Thank you again and have a wonderful day.</font>
+
+%signature%
+<font size="0" color="white">%source%</font>

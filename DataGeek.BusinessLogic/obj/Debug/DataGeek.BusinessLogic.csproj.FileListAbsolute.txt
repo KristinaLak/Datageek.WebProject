@@ -1,0 +1,6 @@
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.BusinessLogic\bin\Debug\DataGeek.BusinessLogic.dll
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.BusinessLogic\bin\Debug\DataGeek.BusinessLogic.pdb
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.BusinessLogic\obj\Debug\DataGeek.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.BusinessLogic\obj\Debug\DataGeek.BusinessLogic.dll
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.BusinessLogic\obj\Debug\DataGeek.BusinessLogic.pdb
+C:\Users\Anuitex-43\source\repos\datageek\DataGeek.BusinessLogic\obj\Debug\DataGeek.BusinessLogic.csprojAssemblyReference.cache
